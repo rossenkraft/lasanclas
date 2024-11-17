@@ -130,25 +130,100 @@ AOS.init({
 
 
 
+// MODAL -------------------------------------------------------------------
 
-  // Obtener elementos del DOM
-const openModalBtn = document.getElementById('openModalBtn');
-const closeModalBtn = document.getElementById('closeModalBtn');
-const modal = document.getElementById('contactModal');
+// Obtener elementos del DOM
+const openModalBtn = document.getElementById('openModalBtn'); // Botón para abrir el modal
+const closeModalBtn = document.getElementById('customCloseModalBtn');
+const modalOverlay = document.getElementById('customContactModal');
 
 // Función para abrir el modal
-openModalBtn.addEventListener('click', () => {
-  modal.style.display = 'block';
+openModalBtn?.addEventListener('click', () => {
+  modalOverlay.style.display = 'flex';
 });
 
 // Función para cerrar el modal
 closeModalBtn.addEventListener('click', () => {
-  modal.style.display = 'none';
+  modalOverlay.style.display = 'none';
 });
 
-// Cerrar el modal si el usuario hace clic fuera del contenido
-window.addEventListener('click', (e) => {
-  if (e.target === modal) {
-    modal.style.display = 'none';
+// Cerrar al hacer clic fuera del contenido
+modalOverlay.addEventListener('click', (e) => {
+  if (e.target === modalOverlay) {
+    modalOverlay.style.display = 'none';
   }
 });
+
+
+// Obtener elementos del DOM
+const openModalBtn2 = document.getElementById('openModalBtn2'); // Botón para abrir el modal
+const closeModalBtn2 = document.getElementById('customCloseModalBtn2');
+const modalOverlay2 = document.getElementById('customContactModal2');
+
+// Función para abrir el modal
+openModalBtn2.addEventListener('click', () => {
+  modalOverlay2.style.display = 'flex';
+});
+
+// Función para cerrar el modal
+closeModalBtn2.addEventListener('click', () => {
+  modalOverlay2.style.display = 'none';
+});
+
+// Cerrar al hacer clic fuera del contenido
+modalOverlay2.addEventListener('click', (e) => {
+  if (e.target === modalOverlay2) {
+    modalOverlay2.style.display = 'none';
+  }
+});
+
+
+// Obtener elementos del DOM
+const openModalBtn3 = document.getElementById('openModalBtn3'); // Botón para abrir el modal
+const closeModalBtn3 = document.getElementById('customCloseModalBtn3');
+const modalOverlay3 = document.getElementById('customContactModal3');
+
+// Función para abrir el modal
+openModalBtn3.addEventListener('click', () => {
+  modalOverlay3.style.display = 'flex';
+});
+
+// Función para cerrar el modal
+closeModalBtn3.addEventListener('click', () => {
+  modalOverlay3.style.display = 'none';
+});
+
+// Cerrar al hacer clic fuera del contenido
+modalOverlay3.addEventListener('click', (e) => {
+  if (e.target === modalOverlay3) {
+    modalOverlay3.style.display = 'none';
+  }
+});
+
+
+
+
+// menú hamburguesa -------------------------------------------------------------------
+ // Obtén el botón de hamburguesa y el menú
+ const hamburgerIcon = document.getElementById('hamburger-icon');
+ const mobileMenu = document.getElementById('mobile-menu-2');
+
+ // Función para abrir/cerrar el menú
+ hamburgerIcon.addEventListener('click', () => {
+	 const isExpanded = hamburgerIcon.getAttribute('aria-expanded') === 'true';
+	 hamburgerIcon.setAttribute('aria-expanded', !isExpanded); // Alterna el estado del menú
+	 mobileMenu.classList.toggle('hidden'); // Alterna la visibilidad del menú
+ });
+
+ // Cierra el menú si se hace clic en un enlace del menú
+ const menuLinks = mobileMenu.querySelectorAll('a');
+ menuLinks.forEach(link => {
+	 link.addEventListener('click', () => {
+		 mobileMenu.classList.add('hidden'); // Oculta el menú
+		 hamburgerIcon.setAttribute('aria-expanded', 'false'); // Marca que el menú está cerrado
+	 });
+ });
+
+
+
+ 
