@@ -4038,7 +4038,7 @@ section {
   color: gray;
 }
 
-.portfolio {
+.portfolio, .expertise{
   background-color: #0d1c2b;
   color: white;
 }
@@ -4198,4 +4198,25 @@ section p {
 	.ulline {
 		margin-top: 40px;
 	}
+}
+
+.expertise img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.expertise img:hover {
+  filter: grayscale(0%);
+}
+
+.expertise .transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+.expertise .shadow-lg {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.expertise .shadow-lg:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
