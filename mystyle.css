@@ -1,5 +1,5 @@
 :root {
-  --col1: #3498db;
+  --col1: #0080FF;
   --col2: #e74c3c;
   --col3: #e74c3c;
   --col4: #e74c3c;
@@ -36,15 +36,15 @@ body {
   
   
   .pack1 h2{
-    color: #0995b4;
+    color: #0080FF;
   }
   
   .pack2 h2{
-    color: #353d88;
+    color: #0080FF;
   }
   
   .pack3 h2{
-    color: #882bb4;
+    color: #0080FF;
   }
   
   /* Definir la animación */
@@ -254,7 +254,6 @@ body {
     text-transform: capitalize;
     padding: 16px 39px;
     border: 2px solid #00b8ca;
-    font-family: Arimo, sans-serif;
     background: #00b8ca;
     display: inline-block;
     position: relative;
@@ -3026,7 +3025,7 @@ body {
 
 /* Modal Content */
 .unique-modal-content {
-  background: linear-gradient(to bottom right, #1a73e8, #4a90e2);
+  background: linear-gradient(to bottom right, var(--col1), #004196);
   color: #ffffff;
   border-radius: 12px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
@@ -3296,7 +3295,6 @@ section {
 }
 
 .unique-contact-form2 {
-  background: linear-gradient(to bottom right, #1a73e8, #4a90e2);
   color: #ffffff;
   border-radius: 12px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
@@ -3308,7 +3306,7 @@ section {
 
 .unique-contact-form3 {
   background: #ffffff;
-  color: linear-gradient(to bottom right, #1a73e8, #4a90e2);
+  color: rgb(55, 55, 55);
   border-radius: 12px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
   /* padding: 20px; */
@@ -3338,7 +3336,7 @@ section {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #fff;
+  background: var(--col1);
   transition: width 0.2s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -3374,26 +3372,37 @@ section {
 }
 
 h1 {
+  align-self: center;
   font-size: 50px;
   font-weight: 900;
 }
 
 h2 {
+  align-self: center;
   font-size: 30px;
   font-weight: 900;
 }
 
 h3 {
+  align-self: center;
   font-size: 40px;
   font-weight: bolder;
 }
 
+h4 {
+  align-self: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 p {
+  align-self: center;
   font-size: 15px;
   font-weight:normal;
 }
 
-//EXPERIMENTAL
+/*EXPERIMENTAL*/
+
 a-waves {
   --x: -0.5rem;
   --y: 50%;
@@ -3412,7 +3421,6 @@ a-waves:before {
   left: 0;
   width: 0.5rem;
   height: 0.5rem;
-  background: #000000;
   border-radius: 50%;
   transform: translate3d(calc(var(--x) - 50%), calc(var(--y) - 50%), 0);
   will-change: transform;
@@ -3451,14 +3459,14 @@ a-waves {
   top: 0;
   left: 0;
   width: 100%;
-  height: 140vh; /* Aumentamos la altura del canvas para hacerlo más grande */
+  height: 150vh; /* Aumentamos la altura del canvas para hacerlo más grande */
   z-index: -1; /* El canvas queda debajo del contenido */
 }
 
 
 @media (max-width: 780px) {
   .section-hero {
-      min-height: 140vh;
+      min-height: 150vh;
   }
 }
 
@@ -3470,10 +3478,6 @@ a-waves {
 
 
 /* Estilos generales */
-.faq {
-  background: linear-gradient(to right, #f0f9ff, #ffffff, #f9fafb);
-  padding: 4rem 1.5rem;
-}
 
 .container {
   max-width: 1200px;
@@ -3659,7 +3663,7 @@ a-waves {
 }
 
 .btn-11e {
-    border: linear-gradient(0deg, rgb(33, 156, 251) 0%, rgb(155, 237, 255) 100%);
+    border: linear-gradient(0deg, var(--col1) 0%, rgb(155, 237, 255) 100%);
     color: #fff;
     overflow: hidden;
 }
@@ -3680,11 +3684,664 @@ a-waves {
 }
 .btn-11e:hover{
   opacity: 1;
-  background: linear-gradient(0deg, rgb(155, 237, 255) 0%, rgb(33, 156, 251) 100%);
+  background: linear-gradient(0deg, rgb(155, 237, 255) 0%, var(--col1) 100%);
 }
 .btn-11e:active{
   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+
+
+
+
+
+
+
+/* Eliminar espacios entre los elementos de la grilla */
+.grid {
+  grid-gap: 0;  /* No hay espacios entre los elementos */
+}
+
+/* Aseguramos que todos los elementos de la grilla tengan el mismo tamaño */
+.portfolio-item {
+  height: 300px; /* Ajusta la altura de los elementos */
+  position: relative; /* Necesario para la capa overlay */
+  overflow: hidden;  /* Asegura que la imagen y el overlay no sobresalgan */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Overlay para el hover */
+.portfolio-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 128, 255, 0.8); /* Color de fondo semi-transparente */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px; /* Bordes redondeados también para el overlay */
+}
+
+/* Aparece el overlay al hacer hover */
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Estilo del texto dentro del overlay */
+.portfolio-item .overlay h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.portfolio-item .overlay p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Botones de filtro */
+.filter-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #555;
+}
+
+.filter-btn.active {
+  background-color: var(--col1);
+  color: white;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Esto asegura que la imagen cubra todo el área */
+  border-radius: 8px; /* Asegura que la imagen tenga bordes redondeados */
+}
+
+
+
+/*------------------------------------------------------------------------------------/
+/* Estilo general del botón */
+.bubbly-button {
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #0080FF; /* Color de fondo actualizado */
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.5s, box-shadow ease-in 0.25s;
+  font-weight: 700;
+}
+
+.bubbly-button:hover {
+  box-shadow: 0 2px 25px rgba(0, 128, 255, 0.8); /* Sombra con color actualizado */
+}
+
+.bubbly-button:focus {
+  outline: 0;
+}
+
+.bubbly-button:before, .bubbly-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+
+/* Cambiar el color de las burbujas a #0080FF */
+.bubbly-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, transparent 20%, #0080FF 20%, transparent 30%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, transparent 10%, #0080FF 15%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+
+.bubbly-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, transparent 10%, #0080FF 15%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+
+.bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #0066cc; /* Color oscuro al hacer clic */
+  box-shadow: 0 2px 25px rgba(0, 128, 255, 0.2);
+}
+
+.bubbly-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+
+.bubbly-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+/* Variación del botón con borde */
+.bubbly-button-outline {
+  background-color: transparent; /* Sin fondo */
+  color: white; /* Texto con el mismo color que el borde */
+  border: 2px solid #0080FF; /* Borde con color */
+  box-shadow: none; /* Sin sombra */
+}
+
+/* Animaciones de las burbujas */
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+
+
+
+
+
+/* Estilo general del botón */
+.bubbly-button-w {
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white; /* Color de fondo actualizado */
+  color: #0080FF;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.5s, box-shadow ease-in 0.25s;
+  font-weight: 700;
+}
+
+.bubbly-button-w:hover {
+  box-shadow: 0 2px 25px rgba(255, 255, 255, 0.8); /* Sombra con color actualizado */
+}
+
+.bubbly-button-w:focus {
+  outline: 0;
+}
+
+.bubbly-button-w:before, .bubbly-button-w:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+
+/* Cambiar el color de las burbujas a #0080FF */
+.bubbly-button-w:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #fff 20%, transparent 20%), 
+                    radial-gradient(circle, transparent 20%, #fFF 20%, transparent 30%), 
+                    radial-gradient(circle, #fFF 20%, transparent 20%), 
+                    radial-gradient(circle, #fFF 20%, transparent 20%), 
+                    radial-gradient(circle, transparent 10%, #fFF 15%, transparent 20%), 
+                    radial-gradient(circle, #fFF 20%, transparent 20%), 
+                    radial-gradient(circle, #fFF 20%, transparent 20%), 
+                    radial-gradient(circle, #fFF 20%, transparent 20%), 
+                    radial-gradient(circle, #fFF 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+
+.bubbly-button-w:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #fFF 20%, transparent 20%), 
+                    radial-gradient(circle, #fFF 20%, transparent 20%), 
+                    radial-gradient(circle, transparent 10%, #fFF 15%, transparent 20%), 
+                    radial-gradient(circle, #fFF 20%, transparent 20%), 
+                    radial-gradient(circle, #fFF 20%, transparent 20%), 
+                    radial-gradient(circle, #fFF 20%, transparent 20%), 
+                    radial-gradient(circle, #fFF 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+
+.bubbly-button-w:active {
+  transform: scale(0.9);
+  background-color: white; /* Color oscuro al hacer clic */
+  box-shadow: 0 2px 25px rgba(176, 176, 176, 0.2);
+}
+
+.bubbly-button-w.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+
+.bubbly-button-w.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+/* Variación del botón con borde */
+.bubbly-button-w-outline {
+  background-color: transparent; /* Sin fondo */
+  color: white; /* Texto con el mismo color que el borde */
+  border: 2px solid #0080FF; /* Borde con color */
+  box-shadow: none; /* Sin sombra */
+}
+
+/* Animaciones de las burbujas */
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------/
+/* Estilo para los iconos de redes sociales */
+.social-icons {
+  display: flex;
+  flex-wrap: wrap; /* Para permitir que los íconos se ajusten en múltiples líneas si es necesario */
+  gap: 20px; /* Espacio entre los íconos */
+  margin-top: 20px; /* Espacio superior para separarlo del contenido anterior */
+}
+
+.social-icon {
+  font-size: 1.3rem; /* Tamaño de los íconos */
+  color: white; /* Color por defecto */
+  transition: color 0.3s ease-in-out; /* Transición suave al cambiar color */
+}
+
+.social-icon:hover {
+  color: #0080FF; /* Color al hacer hover */
+  transform: scale(1.3);
+}
+
+.drk {
+  background-color: var(--col1);
+  color: white;
+}
+
+.lght {
+  background-color: white;
+  color: rgb(75, 75, 75);
+}
+
+/* ------------------------------------------------------------*/
+.pricing-section {
+  padding: 4rem 2rem;
+}
+
+.heading {
+  margin-bottom: 2rem;
+}
+
+.heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.heading p {
+  font-size: 1.2rem;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  border-radius: 1rem;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  text-align: left; /* Alineación izquierda */
+  flex: 1;
+  max-width: 320px;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card.featured {
+  color: #fff;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: #0080ff;
+  margin-bottom: 1rem;
+}
+
+.pricing-card.featured .card-icon {
+  color: #fff;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-price {
+  display: flex; /* Usamos flexbox para distribuir los elementos */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.card-price span {
+  font-size: 0.9rem;
+}
+
+.card-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0; /* Alineación superior */
+}
+
+.card-features li {
+  margin: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 5px;
+  position: relative;
+  padding-left: 2rem; /* Espacio para el check */
+}
+
+.card-features-f {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0; /* Alineación superior */
+}
+
+.card-features-f li {
+  margin: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 2rem; /* Espacio para el check */
+}
+
+.card-features li::before {
+  font: var(--fa-font-solid);
+  content: "\f00c"; /* Nuevo ícono de FontAwesome: circle-check */
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  background: #0080ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-features-f li::before {
+  font: var(--fa-font-solid);
+  content: "\f00c"; /* Nuevo ícono de FontAwesome: circle-check */
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  background: white;
+  color: #0080ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card.featured .card-features li::before {
+  background: #fff;
+  color: #0080ff;
+}
+
+
+.card-footer {
+  margin-top: auto; /* Mantener al fondo */
+  text-align: center;
+}
+
+.cta-button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  background: #0080ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.pricing-card.featured .cta-button {
+  background: #fff;
+  color: #0080ff;
+}
+
+.cta-button:hover {
+  background: #5aa0fc;
+}
+
+.pricing-card.featured .cta-button:hover {
+  background: #fff;
+  color: #0080ff;
+}
+
+.card-summary {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0 1rem 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.pricing-card.featured .card-summary {
+  color: #ddd;
+}
+
+.card-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem; /* Espacio entre el icono y el texto */
+  font-size: 11px;
+  color: rgba(0,0,0,.6);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.card-features-f li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem; /* Espacio entre el icono y el texto */
+  font-size: 11px;
+  color: rgba(255,255,255,.6);
+  margin-bottom: 0.5rem;
+}
+
+.card-features .check-icon svg {
+  width: 20px;  /* Tamaño del SVG */
+  height: 20px;
+  color: #4ac79f; /* Color verde para el check */
+}
+
+#mybestwishesforyou p{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#ceoname {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+#business {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+.phr{
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.discount{
+  color: white;
+  background-color: #4ac79f;
+  border-radius: 1rem;
+  margin: 15px;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.expertise img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.expertise img:hover {
+  filter: grayscale(0%);
+}
+
+.expertise .transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+.expertise .shadow-lg {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.expertise .shadow-lg:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.text-primary {
+  color: #4CAF50; /* Verde para estrategias */
+}
+
+.text-secondary {
+  color: #FF5722; /* Naranja para identidad visual */
+}
+
+.text-accent {
+  color: #2196F3; /* Azul para estrategias de crecimiento */
 }

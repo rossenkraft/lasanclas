@@ -443,3 +443,80 @@ function collapse(element, callback) {
   });
 }
 
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+  // Evento para cambiar entre filtros
+  filterButtons.forEach(button => {
+    button.addEventListener("click", (e) => {
+      const filterValue = e.target.getAttribute("data-filter");
+
+      // Cambiar clase activa en los botones
+      filterButtons.forEach(btn => btn.classList.remove("active"));
+      e.target.classList.add("active");
+
+      // Filtrar elementos
+      portfolioItems.forEach(item => {
+        if (filterValue === "all" || item.classList.contains(filterValue)) {
+          item.style.display = "block";  // Mostrar el ítem
+        } else {
+          item.style.display = "none";  // Ocultar el ítem
+        }
+      });
+    });
+  });
+});
+
+
+
+//---------------------------------------------------------------------------
+// BUBBLE BUTTONS
+var animateButton = function(e) {
+  e.preventDefault(); // Asegúrate de ejecutar el preventDefault correctamente, con paréntesis.
+  
+  // Resetear la animación
+  e.target.classList.remove('animate');
+  
+  // Activar la animación
+  e.target.classList.add('animate');
+  
+  // Eliminar la animación después de 700ms
+  setTimeout(function() {
+    e.target.classList.remove('animate');
+  }, 700);
+};
+
+var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+for (var i = 0; i < bubblyButtons.length; i++) {
+  // Cambiar el evento a mousedown para que se active al presionar el botón
+  bubblyButtons[i].addEventListener('mousedown', animateButton, false);
+}
+
+
+
+//---------------------------------------------------------------------------
+// Si deseas agregar efectos interactivos
+document.querySelectorAll('.pricing-card').forEach((card) => {
+  card.addEventListener('mouseover', () => {
+    card.style.transform = 'scale(1.05)';
+  });
+
+  card.addEventListener('mouseout', () => {
+    card.style.transform = 'scale(1)';
+  });
+});
+
+
+
+
+
+
+
+
