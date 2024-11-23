@@ -82,7 +82,7 @@
             <!-- Icono del menú hamburguesa -->
             <button data-collapse-toggle="mobile-menu-2" type="button" class="lg:hidden inline-flex items-center justify-center p-2 w-10 h-10 focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-lg" aria-controls="mobile-menu-2" aria-expanded="false" id="hamburger-icon">
                 <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="#4ac79f" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-6 h-6" aria-hidden="true" fill="#ffffff" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M0 1.75C0 1.335 0.335 1 0.75 1H16.25C16.665 1 17 1.335 17 1.75C17 2.165 16.665 2.5 16.25 2.5H0.75C0.335 2.5 0 2.165 0 1.75ZM0 6.75C0 6.335 0.335 6 0.75 6H16.25C16.665 6 17 6.335 17 6.75C17 7.165 16.665 7.5 16.25 7.5H0.75C0.335 7.5 0 7.165 0 6.75ZM0 11.75C0 11.335 0.335 11 0.75 11H16.25C16.665 11 17 11.335 17 11.75C17 12.165 16.665 12.5 16.25 12.5H0.75C0.335 12.5 0 12.165 0 11.75Z" clip-rule="evenodd"></path>
                 </svg>
             </button>
@@ -121,31 +121,28 @@
 	
 	  
 	<section class="section-hero">
-		<a-waves>
-		  <canvas class="js-canvas"></canvas>
-		  <div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28 relative z-10">
-			<div class="lg:mt-0 lg:col-span-5 lg:flex imagen-flotante" data-aos="fade-up" data-aos-duration="1000">
-			  <img src="./hero.png" alt="hero image">
+			<div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28 relative z-10">
+				<div class="lg:mt-0 lg:col-span-5 lg:flex imagen-flotante" data-aos="fade-up" data-aos-duration="1000">
+					<img src="./hero.png" alt="hero image">
+				</div>
+				<div class="mr-auto place-self-center lg:col-span-7 glow-filter" data-aos="fade-down" data-aos-duration="1000">
+					<h1 class="max-w-2xl mb-4 leading-none tracking-tight" data-text="Illuminated Glow Text.">Empowering Brands to Stand Out</h1>
+					<h4 class="max-w-2xl mb-6" data-aos="fade-left" data-aos-delay="200">Tailored branding solutions designed to elevate your business, attract your ideal audience, and drive sustainable growth.</h4>
+					<button class="bubbly-button" style="width: 40%;">Explore Our Portfolio</button>
+					<button class="bubbly-button bubbly-button-outline" style="width: 40%;">Free Consultation</button>
+					
+					<!-- Íconos de redes sociales -->
+					<div class="social-icons mt-6">
+						<h4>Follow us: </h4>
+						<a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+						<a href="https://x.com" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+						<a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="https://www.behance.net" target="_blank" class="social-icon"><i class="fa-brands fa-behance"></i></a>
+						<a href="https://www.behance.net" target="_blank" class="social-icon"><i class="fa-brands fa-dribbble"></i></a>
+					</div>
+				</div>
 			</div>
-			<div class="mr-auto place-self-center lg:col-span-7 glow-filter" data-aos="fade-down" data-aos-duration="1000">
-			  <h1 class="max-w-2xl mb-4 leading-none tracking-tight" data-text="Illuminated Glow Text.">Empowering Brands to Stand Out</h1>
-			  <h4 class="max-w-2xl mb-6" data-aos="fade-left" data-aos-delay="200">Tailored branding solutions designed to elevate your business, attract your ideal audience, and drive sustainable growth.</h4>
-			  <button class="bubbly-button" style="width: 40%;">Explore Our Portfolio</button>
-			  <button class="bubbly-button bubbly-button-outline" style="width: 40%;">Free Consultation</button>
-			  
-			  <!-- Íconos de redes sociales -->
-			  <div class="social-icons mt-6">
-				<h4>Follow us: </h4>
-				<a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-				<a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-				<a href="https://x.com" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
-				<a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-				<a href="https://www.behance.net" target="_blank" class="social-icon"><i class="fa-brands fa-behance"></i></a>
-				<a href="https://www.behance.net" target="_blank" class="social-icon"><i class="fa-brands fa-dribbble"></i></a>
-			  </div>
-			</div>
-		  </div>
-		</a-waves>
 	  </section>
 	  
 	  
@@ -391,7 +388,7 @@
 	  </div>
   
 	  <!-- Portfolio Grid -->
-	  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-0">
+	  <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-0">
   
 		<!-- Portfolio Item 1 (Logo) -->
 		<div class="portfolio-item logo relative rounded-lg overflow-hidden bg-white dark:bg-gray-800 shadow-lg hover:scale-105 transition-all duration-300">
@@ -848,19 +845,19 @@
 			<input type="hidden" name="_subject" value="START me">
 			<input type="hidden" name="_template" value="table">
 		  <div>
-			<label for="customName" class="unique-modal-label">Nombre</label>
+			<label for="customName" class="unique-modal-label">Your Name</label>
 			<input type="text" id="customName" name="name" required class="unique-modal-input">
 		  </div>
 		  <div>
-			<label for="customEmail" class="unique-modal-label">Email</label>
+			<label for="customEmail" class="unique-modal-label">Your Email</label>
 			<input type="email" id="customEmail" name="email" required class="unique-modal-input">
 		  </div>
 		  <div>
-			<label for="customPhone" class="unique-modal-label">Teléfono</label>
+			<label for="customPhone" class="unique-modal-label">Your Phone</label>
 			<input type="text" id="customPhone" name="phone" required class="unique-modal-input">
 		  </div>
 		  <div>
-			<label for="customMessage" class="unique-modal-label">Mensaje</label>
+			<label for="customMessage" class="unique-modal-label">Your Message</label>
 			<textarea id="customMessage" name="message" rows="4" required class="unique-modal-input"></textarea>
 		  </div>
 		  <button type="submit" class="bubbly-button" style="width: 100%;">ready, set, go!</button>
@@ -890,19 +887,19 @@
 			<input type="hidden" name="_subject" value="GROW me">
 			<input type="hidden" name="_template" value="table">
 		  <div>
-			<label for="customName" class="unique-modal-label">Nombr</label>
+			<label for="customName" class="unique-modal-label">Your Name</label>
 			<input type="text" id="customName2" name="name" required class="unique-modal-input">
 		  </div>
 		  <div>
-			<label for="customEmail" class="unique-modal-label">Email</label>
+			<label for="customEmail" class="unique-modal-label">Your Email</label>
 			<input type="email" id="customEmail2" name="email" required class="unique-modal-input">
 		  </div>
 		  <div>
-			<label for="customPhone" class="unique-modal-label">Teléfono</label>
+			<label for="customPhone" class="unique-modal-label">Your Phone</label>
 			<input type="text" id="customPhone2" name="phone" required class="unique-modal-input">
 		  </div>
 		  <div>
-			<label for="customMessage" class="unique-modal-label">Mensaje</label>
+			<label for="customMessage" class="unique-modal-label">Your Message</label>
 			<textarea id="customMessage2" name="message" rows="4" required class="unique-modal-input"></textarea>
 		  </div>
 		  <button type="submit" class="bubbly-button" style="width: 100%;">ready, set, go!</button>
@@ -933,19 +930,19 @@
 			<input type="hidden" name="_subject" value="SCALE me">
 			<input type="hidden" name="_template" value="table">
 		  <div>
-			<label for="customName" class="unique-modal-label">Name</label>
+			<label for="customName" class="unique-modal-label">Your Name</label>
 			<input type="text" id="customName3" name="name" required class="unique-modal-input">
 		  </div>
 		  <div>
-			<label for="customEmail" class="unique-modal-label">Email</label>
+			<label for="customEmail" class="unique-modal-label">Your Email</label>
 			<input type="email" id="customEmail3" name="email" required class="unique-modal-input">
 		  </div>
 		  <div>
-			<label for="customPhone" class="unique-modal-label">Phone</label>
+			<label for="customPhone" class="unique-modal-label">Your Phone</label>
 			<input type="text" id="customPhone3" name="phone" required class="unique-modal-input">
 		  </div>
 		  <div>
-			<label for="customMessage" class="unique-modal-label">Message</label>
+			<label for="customMessage" class="unique-modal-label">Your Message</label>
 			<textarea id="customMessage3" name="message" rows="4" required class="unique-modal-input"></textarea>
 		  </div>
 		  <button type="submit" class="bubbly-button" style="width: 100%;">ready, set, go!</button>
@@ -955,7 +952,15 @@
   </div>
   
   
-
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/5493329208747?text=Hi%20there!%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Could%20you%20provide%20me%20with%20more%20details%3F" 
+   class="whatsapp-btn" 
+   target="_blank" 
+   rel="noopener noreferrer">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/640px-WhatsApp_icon.png" 
+       alt="WhatsApp" 
+       class="whatsapp-icon">
+</a>
   
 
 

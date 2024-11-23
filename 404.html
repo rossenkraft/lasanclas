@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0080FF;
+      color: white;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 8rem;
+      font-weight: 900;
+      line-height: 0.5;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .logo-placeholder {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+
+    .btn-home {
+      background-color: white;
+      color: #0080FF;
+      font-weight: bold;
+      padding: 0.75rem 2rem;
+      border-radius: 0.5rem;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+
+    .btn-home:hover {
+      background-color: #0066cc;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="background"></canvas>
+
+  <div class="flex flex-col items-center justify-center h-screen text-center space-y-4">
+    <img src="logo-holytype-WHITE.png" alt="Logo Placeholder" class="logo-placeholder">
+    <h1 style="font-size: 19vh; font-weight: 900;">404</h1>
+    <h2 style="font-size: 5vh; font-weight: 700;">Page Not Found</h2>
+    <p id="random-message" class="text-lg mb-8"></p>
+    <a href="/" class="btn-home">Go Home</a>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('background');
+    const ctx = canvas.getContext('2d');
+
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+
+    let particles = [];
+    const numParticles = 100;
+
+    const createParticles = () => {
+      particles = [];
+      for (let i = 0; i < numParticles; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          vx: (Math.random() - 0.5) * 2,
+          vy: (Math.random() - 0.5) * 2,
+          size: Math.random() * 3 + 1,
+        });
+      }
+    };
+
+    const drawParticles = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = 'white';
+      for (const p of particles) {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    };
+
+    const updateParticles = () => {
+      for (const p of particles) {
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+      }
+    };
+
+    const loop = () => {
+      drawParticles();
+      updateParticles();
+      requestAnimationFrame(loop);
+    };
+
+    window.addEventListener('resize', () => {
+      resizeCanvas();
+      createParticles();
+    });
+
+    resizeCanvas();
+    createParticles();
+    loop();
+
+    document.addEventListener("DOMContentLoaded", () => {
+  // Array of messages with <br> tags for line breaks
+  const messages = [
+    "Oops! 🌌 Looks like you've stumbled into the void of the internet!<br>This page must be hiding, or maybe it's just taking a coffee break. ☕<br>Don't worry, we've got plenty of other amazing stuff waiting for you back on the homepage!",
+    "404 Error! 🚫 You’ve found our secret hiding spot...<br>or maybe just a page that doesn’t exist. 🤷‍♂️<br>No worries, we’re here to guide you home. 🏠",
+    "Well, this is awkward! 🤦‍♀️ The page you’re looking for has decided<br>to go on vacation. 🏖️ Don’t worry though, you can find your way back<br>to civilization by clicking that magical button below. ✨",
+    "Uh-oh! 🚨 It seems you’ve entered uncharted territory. 🗺️<br>This page is currently lost somewhere between here and nowhere.<br>Let’s head back home together and try again! 🏃‍♂️💨",
+    "404: Page not found... but good vibes detected! 😎✨<br>Maybe this page got lost in a parallel dimension? 🌀<br>Either way, let's beam you back to the homepage before things get too weird. 🛸",
+    "Yikes! 🐾 Looks like this page wandered off and got lost.<br>It’s probably chasing squirrels or something. 🐕<br>But hey, the homepage is always there to fetch you some helpful info. 🏠",
+    "This page is playing hide-and-seek! 🕵️‍♀️<br>We couldn’t find it (and trust us, we looked everywhere).<br>Maybe it's in Narnia? 🦁 For now, let’s get you back on track. 🚀",
+    "Well, this is embarrassing. 😅<br>The page you’re looking for is as real as a unicorn 🦄...<br>which is to say, not at all. Don’t worry, just hit the button below,<br>and we’ll show you the way back!",
+    "Error 404! 🧩 It seems like a piece of the internet puzzle is missing.<br>Let’s click below to put everything back together again! 🛠️",
+    "Oh no, you’ve found the Bermuda Triangle of our website! 🌊✈️<br>We don’t know where this page went, but we do know how to get<br>you back home safely. 🛟 Click below to escape the mystery!"
+  ];
+
+  // Select a random message
+  const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
+  // Display the message in the <p> element as HTML
+  document.getElementById("random-message").innerHTML = randomMessage;
+});
+
+
+  </script>
+</body>
+
+</html>

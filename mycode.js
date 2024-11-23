@@ -520,3 +520,9 @@ document.querySelectorAll('.pricing-card').forEach((card) => {
 
 
 
+if (/Mobi|Android/i.test(navigator.userAgent)) {
+  // En dispositivos móviles, aseguramos que el scroll no se bloquee
+  canvas.addEventListener("touchmove", function(event) {
+    event.stopPropagation();  // Evitar que se propague el evento y bloquee el scroll
+  });
+}
