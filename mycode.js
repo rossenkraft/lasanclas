@@ -526,3 +526,33 @@ if (/Mobi|Android/i.test(navigator.userAgent)) {
     event.stopPropagation();  // Evitar que se propague el evento y bloquee el scroll
   });
 }
+
+
+
+//---------------------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  // Array of messages with <br> tags for line breaks
+  const messages = [
+"Your brand, reimagined and reinforced",
+"Innovative branding solutions for growing businesses",
+"A brand built for the future of your business",
+"Distinctive branding that captures attention and loyalty",
+"Your brand’s story, told with clarity and impact",
+"Authentic branding that connects with your audience",
+"Crafting a legacy through strategic brand development",
+"A fresh perspective on building memorable brands",
+"Tailored branding solutions that reflect your vision",
+"The foundation of success, built through powerful branding",
+"Brand identities that stand out in a competitive market",
+"Strategic branding for businesses ready to grow",
+"Brand clarity and direction for sustainable success",
+"Empowering businesses with purposeful, results-driven branding",
+"A unique brand presence that resonates with your market",
+  ];
+
+  // Select a random message
+  const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
+  // Display the message in the <p> element as HTML
+  document.getElementById("random-title").innerHTML = randomMessage;
+});

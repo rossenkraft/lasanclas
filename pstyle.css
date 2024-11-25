@@ -1,0 +1,583 @@
+:root {
+	--col1: #0080FF;
+	--col2: #e74c3c;
+	--col3: #e74c3c;
+	--col4: #e74c3c;
+	--col5: #e74c3c;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+	/* Ajusta este valor al alto de tu header */
+	overflow-x: hidden;
+  background-color: #0080FF;
+}
+
+.section-content {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+
+/* Fullscreen section styling */
+
+.section-bg {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#section-2 {
+  position: relative;
+  background-image: url('https://cdn.dribbble.com/userupload/16331637/file/original-3299a804ebc86d866d63e3be93dfa231.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Sección Overlay */
+
+.section-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 1;
+}
+
+
+/* Contenido de la sección */
+
+.section-content {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+
+/* Sección 3 */
+
+#section-4 {
+  position: relative;
+  background-image: url('https://cdn.dribbble.com/users/3837025/screenshots/7166959/media/e0f92069305fd2fdd1fad2acac7d69d1.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Sección Overlay */
+
+.section-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+}
+
+
+/* Contenido de la sección */
+
+.section-content {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+
+/* Sección 4 */
+
+#section-4 {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* Sección Overlay */
+
+.section-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 1;
+}
+
+
+/* Contenido de la sección */
+
+.section-content {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+
+/* Estilo de los botones */
+
+.toggle-button {
+	background-color: #0080FF;
+	color: #ffffff;
+	padding: 0.5rem 1rem;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.3s;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+}
+
+
+/* Hover para el botón */
+
+.toggle-button:hover {
+	background-color: #0080FF;
+	color: #fff;
+}
+
+
+/* Animación de rotación */
+
+.rotate {
+	transition: transform 1s ease;
+}
+
+.rotate.open {
+	transform: rotate(90deg);
+	/* Rotar para formar una "X" */
+}
+
+
+/* Estilo del contenido oculto */
+
+.hidden-content {
+	display: none;
+  position: relative; /* Necesario para que el botón se posicione en relación a este contenedor */
+  width: 100%; /* Hacer que el contenedor ocupe todo el ancho disponible */
+}
+
+.hidden-content.active {
+	display: block;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 5rem 2rem 2rem 2rem;
+	border-radius: 8px;
+	position: relative;
+}
+
+
+/* Mover el botón dentro del contenido */
+
+.hidden-content.active .toggle-button {
+	position: absolute;
+	top: 95%; /* Centramos verticalmente en el contenedor */
+	right: 1rem;
+	z-index: 10;
+}
+
+
+/* Estilo de las imágenes en la galería */
+
+.gallery img {
+	max-width: 100%;
+	height: auto;
+	margin: 0.5rem;
+	border-radius: 4px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilos generales */
+
+h1 {
+	align-self: center;
+	font-size: 4vw;
+	/* 3% del ancho de la pantalla */
+	font-weight: 900;
+	color: #fff;
+}
+
+h2 {
+	align-self: center;
+	font-size: 2.5vw;
+	/* 2.5% del ancho de la pantalla */
+	font-weight: 900;
+	color: #fff;
+}
+
+h3 {
+	align-self: center;
+	font-size: 4.5vw;
+	/* 4.5% del ancho de la pantalla */
+	font-weight: bolder;
+	color: #fff;
+}
+
+h4 {
+	align-self: center;
+	font-size: 1.4vw;
+	/* 1.4% del ancho de la pantalla */
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+p {
+	align-self: center;
+	font-size: 1.2vw;
+	/* 1.2% del ancho de la pantalla */
+	font-weight: normal;
+	color: #fff;
+}
+
+
+/* Media query para pantallas de tabletas (entre 768px y 1024px) */
+
+@media (max-width: 1024px) and (min-width: 768px) {
+	h1 {
+		font-size: 5vw;
+		/* 5% del ancho de la pantalla */
+	}
+	h2 {
+		font-size: 4vw;
+		/* 4% del ancho de la pantalla */
+	}
+	h3 {
+		font-size: 6vw;
+		/* 6% del ancho de la pantalla */
+	}
+	h4 {
+		font-size: 1.8vw;
+		/* 2.5% del ancho de la pantalla */
+	}
+	p {
+		font-size: 2vw;
+		/* 2% del ancho de la pantalla */
+	}
+	section {
+		padding: 0 20px;
+	}
+}
+
+
+/* Media query para pantallas de 600px a 768px (dispositivos más pequeños) */
+
+@media (max-width: 768px) and (min-width: 600px) {
+	h1 {
+		font-size: 6vw;
+		/* 6% del ancho de la pantalla */
+	}
+	h2 {
+		font-size: 5vw;
+		/* 5% del ancho de la pantalla */
+	}
+	h3 {
+		font-size: 8vw;
+		/* 8% del ancho de la pantalla */
+	}
+	h4 {
+		font-size: 2.7vw;
+		/* 4% del ancho de la pantalla */
+	}
+	p {
+		font-size: 3vw;
+		/* 3% del ancho de la pantalla */
+	}
+	section {
+		padding: 0 15px;
+	}
+}
+
+
+/* Media query para pantallas pequeñas (hasta 600px, móviles pequeños) */
+
+@media (max-width: 600px) {
+	h1 {
+		font-size: 7vw;
+		/* 7% del ancho de la pantalla */
+	}
+	h2 {
+		font-size: 6vw;
+		/* 6% del ancho de la pantalla */
+	}
+	h3 {
+		font-size: 9vw;
+		/* 9% del ancho de la pantalla */
+	}
+	h4 {
+		font-size: 3vw;
+		/* 5% del ancho de la pantalla */
+	}
+	p {
+		font-size: 4vw;
+		/* 4% del ancho de la pantalla */
+	}
+	section {
+		padding: 0 10px;
+	}
+}
+
+
+/* Media query para pantallas extra pequeñas (por debajo de 320px, móviles más pequeños) */
+
+@media (max-width: 320px) {
+	h1 {
+		font-size: 29px;
+		/* Tamaño fijo para pantallas muy pequeñas */
+	}
+	h2 {
+		font-size: 15px;
+	}
+	h3 {
+		font-size: 10px;
+	}
+	h4 {
+		font-size: 14px;
+	}
+	p {
+		font-size: 10px;
+	}
+	section {
+		padding: 0 100px;
+	}
+}
+
+.logoholy {
+	width: 180%;
+	height: auto;
+}
+
+section {
+	padding: 0 20px;
+}
+
+.header {
+	position: fixed;
+	box-sizing: border-box;
+	/* margin: 0 18px 18px; */
+	border-radius: 0 0 40px 40px;
+	z-index: 2000;
+	color: white;
+	width: 100%;
+	box-sizing: border-box;
+	/* width: calc(100% - 36px);*/
+}
+
+.navitem {
+	color: white;
+	transition: 300ms;
+}
+
+
+/* Reducir la altura de la barra de menú */
+
+header nav {
+	padding: 8px 16px;
+	/* Reducir el padding en todos los lados */
+}
+
+
+/* Logo */
+
+header nav .flex.items-center img {
+	height: 60px;
+	/* Ajustar la altura del logo */
+}
+
+
+/* Menú hamburguesa */
+
+#hamburger-icon {
+	padding: 0;
+	/* Asegúrate de que no tenga padding extra */
+	width: 30px;
+	/* Ajusta el tamaño del icono */
+	height: 30px;
+	/* Ajusta el tamaño del icono */
+}
+
+
+/* Menú de enlaces (en pantallas grandes) */
+
+header nav .lg\:flex {
+	padding: 0;
+	/* Eliminar padding extra */
+}
+
+header nav .lg\:flex ul {
+	margin: 0;
+	/* Eliminar márgenes en los enlaces */
+	padding: 0;
+	/* Eliminar padding en los enlaces */
+}
+
+header nav .lg\:flex ul li {
+	margin: 0 10px;
+	/* Ajustar los márgenes entre los enlaces */
+}
+
+
+/* Menú en pantallas pequeñas */
+
+@media (max-width: 768px) {
+	header nav {
+		padding: 10px 16px;
+		/* Menú más pequeño en pantallas móviles */
+	}
+	header nav .flex.items-center img {
+		height: 46px;
+		/* Reducir el tamaño del logo en móviles */
+	}
+	#hamburger-icon {
+		width: 24px;
+		/* Reducir el tamaño del icono */
+		height: 24px;
+		/* Reducir el tamaño del icono */
+	}
+	header nav .lg\:flex ul {
+		padding: 0;
+	}
+	header nav .lg\:flex ul li {
+		padding: 5px;
+		/* Reducir espacio entre enlaces en móviles */
+	}
+}
+
+
+/*BOTONES DEL MENÚ*/
+
+.aline {
+	display: inline-block;
+	padding: 8px 1px;
+	position: relative;
+	font-size: 13px;
+}
+
+.aline:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: var(--col1);
+	transition: width 0.2s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+
+.aline:hover:after {
+	width: 100%;
+	left: 0;
+}
+
+@media screen and (max-height: 300px) {
+	.ulline {
+		margin-top: 40px;
+	}
+}
+
+/* Estilos para centrar el botón dentro de su contenedor */
+.abutton {
+  position: absolute; /* Posiciona el botón dentro del contenedor */
+  top: 95%; /* Centramos verticalmente en el contenedor */
+  left: 48.8%; /* Centramos horizontalmente en el contenedor */
+  transform: translate(-50%, -50%) rotate(45deg); /* Usamos translate para ajustar el centro y la rotación */
+  background-color: #0080FF; /* Color de fondo */
+  color: #fff; /* Color del ícono */
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10; /* Asegura que esté encima de otros elementos */
+  transition: transform 0.3s ease; /* Efecto de transición para la rotación */
+}
+
+/* Estilo cuando el botón es presionado (en hover) */
+.abutton:hover {
+  background-color: #005bb5; /* Cambio de color en hover */
+}
+
+/* Estilos para la galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para pantallas más grandes */
+@media (min-width: 768px) {
+  .gallery {
+      grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
+  }
+}
+
+/* Para la visualización del contenido oculto */
+.hidden-content.active {
+  display: block;
+  background-color: #0080ff;
+  padding: 5rem 2rem 2rem 2rem;
+  border-radius: 8px;
+}

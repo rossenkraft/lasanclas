@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holytype Portfolio</title>
+    <!-- Include FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="pstyle.css">
+</head>
+
+
+<style>
+    
+</style>
+
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- Start block HEADER-->
+<header class="w-full z-10 top-0 left-0 header">
+    <nav>
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+            <!-- Logo y nombre de la marca -->
+            <a href="#" class="flex items-center">
+                <img class="logoholy" src="./logo-holytype-1.png" alt="Holytype Logo" />
+            </a>
+
+            <!-- Icono del menú hamburguesa -->
+            <button data-collapse-toggle="mobile-menu-2" type="button" class="lg:hidden inline-flex items-center justify-center p-2 w-10 h-10 focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-lg" aria-controls="mobile-menu-2" aria-expanded="false" id="hamburger-icon">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="#ffffff" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M0 1.75C0 1.335 0.335 1 0.75 1H16.25C16.665 1 17 1.335 17 1.75C17 2.165 16.665 2.5 16.25 2.5H0.75C0.335 2.5 0 2.165 0 1.75ZM0 6.75C0 6.335 0.335 6 0.75 6H16.25C16.665 6 17 6.335 17 6.75C17 7.165 16.665 7.5 16.25 7.5H0.75C0.335 7.5 0 7.165 0 6.75ZM0 11.75C0 11.335 0.335 11 0.75 11H16.25C16.665 11 17 11.335 17 11.75C17 12.165 16.665 12.5 16.25 12.5H0.75C0.335 12.5 0 12.165 0 11.75Z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+
+            <!-- Menú desplegable en pantallas grandes -->
+            <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4  lg:flex-row lg:space-x-8 lg:mt-0 ulline">
+                    <li>
+                        <a href="#home" class="navitem aline" aria-current="page">Home</a>
+                    </li>
+					<li>
+                        <a href="#expertise" class="navitem aline">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="navitem aline">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#faqs" class="navitem aline">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="navitem aline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+   <!-- Section 1 -->
+<section id="section-1" class="section-bg">
+    <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop id="background-video">
+        <source src="https://videos.pexels.com/video-files/17486488/17486488-uhd_2560_1440_30fps.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+    </video>
+
+    <div class="section-overlay"></div>
+
+    <div class="section-content text-center">
+        <h1 class="text-white font-bold mb-4">🎨 Visual Identity & Branding</h1>
+        <h4>Here you’ll find the complete creation and evolution of brand identities, from logo design <br>to the development of comprehensive brand manuals.</h4>
+
+        <!-- Botón que abre el contenido y hace scroll -->
+        <a href="javascript:void(0);" id="toggleButton1" class="p-button toggle-button rotate">
+            <i id="toggleIcon1" class="fas fa-plus"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Contenido oculto que se muestra al hacer clic -->
+<div id="content-1" class="hidden-content">
+    <div class="gallery grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 1">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 2">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 3">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 4">
+    </div>
+
+    <!-- Botón para alternar el contenido -->
+    <a href="javascript:void(0);" id="toggleButton1Content" class="p-button toggle-button rotate abutton" style="transform: rotate(45deg);">
+        <i id="toggleIcon1Content" class="fas fa-plus"></i>
+    </a>
+</div>
+
+
+
+
+
+
+<!-- Sección 2 -->
+<section id="section-2" class="section-bg">
+    
+    
+    <div class="section-overlay"></div>
+    
+    <div class="section-content text-center">
+        <h1 class="text-white font-bold mb-4">🖌️ Graphic Design & Promotional Material</h1>
+        <h4>Explore high-quality design solutions for all your graphic needs, including promotional materials, stationery,<br>and visual content for social media.</h4>
+
+        <!-- Botón que abre el contenido y hace scroll -->
+        <a href="javascript:void(0);" id="toggleButton2" class="p-button toggle-button rotate">
+            <i id="toggleIcon2" class="fas fa-plus"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Contenido oculto de la sección 2 -->
+<div id="content-2" class="hidden-content">
+    <div class="gallery grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 1">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 2">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 3">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 4">
+    </div>
+
+    <!-- Botón para alternar el contenido -->
+    <a href="javascript:void(0);" id="toggleButton2Content" class="p-button toggle-button rotate abutton" style="transform: rotate(45deg);">
+        <i id="toggleIcon2Content" class="fas fa-plus"></i>
+    </a>
+</div>
+
+
+
+
+
+
+<!-- Sección 3 -->
+<section id="section-3" class="section-bg">
+    <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop id="background-video-3">
+        <source src="https://cdn.dribbble.com/userupload/17109994/file/large-07fe96121f67349c1df3a523f95e1f28.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+    </video>
+    
+    <div class="section-overlay"></div>
+    
+    <div class="section-content text-center">
+        <h1 class="text-white font-bold mb-4">📣 Branding Campaigns & Visual Advertising</h1>
+        <h4>Discover impactful branding campaigns and advertising strategies that connect your brand<br>with your audience through creative visuals and multi-channel approaches.</h4>
+
+        <!-- Botón que abre el contenido y hace scroll -->
+        <a href="javascript:void(0);" id="toggleButton3" class="p-button toggle-button rotate">
+            <i id="toggleIcon3" class="fas fa-plus"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Contenido oculto de la sección 3 -->
+<div id="content-3" class="hidden-content">
+    <div class="gallery grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 1">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 2">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 3">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 4">
+    </div>
+
+    <!-- Botón para alternar el contenido -->
+    <a href="javascript:void(0);" id="toggleButton3Content" class="p-button toggle-button rotate abutton" style="transform: rotate(45deg);">
+        <i id="toggleIcon3Content" class="fas fa-plus"></i>
+    </a>
+</div>
+
+
+
+
+
+<!-- Sección 4 -->
+<section id="section-4" class="section-bg">
+    
+    <div class="section-overlay"></div>
+    <div class="section-content text-center">
+        <h1 class="text-white font-bold mb-4">🔄 Vectorization & Visual Elements</h1>
+        <h4>Here we focus on transforming your logo and brand elements into scalable vector formats,<br>ensuring consistency and quality across all platforms.</h4>
+
+        <!-- Botón que abre el contenido y hace scroll -->
+        <a href="javascript:void(0);" id="toggleButton4" class="p-button toggle-button rotate">
+            <i id="toggleIcon4" class="fas fa-plus"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Contenido oculto de la sección 4 -->
+<div id="content-4" class="hidden-content">
+    <div class="gallery grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 1">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 2">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 3">
+        <img src="https://via.placeholder.com/300" alt="Gallery Image 4">
+    </div>
+
+    <!-- Botón para alternar el contenido -->
+    <a href="javascript:void(0);" id="toggleButton4Content" class="p-button toggle-button rotate abutton" style="transform: rotate(45deg);">
+        <i id="toggleIcon4Content" class="fas fa-plus"></i>
+    </a>
+</div>
+
+
+
+
+
+
+    <script src="pscript.js"></script>
+</body>
+
+</html>
