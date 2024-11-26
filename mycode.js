@@ -1,3 +1,34 @@
+//---------------------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  // Array of messages with <br> tags for line breaks
+  const messages = [
+"Your brand, reimagined and reinforced",
+"Innovative branding solutions for growing businesses",
+"A brand built for the future of your business",
+"Distinctive branding that captures attention and loyalty",
+"Your brand’s story, told with clarity and impact",
+"Authentic branding that connects with your audience",
+"Crafting a legacy through strategic brand development",
+"A fresh perspective on building memorable brands",
+"Tailored branding solutions that reflect your vision",
+"The foundation of success, built through powerful branding",
+"Brand identities that stand out in a competitive market",
+"Strategic branding for businesses ready to grow",
+"Brand clarity and direction for sustainable success",
+"Empowering businesses with purposeful, results-driven branding",
+"A unique brand presence that resonates with your market",
+  ];
+
+  // Select a random message
+  const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
+  // Display the message in the <p> element as HTML
+  document.getElementById("random-title").innerHTML = randomMessage;
+});
+
+
+//----------------------------------------------------------------------------
+
 AOS.init({
     duration: 1000, // duración por defecto para todas las animaciones
 	offset: -5,
@@ -529,30 +560,54 @@ if (/Mobi|Android/i.test(navigator.userAgent)) {
 
 
 
-//---------------------------------------------------------------------------
-document.addEventListener("DOMContentLoaded", () => {
-  // Array of messages with <br> tags for line breaks
-  const messages = [
-"Your brand, reimagined and reinforced",
-"Innovative branding solutions for growing businesses",
-"A brand built for the future of your business",
-"Distinctive branding that captures attention and loyalty",
-"Your brand’s story, told with clarity and impact",
-"Authentic branding that connects with your audience",
-"Crafting a legacy through strategic brand development",
-"A fresh perspective on building memorable brands",
-"Tailored branding solutions that reflect your vision",
-"The foundation of success, built through powerful branding",
-"Brand identities that stand out in a competitive market",
-"Strategic branding for businesses ready to grow",
-"Brand clarity and direction for sustainable success",
-"Empowering businesses with purposeful, results-driven branding",
-"A unique brand presence that resonates with your market",
-  ];
 
-  // Select a random message
-  const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 
-  // Display the message in the <p> element as HTML
-  document.getElementById("random-title").innerHTML = randomMessage;
+ // Animación del precio (resaltar con pulso)
+ gsap.to(".card-price", {
+  scale: 1.1,
+  duration: 0.5,
+  yoyo: true,  // Reversa la animación
+  repeat: -1,  // Bucle infinito
+  ease: "power1.inOut",
+  delay: 1
+});
+
+// Animación del descuento (pulso con cambio de color)
+gsap.to(".discount", {
+  scale: 1.1,
+  color: "#f9eb3d",  // Cambia el color del descuento
+  duration: 0.6,
+  yoyo: true,
+  repeat: -1,
+  ease: "power1.inOut",
+  delay: 1.5
+});
+
+// Animación del botón (crecer y reducir)
+gsap.to("#openModalBtn", {
+  scale: 1.02,
+  duration: 0.7,
+  yoyo: true,
+  repeat: -1,
+  ease: "power2.inOut",
+  delay: 2
+});
+
+//---------- retraso al link
+
+// Seleccionar todos los botones con la clase 'bubbly-button'
+const buttons = document.querySelectorAll('.bubbly-button');
+
+// Agregar un evento de clic a cada botón
+buttons.forEach(button => {
+    button.addEventListener('click', function(event) {
+        // Prevenir la acción predeterminada (si existe)
+        event.preventDefault();
+
+        // Retrasar la acción con setTimeout (0.5 segundos)
+        setTimeout(() => {
+            // Redirigir al enlace especificado en el atributo href
+            window.location.href = button.getAttribute('href');
+        }, 500);  // 500 milisegundos = 0.5 segundos
+    });
 });

@@ -286,7 +286,7 @@ body {
   }
   .social-icon-four li {
     position: relative;
-    margin-right: 18px;
+    margin-right: 10px;
     display: inline-block;
   }
   .social-icon-four li.follow {
@@ -3730,6 +3730,97 @@ a-waves {
   border-radius: 8px; /* Asegura que la imagen tenga bordes redondeados */
 }
 
+/*------------------------------------------------------------------------------------/
+/* Estilo general del botón */
+.bubbly-button-modal {
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #0080FF; /* Color de fondo actualizado */
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.5s, box-shadow ease-in 0.25s;
+  font-weight: 700;
+}
+
+.bubbly-button-modal:hover {
+  box-shadow: 0 2px 25px rgba(0, 128, 255, 0.8); /* Sombra con color actualizado */
+}
+
+.bubbly-button-modal:focus {
+  outline: 0;
+}
+
+.bubbly-button-modal:before, .bubbly-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+
+/* Cambiar el color de las burbujas a #0080FF */
+.bubbly-button-modal:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, transparent 20%, #0080FF 20%, transparent 30%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, transparent 10%, #0080FF 15%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+
+.bubbly-button-modal:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, transparent 10%, #0080FF 15%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0080FF 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+
+.bubbly-button-modal:active {
+  transform: scale(0.9);
+  background-color: #0066cc; /* Color oscuro al hacer clic */
+  box-shadow: 0 2px 25px rgba(0, 128, 255, 0.2);
+}
+
+.bubbly-button-modal.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+
+.bubbly-button-modal.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+/* Variación del botón con borde */
+.bubbly-button-modal-outline {
+  background-color: transparent; /* Sin fondo */
+  color: white; /* Texto con el mismo color que el borde */
+  border: 2px solid #0080FF; /* Borde con color */
+  box-shadow: none; /* Sin sombra */
+}
+
 
 
 /*------------------------------------------------------------------------------------/
@@ -3992,12 +4083,12 @@ a-waves {
 .social-icons {
   display: flex;
   flex-wrap: wrap; /* Para permitir que los íconos se ajusten en múltiples líneas si es necesario */
-  gap: 20px; /* Espacio entre los íconos */
+  gap: 15px; /* Espacio entre los íconos */
   margin-top: 20px; /* Espacio superior para separarlo del contenido anterior */
 }
 
 .social-icon {
-  font-size: 1.3rem; /* Tamaño de los íconos */
+  font-size: 1.1rem; /* Tamaño de los íconos */
   color: white; /* Color por defecto */
   transition: color 0.3s ease-in-out; /* Transición suave al cambiar color */
 }
@@ -4015,6 +4106,25 @@ a-waves {
 .lght {
   background-color: white;
   color: rgb(75, 75, 75);
+}
+
+/* Estilo para los iconos de redes sociales */
+.social-icons2 {
+  display: flex;
+  flex-wrap: wrap; /* Para permitir que los íconos se ajusten en múltiples líneas si es necesario */
+  gap: 15px; /* Espacio entre los íconos */
+  margin-top: 20px; /* Espacio superior para separarlo del contenido anterior */
+}
+
+.social-icon2 {
+  font-size: 1.4rem; /* Tamaño de los íconos */
+  color: rgb(0, 0, 0); /* Color por defecto */
+  transition: color 0.3s ease-in-out; /* Transición suave al cambiar color */
+}
+
+.social-icon2:hover {
+  color: #0080FF; /* Color al hacer hover */
+  transform: scale(1.3);
 }
 
 /* ------------------------------------------------------------*/
@@ -4050,7 +4160,7 @@ a-waves {
   text-align: left; /* Alineación izquierda */
   flex: 1;
   max-width: 320px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 1ms ease-in-out;
   display: flex;
   flex-direction: column;
 }
@@ -4389,6 +4499,12 @@ h4 {
   font-weight: 600;
 }
 
+h5, li span {
+  align-self: center;
+  font-size: 1.2vw; /* 2% del ancho de la pantalla */
+  font-weight: 600;
+}
+
 p {
   align-self: center;
   font-size: 1.2vw; /* 1.5% del ancho de la pantalla */
@@ -4417,6 +4533,10 @@ p {
     font-size: 14px;
   }
 
+  h5, li span {
+    font-size: 14px;
+  }
+
   .logoholy{
     width: 180%;
     height: auto;
@@ -4428,6 +4548,15 @@ p {
     position: relative; /* Necesario para la capa overlay */
     overflow: hidden;  /* Asegura que la imagen y el overlay no sobresalgan */
     border-radius: 8px; /* Bordes redondeados */
+  }
+
+  .bb1, .bb2{
+    width: 100%;
+  }
+
+  .downlogo {
+    width: 80px;
+    height: auto;
   }
 }
 
@@ -4466,4 +4595,13 @@ p {
 .whatsapp-icon {
   width: 36px; /* Tamaño del ícono */
   height: 36px;
+}
+
+.ctalink {
+  color: #abd4e6;
+}
+
+#random-title {
+  display: block !important;
+  visibility: visible !important;
 }
