@@ -593,21 +593,4 @@ gsap.to("#openModalBtn", {
   delay: 2
 });
 
-//---------- retraso al link
-
-// Seleccionar todos los botones con la clase 'bubbly-button'
-const buttons = document.querySelectorAll('.bubbly-button');
-
-// Agregar un evento de clic a cada botón
-buttons.forEach(button => {
-    button.addEventListener('click', function(event) {
-        // Prevenir la acción predeterminada (si existe)
-        event.preventDefault();
-
-        // Retrasar la acción con setTimeout (0.5 segundos)
-        setTimeout(() => {
-            // Redirigir al enlace especificado en el atributo href
-            window.location.href = button.getAttribute('href');
-        }, 500);  // 500 milisegundos = 0.5 segundos
-    });
-});
+//------------------------------------------------------------------------------ retraso al link
