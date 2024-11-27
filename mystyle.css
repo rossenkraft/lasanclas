@@ -1,5 +1,5 @@
 :root {
-  --col1: #0080FF;
+  --col1: linear-gradient(227deg, #0080ff, #00baff);
   --col2: #e74c3c;
   --col3: #e74c3c;
   --col4: #e74c3c;
@@ -255,7 +255,7 @@ body {
     text-transform: capitalize;
     padding: 16px 39px;
     border: 2px solid #00b8ca;
-    background: #00b8ca;
+    background: linear-gradient(227deg, #0080ff, #00baff);
     display: inline-block;
     position: relative;
     line-height: 24px;
@@ -3026,7 +3026,7 @@ body {
 
 /* Modal Content */
 .unique-modal-content {
-  background: linear-gradient(to bottom right, var(--col1), #004196);
+  background: background: linear-gradient(227deg, #0080ff, #00baff);
   color: #ffffff;
   border-radius: 12px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
@@ -3213,7 +3213,7 @@ header nav .lg\:flex ul li {
 
 section {
   padding-top: -20px; /* Ajusta esto según la altura de tu barra de menú */
-  min-height:100vh;
+  
   overflow: hidden;
 }
 
@@ -3231,7 +3231,7 @@ section {
 }
 
 .unique-contact-form {
-  background: linear-gradient(to bottom right, #1a73e8, #4a90e2);
+  background: linear-gradient(227deg, #0080ff, #00baff);
   color: #ffffff;
   border-radius: 12px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
@@ -3339,7 +3339,7 @@ section {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: var(--col1);
+  background: linear-gradient(227deg, #0080ff, #00baff);
   transition: width 0.2s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -3718,7 +3718,7 @@ a-waves {
 }
 
 .filter-btn.active {
-  background-color: #4ac79f;
+  background-color: #00d3ff;
   font-weight: 700;
   color: white;
 }
@@ -3831,7 +3831,7 @@ a-waves {
   padding: 1em 2em;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #0080FF; /* Color de fondo actualizado */
+  background: linear-gradient(227deg, #0080ff, #00baff); /* Color de fondo actualizado */
   color: #fff;
   border-radius: 10px;
   border: none;
@@ -3908,7 +3908,7 @@ a-waves {
 
 /* Variación del botón con borde */
 .bubbly-button-outline {
-  background-color: transparent; /* Sin fondo */
+  background: transparent; /* Sin fondo */
   color: white; /* Texto con el mismo color que el borde */
   border: 2px solid #0080FF; /* Borde con color */
   box-shadow: none; /* Sin sombra */
@@ -3953,7 +3953,7 @@ a-waves {
   padding: 1em 2em;
   -webkit-appearance: none;
   appearance: none;
-  background-color: white; /* Color de fondo actualizado */
+  background: white; /* Color de fondo actualizado */
   color: #0080FF;
   border-radius: 10px;
   border: none;
@@ -4099,7 +4099,7 @@ a-waves {
 }
 
 .drk {
-  background-color: var(--col1);
+  background: linear-gradient(227deg, #0080ff, #00baff);
   color: white;
 }
 
@@ -4245,7 +4245,7 @@ a-waves {
   left: 0;
   width: 1rem;
   height: 1rem;
-  background: #0080ff;
+  background: linear-gradient(227deg, #0080ff, #00baff);
   color: white;
   display: flex;
   align-items: center;
@@ -4290,7 +4290,7 @@ a-waves {
   font-weight: bold;
   border: none;
   border-radius: 2rem;
-  background: #0080ff;
+  background: linear-gradient(227deg, #0080ff, #00baff);
   color: #fff;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
@@ -4344,7 +4344,7 @@ a-waves {
 .card-features .check-icon svg {
   width: 20px;  /* Tamaño del SVG */
   height: 20px;
-  color: #4ac79f; /* Color verde para el check */
+  color: #00d3ff; /* Color verde para el check */
 }
 
 #mybestwishesforyou p{
@@ -4370,7 +4370,7 @@ a-waves {
 
 .discount{
   color: white;
-  background-color: #4ac79f;
+  background-color: #00d3ff;
   border-radius: 1rem;
   margin: 15px;
   padding: 0 4px;
@@ -4629,7 +4629,7 @@ p {
 /* Contenedor del modal */
 .modal-content {
   position: relative;
-  background-color: #0080ff; /* Fondo con opacidad */
+  background: linear-gradient(227deg, #0080ff, #00baff);
   width: 80%;
   height: 80%;
   overflow-y: auto; /* Hacer que el contenido sea escrolleable */
@@ -4667,7 +4667,7 @@ p {
   height: 60px;
   top: 10px;
   right: 10px;
-  background-color: #0080FF;
+  background: linear-gradient(227deg, #0080ff, #00baff);
   color: white;
   font-size: 1.5rem;
   border: none;
@@ -4695,3 +4695,6 @@ p {
       transform: translateX(-7px); /* Mueve 10px hacia la derecha */
   }
 }
+
+
+
