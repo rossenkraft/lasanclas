@@ -600,7 +600,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeModalBtn = document.getElementById('close-btn');
 
   // Abrir modal
-  openModalBtn.addEventListener('click', function() {
+  openModalBtn.addEventListener('click', function(event) {
+      event.preventDefault();  // Prevenir el comportamiento predeterminado del enlace (navegar)
       modal.style.display = 'flex';  // Mostrar el modal
   });
 
@@ -616,6 +617,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
   const modal = document.getElementById('service2-modal');
@@ -623,7 +626,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeModalBtn = document.getElementById('close-btn2');
 
   // Abrir modal
-  openModalBtn.addEventListener('click', function() {
+  openModalBtn.addEventListener('click', function(event) {
+      event.preventDefault();  // Prevenir el comportamiento predeterminado del enlace (navegar)
       modal.style.display = 'flex';  // Mostrar el modal
   });
 
@@ -639,6 +643,9 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
   const modal = document.getElementById('service3-modal');
@@ -646,7 +653,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeModalBtn = document.getElementById('close-btn3');
 
   // Abrir modal
-  openModalBtn.addEventListener('click', function() {
+  openModalBtn.addEventListener('click', function(event) {
+      event.preventDefault();  // Prevenir el comportamiento predeterminado del enlace (navegar)
       modal.style.display = 'flex';  // Mostrar el modal
   });
 
@@ -662,6 +670,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
+
+
+
+
 
 const ctaIcon = document.querySelector('.ctaicon');
 const serviceBtn = document.getElementById('service1-btn');
