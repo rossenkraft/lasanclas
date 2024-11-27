@@ -536,7 +536,7 @@ for (var i = 0; i < bubblyButtons.length; i++) {
 // Si deseas agregar efectos interactivos
 document.querySelectorAll('.pricing-card').forEach((card) => {
   card.addEventListener('mouseover', () => {
-    card.style.transform = 'scale(1.05)';
+    card.style.transform = 'scale(1.03)';
   });
 
   card.addEventListener('mouseout', () => {

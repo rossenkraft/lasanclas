@@ -3322,10 +3322,10 @@ section {
   color: #ffffff;
   border-radius: 12px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
-  /* padding: 20px; */
-  max-width: 800px;
+  padding: 20px;
   margin: auto;
-  margin: 1rem;
+  margin-top: 20px;
+  width:100%;
 }
 
 .unique-contact-form3 {
@@ -3333,11 +3333,39 @@ section {
   color: rgb(55, 55, 55);
   border-radius: 12px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
-  /* padding: 20px; */
-  max-width: 800px;
+  padding: 20px;
   margin: auto;
-  margin: 1rem;
+  margin-top: 20px;
+  width:100%;
 }
+
+.contact-cont {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
+  gap: 20px; /* Espacio entre los divs */
+}
+
+.contact-cont > div {
+  flex: 1 1 45%; /* Hace que cada div ocupe el 45% del contenedor */
+  min-width: 200px; /* Esto garantiza que los divs no se hagan demasiado pequeños */
+  box-sizing: border-box; /* Asegura que el ancho incluya el padding y border */
+}
+
+@media (max-width: 768px) {
+  .contact-cont {
+    flex-direction: column; /* En pantallas pequeñas, cambia a una columna */
+  }
+
+  .contact-cont > div {
+    flex: 1 1 100%; /* Los divs ocupan el 100% del ancho en pantallas pequeñas */
+  }
+}
+
+
+
+
+
+
 
 .glow-border {
   animation: neonGlow1 1.5s ease-in-out infinite alternate;
@@ -3526,7 +3554,7 @@ a-waves {
 }
 
 .faq-item.open .faq-content {
-  max-height: 500px; /* Ajusta según necesidad */
+  max-height: 1500px; /* Ajusta según necesidad */
   padding: 1rem;
 }
 
@@ -4180,7 +4208,7 @@ a-waves {
   padding: 2rem;
   text-align: left; /* Alineación izquierda */
   flex: 1;
-  max-width: 320px;
+  max-width: 600px;
   transition: transform 1ms ease-in-out;
   display: flex;
   flex-direction: column;
@@ -4347,7 +4375,7 @@ a-waves {
   display: flex;
   align-items: center;
   gap: 0.6rem; /* Espacio entre el icono y el texto */
-  font-size: 11px;
+  font-size: 12px;
   color: rgba(0,0,0,.6);
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -4357,7 +4385,7 @@ a-waves {
   display: flex;
   align-items: center;
   gap: 0.6rem; /* Espacio entre el icono y el texto */
-  font-size: 11px;
+  font-size: 12px;
   color: rgba(255,255,255,.7);
   margin-bottom: 0.5rem;
 }
