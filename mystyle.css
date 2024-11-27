@@ -4552,6 +4552,7 @@ p {
 
   .bb1, .bb2{
     width: 100%;
+    margin-top: 0.5rem;
   }
 
   .downlogo {
@@ -4598,10 +4599,99 @@ p {
 }
 
 .ctalink {
-  color: #abd4e6;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 #random-title {
   display: block !important;
   visibility: visible !important;
+}
+
+
+
+
+/* Modal de fondo oscuro con opacidad */
+.modal {
+  display: none; /* Ocultamos el modal por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Fondo oscuro con opacidad */
+  backdrop-filter: blur(10px); /* Efecto blur en el fondo */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Contenedor del modal */
+.modal-content {
+  position: relative;
+  background-color: #0080ff; /* Fondo con opacidad */
+  width: 80%;
+  height: 80%;
+  overflow-y: auto; /* Hacer que el contenido sea escrolleable */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); /* Aplicar blur */
+}
+
+/* Estilos para el título */
+.modal-content h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para el subtítulo */
+.modal-content h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para el párrafo */
+.modal-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* Botón de cierre */
+.close-btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  right: 10px;
+  background-color: #0080FF;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #54a9fe;
+}
+
+
+.ctaicon {
+  display: inline-block;
+  animation: moveIcon 0.5s infinite alternate;
+}
+
+/* Keyframes for moving the icon */
+@keyframes moveIcon {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-7px); /* Mueve 10px hacia la derecha */
+  }
 }

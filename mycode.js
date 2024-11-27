@@ -593,4 +593,85 @@ gsap.to("#openModalBtn", {
   delay: 2
 });
 
-//------------------------------------------------------------------------------ retraso al link
+//------------------------------------------------------------------------------ MODAL SERVICES
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('service1-modal');
+  const openModalBtn = document.getElementById('service1-btn');
+  const closeModalBtn = document.getElementById('close-btn');
+
+  // Abrir modal
+  openModalBtn.addEventListener('click', function() {
+      modal.style.display = 'flex';  // Mostrar el modal
+  });
+
+  // Cerrar modal
+  closeModalBtn.addEventListener('click', function() {
+      modal.style.display = 'none';  // Ocultar el modal
+  });
+
+  // Cerrar el modal al hacer clic fuera del contenido
+  window.addEventListener('click', function(e) {
+      if (e.target === modal) {
+          modal.style.display = 'none';
+      }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('service2-modal');
+  const openModalBtn = document.getElementById('service2-btn');
+  const closeModalBtn = document.getElementById('close-btn2');
+
+  // Abrir modal
+  openModalBtn.addEventListener('click', function() {
+      modal.style.display = 'flex';  // Mostrar el modal
+  });
+
+  // Cerrar modal
+  closeModalBtn.addEventListener('click', function() {
+      modal.style.display = 'none';  // Ocultar el modal
+  });
+
+  // Cerrar el modal al hacer clic fuera del contenido
+  window.addEventListener('click', function(e) {
+      if (e.target === modal) {
+          modal.style.display = 'none';
+      }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('service3-modal');
+  const openModalBtn = document.getElementById('service3-btn');
+  const closeModalBtn = document.getElementById('close-btn3');
+
+  // Abrir modal
+  openModalBtn.addEventListener('click', function() {
+      modal.style.display = 'flex';  // Mostrar el modal
+  });
+
+  // Cerrar modal
+  closeModalBtn.addEventListener('click', function() {
+      modal.style.display = 'none';  // Ocultar el modal
+  });
+
+  // Cerrar el modal al hacer clic fuera del contenido
+  window.addEventListener('click', function(e) {
+      if (e.target === modal) {
+          modal.style.display = 'none';
+      }
+  });
+});
+
+const ctaIcon = document.querySelector('.ctaicon');
+const serviceBtn = document.getElementById('service1-btn');
+
+// Agregar animación al hacer hover sobre el botón
+serviceBtn.addEventListener('mouseover', () => {
+    ctaIcon.classList.add('animate__animated', 'animate__jello');  // Agregar animación de Animate.css si prefieres efecto extra
+});
+
+// Quitar animación cuando el hover termina
+serviceBtn.addEventListener('mouseout', () => {
+    ctaIcon.classList.remove('animate__animated', 'animate__jello');  // Quitar la animación si se usa Animate.css
+});
