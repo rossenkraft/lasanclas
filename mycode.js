@@ -594,32 +594,26 @@ gsap.to("#openModalBtn", {
 });
 
 //------------------------------------------------------------------------------ MODAL SERVICES
-// Esperamos a que el DOM se cargue completamente
-const openModalBtn = document.getElementById('service1-btn');  // Botón para abrir el modal
-const closeModalBtn = document.getElementById('close-btn');    // Botón para cerrar el modal
-const modal = document.getElementById('service1-modal');       // Modal
+const openModalBtn4 = document.getElementById('service1-btn'); // Botón para abrir el modal
+const closeModalBtn4 = document.getElementById('close-btn');
+const modalOverlay4 = document.getElementById('cservice1-modal');
 
-// Solo ejecutar si los elementos existen (prevención de errores en dispositivos móviles)
-if (openModalBtn && closeModalBtn && modal) {
+// Abrir modal
+openModalBtn4.addEventListener('click', () => {
+  modalOverlay4.style.display = 'flex';
+});
 
-  // Abrir modal
-  openModalBtn.addEventListener('click', function(event) {
-    event.preventDefault();  // Prevenir comportamiento predeterminado del enlace
-    modal.style.display = 'flex';  // Mostrar el modal
-  });
+// Cerrar el modal
+closeModalBtn4.addEventListener('click', () => {
+  modalOverlay4.style.display = 'none';
+});
 
-  // Cerrar modal
-  closeModalBtn.addEventListener('click', function() {
-    modal.style.display = 'none';  // Ocultar el modal
-  });
-
-  // Cerrar el modal al hacer clic fuera del contenido
-  window.addEventListener('click', function(e) {
-    if (e.target === modal) {
-      modal.style.display = 'none';  // Cerrar el modal si se hace clic fuera de él
-    }
-  });
-}
+// Cerrar el modal al hacer clic fuera del contenido
+modalOverlay4.addEventListener('click', (e) => {
+  if (e.target === modalOverlay4) {
+    modalOverlay4.style.display = 'none';
+  }
+});
 
 
 
