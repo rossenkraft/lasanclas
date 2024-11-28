@@ -596,7 +596,7 @@ gsap.to("#openModalBtn", {
 //------------------------------------------------------------------------------ MODAL SERVICES
 const openModalBtn4 = document.getElementById('service1-btn'); // Botón para abrir el modal
 const closeModalBtn4 = document.getElementById('close-btn');
-const modalOverlay4 = document.getElementById('cservice1-modal');
+const modalOverlay4 = document.getElementById('service1-modal');
 
 // Abrir modal
 openModalBtn4.addEventListener('click', () => {
