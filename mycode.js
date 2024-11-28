@@ -602,6 +602,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Abrir modal
   openModalBtn.addEventListener('click', function(event) {
       event.preventDefault();  // Prevenir el comportamiento predeterminado del enlace (navegar)
+      console.log('Button clicked');  // Verifica si se está disparando el evento
       modal.style.display = 'flex';  // Mostrar el modal
   });
 
