@@ -594,30 +594,33 @@ gsap.to("#openModalBtn", {
 });
 
 //------------------------------------------------------------------------------ MODAL SERVICES
-document.addEventListener('DOMContentLoaded', function() {
-  const modal = document.getElementById('service1-modal');
-  const openModalBtn = document.getElementById('service1-btn');
-  const closeModalBtn = document.getElementById('close-btn');
+// Esperamos a que el DOM se cargue completamente
+const openModalBtn = document.getElementById('service1-btn');  // Botón para abrir el modal
+const closeModalBtn = document.getElementById('close-btn');    // Botón para cerrar el modal
+const modal = document.getElementById('service1-modal');       // Modal
+
+// Solo ejecutar si los elementos existen (prevención de errores en dispositivos móviles)
+if (openModalBtn && closeModalBtn && modal) {
 
   // Abrir modal
   openModalBtn.addEventListener('click', function(event) {
-      event.preventDefault();  // Prevenir el comportamiento predeterminado del enlace (navegar)
-      console.log('Button clicked');  // Verifica si se está disparando el evento
-      modal.style.display = 'flex';  // Mostrar el modal
+    event.preventDefault();  // Prevenir comportamiento predeterminado del enlace
+    modal.style.display = 'flex';  // Mostrar el modal
   });
 
   // Cerrar modal
   closeModalBtn.addEventListener('click', function() {
-      modal.style.display = 'none';  // Ocultar el modal
+    modal.style.display = 'none';  // Ocultar el modal
   });
 
   // Cerrar el modal al hacer clic fuera del contenido
   window.addEventListener('click', function(e) {
-      if (e.target === modal) {
-          modal.style.display = 'none';
-      }
+    if (e.target === modal) {
+      modal.style.display = 'none';  // Cerrar el modal si se hace clic fuera de él
+    }
   });
-});
+}
+
 
 
 
