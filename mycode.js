@@ -593,83 +593,6 @@ gsap.to("#openModalBtn", {
   delay: 2
 });
 
-//------------------------------------------------------------------------------ MODAL SERVICES
-const openModalBtn4 = document.getElementById('service1-btn'); // Botón para abrir el modal
-const closeModalBtn4 = document.getElementById('close-btn');
-const modalOverlay4 = document.getElementById('service1-modal');
-
-// Abrir modal
-openModalBtn4.addEventListener('click', () => {
-  modalOverlay4.style.display = 'flex';
-});
-
-// Cerrar el modal
-closeModalBtn4.addEventListener('click', () => {
-  modalOverlay4.style.display = 'none';
-});
-
-// Cerrar el modal al hacer clic fuera del contenido
-modalOverlay4.addEventListener('click', (e) => {
-  if (e.target === modalOverlay4) {
-    modalOverlay4.style.display = 'none';
-  }
-});
-
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  const modal = document.getElementById('service2-modal');
-  const openModalBtn = document.getElementById('service2-btn');
-  const closeModalBtn = document.getElementById('close-btn2');
-
-  // Abrir modal
-  openModalBtn.addEventListener('click', function(event) {
-      event.preventDefault();  // Prevenir el comportamiento predeterminado del enlace (navegar)
-      modal.style.display = 'flex';  // Mostrar el modal
-  });
-
-  // Cerrar modal
-  closeModalBtn.addEventListener('click', function() {
-      modal.style.display = 'none';  // Ocultar el modal
-  });
-
-  // Cerrar el modal al hacer clic fuera del contenido
-  window.addEventListener('click', function(e) {
-      if (e.target === modal) {
-          modal.style.display = 'none';
-      }
-  });
-});
-
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  const modal = document.getElementById('service3-modal');
-  const openModalBtn = document.getElementById('service3-btn');
-  const closeModalBtn = document.getElementById('close-btn3');
-
-  // Abrir modal
-  openModalBtn.addEventListener('click', function(event) {
-      event.preventDefault();  // Prevenir el comportamiento predeterminado del enlace (navegar)
-      modal.style.display = 'flex';  // Mostrar el modal
-  });
-
-  // Cerrar modal
-  closeModalBtn.addEventListener('click', function() {
-      modal.style.display = 'none';  // Ocultar el modal
-  });
-
-  // Cerrar el modal al hacer clic fuera del contenido
-  window.addEventListener('click', function(e) {
-      if (e.target === modal) {
-          modal.style.display = 'none';
-      }
-  });
-});
-
-
 
 
 
@@ -685,3 +608,26 @@ serviceBtn.addEventListener('mouseover', () => {
 serviceBtn.addEventListener('mouseout', () => {
     ctaIcon.classList.remove('animate__animated', 'animate__jello');  // Quitar la animación si se usa Animate.css
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.service-btn');
+  buttons.forEach(button => {
+    button.addEventListener('click', function(event) {
+      event.preventDefault();
+      const targetDesc = document.querySelector(`.desc${button.id.replace('service', '').replace('-btn', '')}`);
+      
+      // Ocultar todas las descripciones
+      document.querySelectorAll('.descriptionplus').forEach(desc => {
+        desc.style.display = 'none';
+      });
+
+      // Mostrar la descripción del botón presionado
+      targetDesc.style.display = 'block';
+    });
+  });
+});
+

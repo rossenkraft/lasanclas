@@ -4538,7 +4538,7 @@ h2 {
 
 h3 {
   align-self: center;
-  font-size: 4.5vw; /* 4.5% del ancho de la pantalla */
+  font-size: 1.5vw; /* 4.5% del ancho de la pantalla */
   font-weight: bolder;
 }
 
@@ -4741,9 +4741,20 @@ p {
       transform: translateX(0);
   }
   100% {
-      transform: translateX(-7px); /* Mueve 10px hacia la derecha */
+      transform: translateX(7px); /* Mueve 10px hacia la derecha */
   }
 }
 
 
 
+.desc1 {
+  display:none;
+}
+
+.desc2 {
+  display:none;
+}
+
+.desc3 {
+  display:none;
+}
