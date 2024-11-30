@@ -614,19 +614,29 @@ serviceBtn.addEventListener('mouseout', () => {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  const buttons = document.querySelectorAll('.service-btn');
-  buttons.forEach(button => {
-    button.addEventListener('click', function(event) {
+  // Seleccionamos los botones y los títulos por su ID
+  const buttonsAndTitles = document.querySelectorAll('.service-btn, #title1, #title2, #title3');
+  
+  buttonsAndTitles.forEach(element => {
+    element.addEventListener('click', function(event) {
+      // Evitamos el comportamiento predeterminado del enlace (recarga de página)
       event.preventDefault();
-      const targetDesc = document.querySelector(`.desc${button.id.replace('service', '').replace('-btn', '')}`);
       
-      // Ocultar todas las descripciones
-      document.querySelectorAll('.descriptionplus').forEach(desc => {
-        desc.style.display = 'none';
-      });
+      // Identificamos la descripción correspondiente al botón o título
+      const targetDesc = document.querySelector(`.desc${element.id.replace('service', '').replace('title', '').replace('-btn', '')}`);
+      
+      // Si la descripción está visible, la ocultamos
+      if (targetDesc.style.display === 'block') {
+        targetDesc.style.display = 'none';
+      } else {
+        // Ocultamos todas las descripciones
+        document.querySelectorAll('.descriptionplus').forEach(desc => {
+          desc.style.display = 'none';
+        });
 
-      // Mostrar la descripción del botón presionado
-      targetDesc.style.display = 'block';
+        // Mostramos la descripción correspondiente
+        targetDesc.style.display = 'block';
+      }
     });
   });
 });
