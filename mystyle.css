@@ -4758,3 +4758,9 @@ p {
 .desc3 {
   display:none;
 }
+
+
+/* Asegúrate de que los botones y títulos tengan pointer-events habilitados */
+.service-btn, #title1, #title2, #title3 {
+  pointer-events: auto; /* Garantiza que se puedan hacer clic y tocar */
+}
