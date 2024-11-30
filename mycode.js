@@ -618,7 +618,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const buttonsAndTitles = document.querySelectorAll('.service-btn, #title1, #title2, #title3');
   
   buttonsAndTitles.forEach(element => {
-    element.addEventListener('click', function(event) {
+    // Función común para manejar el click o touch
+    function toggleDescription(event) {
       // Evitamos el comportamiento predeterminado del enlace (recarga de página)
       event.preventDefault();
       
@@ -637,7 +638,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Mostramos la descripción correspondiente
         targetDesc.style.display = 'block';
       }
-    });
+    }
+
+    // Escuchamos tanto el click como el touchstart
+    element.addEventListener('click', toggleDescription);
+    element.addEventListener('touchstart', toggleDescription); // Soporte adicional para pantallas táctiles
   });
 });
-
