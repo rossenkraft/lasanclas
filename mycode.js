@@ -614,10 +614,12 @@ serviceBtn.addEventListener('mouseout', () => {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Seleccionamos los botones y los títulos por su ID
   const buttonsAndTitles = document.querySelectorAll('.service-btn, #title1, #title2, #title3');
   
   buttonsAndTitles.forEach(element => {
+    // Detectamos si el dispositivo soporta touch
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
     // Función común para manejar el click o touch
     function toggleDescription(event) {
       // Evitamos el comportamiento predeterminado del enlace (recarga de página)
@@ -640,8 +642,12 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
 
-    // Escuchamos tanto el click como el touchstart
-    element.addEventListener('click', toggleDescription);
-    element.addEventListener('touchstart', toggleDescription); // Soporte adicional para pantallas táctiles
+    if (isTouchDevice) {
+      // Para dispositivos táctiles usamos touchend
+      element.addEventListener('touchend', toggleDescription);
+    } else {
+      // Para dispositivos de escritorio usamos click
+      element.addEventListener('click', toggleDescription);
+    }
   });
 });
