@@ -57,12 +57,32 @@
 	
 		<!-- Page Title -->
 		<title>Holytype Branding</title>
+
+		<style>
+			body {
+			  font-family: 'Roboto', sans-serif;
+			  background-color: #0080FF;
+			  color: white;
+			  margin: 0;
+			  overflow: hidden;
+			}
+		
+			canvas {
+			  position: fixed;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			  z-index: -1;
+			}
+		  </style>
 	</head>
 	
 
 
 
-<body id="home">
+<body>
+	<canvas id="background"></canvas>
 
 
 
@@ -105,8 +125,8 @@
 
 
 
-<section id="expertise" class="expertise drk">
-	<div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24">
+<section id="expertise" class="expertise">
+	<div class="max-w-screen-xl py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24">
 		<!-- Row -->
 		<div class="grid grid-cols-1 lg:grid-cols-1">
 			
@@ -247,6 +267,69 @@
 	<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
 	<script src="mycode.js"></script>
+
+	<script>
+		const canvas = document.getElementById('background');
+		const ctx = canvas.getContext('2d');
+	
+		const resizeCanvas = () => {
+		  canvas.width = window.innerWidth;
+		  canvas.height = window.innerHeight;
+		};
+	
+		let particles = [];
+		const numParticles = 100;
+	
+		const createParticles = () => {
+		  particles = [];
+		  for (let i = 0; i < numParticles; i++) {
+			particles.push({
+			  x: Math.random() * canvas.width,
+			  y: Math.random() * canvas.height,
+			  vx: (Math.random() - 0.5) * 2,
+			  vy: (Math.random() - 0.5) * 2,
+			  size: Math.random() * 3 + 1,
+			});
+		  }
+		};
+	
+		const drawParticles = () => {
+		  ctx.clearRect(0, 0, canvas.width, canvas.height);
+		  ctx.fillStyle = 'white';
+		  for (const p of particles) {
+			ctx.beginPath();
+			ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+			ctx.fill();
+		  }
+		};
+	
+		const updateParticles = () => {
+		  for (const p of particles) {
+			p.x += p.vx;
+			p.y += p.vy;
+	
+			if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+			if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+		  }
+		};
+	
+		const loop = () => {
+		  drawParticles();
+		  updateParticles();
+		  requestAnimationFrame(loop);
+		};
+	
+		window.addEventListener('resize', () => {
+		  resizeCanvas();
+		  createParticles();
+		});
+	
+		resizeCanvas();
+		createParticles();
+		loop();
+	
+	
+	  </script>
 
 
 

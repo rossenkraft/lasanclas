@@ -4212,6 +4212,12 @@ a-waves {
   transition: transform 1ms ease-in-out;
   display: flex;
   flex-direction: column;
+  min-height: 850px;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/044/771/645/small/christmas-border-with-coniferous-branches-and-lights-png.png');
+  background-size: contain; /* La imagen se ajusta para que toda sea visible */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .pricing-card.featured {
@@ -4225,6 +4231,7 @@ a-waves {
 .card-header {
   text-align: center;
   margin-bottom: 1rem;
+  margin-top: 4rem;
 }
 
 .card-icon {
@@ -4259,7 +4266,6 @@ a-waves {
 .card-features {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0 0; /* Alineación superior */
 }
 
 .card-features li {
@@ -4274,7 +4280,6 @@ a-waves {
 .card-features-f {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0 0; /* Alineación superior */
 }
 
 .card-features-f li {
@@ -4743,4 +4748,22 @@ p {
   100% {
       transform: translateX(7px); /* Mueve 10px hacia la derecha */
   }
+}
+
+
+.banner {
+  width: 100%;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/034/906/278/small/decorated-with-jingle-bell-candy-cane-red-bow-holly-berry-leaves-clear-glass-lantern-garlands-star-merry-christmas-and-happy-new-year-3d-render-illustration-png.png');
+  background-repeat: no-repeat;
+  background-size: contain; /* Ajusta la imagen al tamaño del contenedor */
+  background-position: center;
+  text-align: center; /* Centra el texto */
+  padding: 50px; /* Espacio alrededor del texto */
+  color: rgba(0, 0, 0, 0.526); /* Color del texto */
+}
+
+.banner p {
+  font-size: 12px; /* Tamaño de fuente del texto */
+  font-weight: 700;
+  margin: 0; /* Elimina el margen para evitar espacio adicional */
 }
