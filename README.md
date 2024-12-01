@@ -1,6 +1,6 @@
 ## Holytype Branding – Elevating your Bbrand identity
 
-<a href="https://holytype.site" rel="Holytype Branding Website">![Holytype Branding Hero Image](https://via.placeholder.com/1500x500.png)</a>
+<a href="https://holytype.site" rel="Holytype Branding Website">![Holytype Branding Hero Image](https://raw.githubusercontent.com/holytype-branding/holytype/refs/heads/main/banner.jpg)</a>
 
 At **Holytype Branding**, our passion lies in helping small businesses and entrepreneurs unlock their full potential through the power of authentic branding. We understand that your brand is more than just a logo or a tagline it's the story you tell, the emotions you evoke, and the connection you create with your audience. That's why we dedicate ourselves to crafting brand identities that are not only visually stunning but deeply resonate with the values and aspirations that drive your business.
 
