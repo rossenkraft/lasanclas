@@ -4746,21 +4746,14 @@ p {
 }
 
 
-
-.desc1 {
-  display:none;
+/* Descripción inicialmente oculta con altura 0 */
+.descriptionplus {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
 }
 
-.desc2 {
-  display:none;
-}
-
-.desc3 {
-  display:none;
-}
-
-
-/* Asegúrate de que los botones y títulos tengan pointer-events habilitados */
-.service-btn, #title1, #title2, #title3 {
-  pointer-events: auto; /* Garantiza que se puedan hacer clic y tocar */
+/* Cuando la descripción está abierta, su altura se ajusta automáticamente */
+.descriptionplus.open {
+  height: auto;
 }

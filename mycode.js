@@ -613,41 +613,59 @@ serviceBtn.addEventListener('mouseout', () => {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const buttonsAndTitles = document.querySelectorAll('.service-btn, #title1, #title2, #title3');
-  
-  buttonsAndTitles.forEach(element => {
-    // Detectamos si el dispositivo soporta touch
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-    // Función común para manejar el click o touch
-    function toggleDescription(event) {
-      // Evitamos el comportamiento predeterminado del enlace (recarga de página)
+document.addEventListener('DOMContentLoaded', function() {
+  // Seleccionamos todos los botones y títulos
+  const buttonsAndTitles = document.querySelectorAll('.service-btn, #title1, #title2, #title3');
+
+  // Para cada uno de los botones y títulos, agregamos un evento de clic
+  buttonsAndTitles.forEach(element => {
+    // Encontramos la descripción correspondiente a cada botón/título
+    const targetDesc = document.querySelector(`.desc${element.id.replace('service', '').replace('title', '').replace('-btn', '')}`);
+
+    element.addEventListener('click', function(event) {
+      // Prevenimos que se recargue la página
       event.preventDefault();
-      
-      // Identificamos la descripción correspondiente al botón o título
-      const targetDesc = document.querySelector(`.desc${element.id.replace('service', '').replace('title', '').replace('-btn', '')}`);
-      
-      // Si la descripción está visible, la ocultamos
-      if (targetDesc.style.display === 'block') {
-        targetDesc.style.display = 'none';
+
+      // Si la descripción está abierta, la cerramos
+      if (targetDesc.classList.contains('open')) {
+        collapse(targetDesc, () => targetDesc.classList.remove('open'));
       } else {
-        // Ocultamos todas las descripciones
-        document.querySelectorAll('.descriptionplus').forEach(desc => {
-          desc.style.display = 'none';
+        // Primero cerramos todas las demás descripciones abiertas
+        document.querySelectorAll('.descriptionplus.open').forEach(openDesc => {
+          collapse(openDesc, () => openDesc.classList.remove('open'));
         });
 
-        // Mostramos la descripción correspondiente
-        targetDesc.style.display = 'block';
+        // Luego abrimos la descripción correspondiente
+        expand(targetDesc, () => targetDesc.classList.add('open'));
       }
-    }
-
-    if (isTouchDevice) {
-      // Para dispositivos táctiles usamos touchend
-      element.addEventListener('touchend', toggleDescription);
-    } else {
-      // Para dispositivos de escritorio usamos click
-      element.addEventListener('click', toggleDescription);
-    }
+    });
   });
+
+  // Función para expandir (abrir) la descripción
+  function expand(element, callback) {
+    element.style.height = element.scrollHeight + 'px'; // Establecer la altura del contenido
+    element.style.overflow = 'hidden';
+    element.style.transition = 'height 0.3s ease';
+
+    element.addEventListener('transitionend', function handler() {
+      element.style.height = 'auto'; // Dejar que la altura sea dinámica después de la animación
+      element.removeEventListener('transitionend', handler);
+      if (callback) callback(); // Llamamos al callback después de la animación
+    });
+  }
+
+  // Función para colapsar (cerrar) la descripción
+  function collapse(element, callback) {
+    element.style.height = element.scrollHeight + 'px'; // Establecer la altura actual antes de colapsar
+    requestAnimationFrame(() => {
+      element.style.height = '0px'; // Reducir la altura a 0
+      element.style.transition = 'height 0.3s ease';
+
+      element.addEventListener('transitionend', function handler() {
+        element.removeEventListener('transitionend', handler);
+        if (callback) callback(); // Llamamos al callback después de la animación
+      });
+    });
+  }
 });
