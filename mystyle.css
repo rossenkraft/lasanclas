@@ -4627,7 +4627,7 @@ p {
 /* WhatsApp Floating Button */
 .whatsapp-btn {
   position: fixed;
-  bottom: 20px; /* Distancia desde el borde inferior */
+  bottom: 90px; /* Distancia desde el borde inferior */
   right: 20px;  /* Distancia desde el borde derecho */
   z-index: 1000; /* Para que siempre esté encima */
   display: flex;
@@ -4765,4 +4765,8 @@ p {
   font-size: 12px; /* Tamaño de fuente del texto */
   font-weight: 700;
   margin: 0; /* Elimina el margen para evitar espacio adicional */
+}
+
+.tawk-icon img {
+  display: none !important;
 }
