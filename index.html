@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 	<head>
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ8X4YS5Q4"></script>
 		<script>
-  			window.dataLayer = window.dataLayer || [];
-  			function gtag(){dataLayer.push(arguments);}
-  			gtag('js', new Date());
-
-  			gtag('config', 'G-RJ8X4YS5Q4');
+			window.dataLayer = window.dataLayer || [];
+			  			function gtag(){dataLayer.push(arguments);}
+			  			gtag('js', new Date());
+			
+			  			gtag('config', 'G-RJ8X4YS5Q4');
+			
 		</script>
-
 		<!-- Meta Tags (SEO) -->
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,10 +24,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="language" content="English">
 		<meta name="author" content="Holytype Branding">
-	
 		<!-- Canonical Link -->
 		<link rel="canonical" href="https://holytype.site/" />
-	
 		<!-- Open Graph (OG) Tags for Social Media -->
 		<meta property="og:title" content="Holytype Branding">
 		<meta property="og:site_name" content="Holytype Branding">
@@ -32,18 +33,15 @@
 		<meta property="og:description" content="Empowering small businesses with personalized branding and marketing strategies that connect with your audience.">
 		<meta property="og:type" content="website">
 		<meta property="og:image" content="https://holytype.site/images/og-image.png">
-	
 		<!-- Twitter Cards -->
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@holytype_branding">
 		<meta name="twitter:creator" content="@holytype_branding">
-	
 		<!-- Favicon & Icons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
-	
 		<!-- Stylesheets -->
 		<!-- Tailwind CSS -->
 		<link href="https://cdn.tailwindcss.com" rel="stylesheet">
@@ -54,1174 +52,695 @@
 		<!-- Custom Styles -->
 		<link href="./output.css" rel="stylesheet">
 		<link href="./mystyle.css" rel="stylesheet">
-	
 		<!-- Personal Modifications / Additional Libraries -->
 		<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	
 		<!-- Microsoft Tiles (Optional) -->
 		<meta name="msapplication-TileColor" content="#0080ff">
 		<meta name="theme-color" content="#ffffff">
-	
 		<!-- GitHub Button Script (Async) -->
 		<script async defer src="https://buttons.github.io/buttons.js"></script>
-	
 		<!-- Page Title -->
 		<title>Holytype Branding</title>
 	</head>
-	
 
 
 
-<body id="home">
-
-
-
-
-
-
-
-<!-- Start block HEADER-->
-<header class="w-full z-10 top-0 left-0 header">
-    <nav>
-        <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-            <!-- Logo y nombre de la marca -->
-            <a href="#" class="flex items-center">
-                <img class="logoholy" src="./logo-holytype-1.png" alt="Holytype Logo" />
-            </a>
-
-            <!-- Icono del menú hamburguesa -->
-            <button data-collapse-toggle="mobile-menu-2" type="button" class="lg:hidden inline-flex items-center justify-center p-2 w-10 h-10 focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-lg" aria-controls="mobile-menu-2" aria-expanded="false" id="hamburger-icon">
+	<body id="home">
+		<!-- Start block HEADER-->
+		<header class="w-full z-10 top-0 left-0 header">
+			<nav>
+				<div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+					<!-- Logo y nombre de la marca -->
+					<a href="#" class="flex items-center"> <img class="logoholy" src="./logo-holytype-1.png" alt="Holytype Logo" /> </a>
+					<!-- Icono del menú hamburguesa --><button data-collapse-toggle="mobile-menu-2" type="button" class="lg:hidden inline-flex items-center justify-center p-2 w-10 h-10 focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-lg" aria-controls="mobile-menu-2" aria-expanded="false" id="hamburger-icon">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-6 h-6" aria-hidden="true" fill="#ffffff" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M0 1.75C0 1.335 0.335 1 0.75 1H16.25C16.665 1 17 1.335 17 1.75C17 2.165 16.665 2.5 16.25 2.5H0.75C0.335 2.5 0 2.165 0 1.75ZM0 6.75C0 6.335 0.335 6 0.75 6H16.25C16.665 6 17 6.335 17 6.75C17 7.165 16.665 7.5 16.25 7.5H0.75C0.335 7.5 0 7.165 0 6.75ZM0 11.75C0 11.335 0.335 11 0.75 11H16.25C16.665 11 17 11.335 17 11.75C17 12.165 16.665 12.5 16.25 12.5H0.75C0.335 12.5 0 12.165 0 11.75Z" clip-rule="evenodd"></path>
                 </svg>
             </button>
-
-            <!-- Menú desplegable en pantallas grandes -->
-            <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                <ul class="flex flex-col mt-4  lg:flex-row lg:space-x-8 lg:mt-0 ulline">
-                    <li>
-                        <a href="#home" class="navitem aline" aria-current="page">Home</a>
-                    </li>
-					<li>
-                        <a href="#expertise" class="navitem aline">Services</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="navitem aline">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#faqs" class="navitem aline">FAQs</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="navitem aline">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-
-
-
-
-
-
-	<!-- Start block SECTION-HERO-->
-	
-	  
-	<section class="section-hero">
-		<video autoplay muted loop>
+					<!-- Menú desplegable en pantallas grandes -->
+					<div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+						<ul class="flex flex-col mt-4  lg:flex-row lg:space-x-8 lg:mt-0 ulline">
+							<li> <a href="#home" class="navitem aline" aria-current="page">Home</a> </li>
+							<li> <a href="#expertise" class="navitem aline">Services</a> </li>
+							<li> <a href="#portfolio" class="navitem aline">Portfolio</a> </li>
+							<li> <a href="#faqs" class="navitem aline">FAQs</a> </li>
+							<li> <a href="#contact" class="navitem aline">Contact</a> </li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Start block SECTION-HERO-->
+		<section class="section-hero"> <video autoplay muted loop>
 		  <source src="backvid.mp4" type="video/mp4">
 		  Tu navegador no soporta este formato de video.
 		</video>
-		
-		<div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28 relative z-10">
-		  <div class="lg:mt-0 lg:col-span-5 lg:flex imagen-flotante" data-aos="fade-up" data-aos-duration="1000">
-			<img src="./hero.png" alt="hero image">
-		  </div>
-		  <div class="mr-auto place-self-center lg:col-span-7 glow-filter" data-aos="fade-down" data-aos-duration="1000">
-			<h1 id="random-title" class="max-w-2xl mb-4 leading-none tracking-tight" data-text="Illuminated Glow Text."></h1>
-			<h4 class="max-w-2xl mb-6" data-aos="fade-left" data-aos-delay="200">Tailored branding solutions designed to elevate your business, attract your ideal audience, and drive sustainable growth.</h4>
-			
-			<a href="#portfolio" class="bubbly-button bb1">Explore Our Portfolio</a>
-			<a href="#contact" class="bubbly-button bubbly-button-outline bb2">Free Consultation</a>
-			<!-- Íconos de redes sociales -->
-			<div class="social-icons mt-6">
-			  <h5>Follow us: </h5>
-			  <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-			  <a href="https://www.linkedin.com/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-			  <a href="https://x.com/" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
-			  <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-			  <a href="https://www.behance.net/" target="_blank" class="social-icon"><i class="fa-brands fa-behance"></i></a>
-			  <a href="https://www.behance.net/" target="_blank" class="social-icon"><i class="fa-brands fa-dribbble"></i></a>
+			<div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28 relative z-10">
+				<div class="lg:mt-0 lg:col-span-5 lg:flex imagen-flotante" data-aos="fade-up" data-aos-duration="1000"> <img src="./hero.png" alt="hero image"> </div>
+				<div class="mr-auto place-self-center lg:col-span-7 glow-filter" data-aos="fade-down" data-aos-duration="1000">
+					<h1 id="random-title" class="max-w-2xl mb-4 leading-none tracking-tight" data-text="Illuminated Glow Text."></h1>
+					<h4 class="max-w-2xl mb-6" data-aos="fade-left" data-aos-delay="200">Tailored branding solutions designed to elevate your business, attract your ideal audience, and drive sustainable growth.</h4> <a href="#portfolio" class="bubbly-button bb1">Explore Our Portfolio</a> <a href="#contact" class="bubbly-button bubbly-button-outline bb2">Free Consultation</a>
+					<!-- Íconos de redes sociales -->
+					<div class="social-icons mt-6">
+						<h5>Follow us: </h5> <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a> <a href="https://www.linkedin.com/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a> <a href="https://x.com/" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a> <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a> <a href="https://www.behance.net/" target="_blank" class="social-icon"><i class="fa-brands fa-behance"></i></a> <a href="https://www.behance.net/" target="_blank" class="social-icon"><i class="fa-brands fa-dribbble"></i></a> </div>
+				</div>
 			</div>
-		  </div>
-		</div>
-	  </section>
-	  
-	<!-- End block -->
-
-
-
-
-
-
-
-
-
-
-		
-
-
-
-<!-- Start block OUR EXPERTISE -->
-<section id="expertise" class="expertise drk">
-	<div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24">
-		<div class="text-center">
-			<h2 class="tracking-tight mb-6">
+		</section>
+		<!-- End block -->
+		<!-- Start block OUR EXPERTISE -->
+		<section id="expertise" class="expertise drk">
+			<div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24">
+				<div class="text-center">
+					<h2 class="tracking-tight mb-6">
 		  🤝 Our Expertise at your service
 		</h2>
-			<p class="max-w-3xl mx-auto mb-12 text-lg">
-				Comprehensive solutions for every stage of your brand’s journey. Whether you’re starting, growing, or scaling, we’ve got you covered.
-			</p>
-		</div>
-		<!-- Row -->
-		<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-			<!-- Card 1 -->
-
-			<div class="p-8 p-4 rounded-lg shadow-lg transform transition-all hover:scale-105" data-aos="fade-up" data-aos-duration="1000" style="margin:0 10px; display: flex; flex-direction: column; height: 100%; justify-content: space-between; align-items:center; text-align: justify;">
-
-				<!-- Image at the top -->
-				<div class="flex justify-center mb-6">
-					<img src="Holytype-services-1.jpg" alt="Brand Strategy" class="rounded-lg w-16 h-16 object-cover">
+					<p class="max-w-3xl mx-auto mb-12 text-lg"> Comprehensive solutions for every stage of your brand’s journey. Whether you’re starting, growing, or scaling, we’ve got you covered. </p>
 				</div>
-
-				<!-- Title -->
-				<a href="https://holytype.site/brand.html" id="title1"><h3 class="mb-4 text-2xl font-bold text-primary text-center">🎯 Brand Strategy</h3></a>
-
-				<!-- Detailed description -->
-				 <p style="font-size: 0.85rem;">We develop a comprehensive strategy that defines your brand’s vision, mission, and values. Our personalized approach will help you build a solid foundation for continuous growth, differentiating you from the competition and emotionally connecting with your target audience.</p>
-
-				<!-- Call to action -->
-				<br>
-				<a href="https://holytype.site/brand.html" id="service1-btn" class="ctalink service-btn"><span class="ctaicon">👉</span>&nbsp;&nbsp;Discover how we can help you</a>
-				<br>
-
-			</div>
-
-			<!-- Card 2 -->
-			<div class="p-8 p-4 rounded-lg shadow-lg transform transition-all hover:scale-105" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" style="margin:0 10px; display: flex; flex-direction: column; height: 100%; justify-content: space-between; align-items:center; text-align: justify;">
-
-				<!-- Image at the top -->
-				<div class="flex justify-center mb-6">
-					<img src="Holytype-services-2.jpg" alt="Visual Identity" class="rounded-lg w-16 h-16 object-cover">
-				</div>
-
-				<!-- Title -->
-				<a href="https://holytype.site/identity.html" id="title2"><h3 class="mb-4 text-2xl font-bold text-secondary text-center">🎨 Visual Identity</h3></a>
-
-
-				<!-- Detailed description -->
-				 <p style="font-size: 0.85rem;">We create cohesive visual elements for your brand, including logos, color palettes, and typography, designed to resonate with your audience. Our methodology ensures that your visual identity is unique, memorable, and perfectly suited to stand out in your market.</p>
-				
-
-			<!-- Call to action -->
-			<br>
-			<a href="https://holytype.site/identity.html" id="service2-btn" class="ctalink service-btn"><span class="ctaicon">👉</span> &nbsp;&nbsp;Discover how to transform your brand</a>
-			<br>
-
-		</div>
-
-		<!-- Card 3 -->
-		<div class="p-8 p-4 rounded-lg shadow-lg transform transition-all hover:scale-105" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" style="margin:0 10px; display: flex; flex-direction: column; height: 100%; justify-content: space-between; align-items:center; text-align: justify;">
-
-			<!-- Image at the top -->
-			<div class="flex justify-center mb-6">
-				<img src="Holytype-services-3.jpg" alt="Growth Strategies" class="rounded-lg w-16 h-16 object-cover">
-			</div>
-
-			<!-- Title -->
-			<a href="https://holytype.site/growth.html" id="title3"><h3 class="mb-4 text-2xl font-bold text-accent text-center">📈 Growth Strategies</h3></a>
-
-			<!-- Detailed description -->
-			 <p style="font-size: 0.85rem;">Boost your reach and growth through targeted marketing campaigns and impactful brand messaging. We analyze your market and audience to design strategies that not only increase your visibility but also generate measurable and sustainable long-term results.</p>
-				
-			<!-- Call to action -->
-			<br>
-			<a href="https://holytype.site/growth.html" id="service3-btn" class="ctalink service-btn"> <span class="ctaicon">👉</span> &nbsp;&nbsp;Explore our strategies for your growth</a>
-			<br>
-
-		</div>
-
-
-
-	</div>
-	</div>
-</section>
-<!-- End block -->
-
-
-
-<!-- Start block PLANS-->
-	<section id="plans" class="plans">
-		
-		<div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24">
-			<div class="text-center">
-				<h2 class="tracking-tight mb-6">💡 Find the right plan for you</h2>
-				<p class="max-w-3xl mx-auto mb-12">Customized packages designed to grow with your business, from foundation to expansion.</p>
-			</div>
-			<!-- Row -->
-			<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-16">
-				<!-- Contenedor de la imagen -->
-				<img class="w-full mb-4 rounded-lg lg:mb-0 order-1 lg:order-2" src="./feature-1.png" alt="dashboard feature image" data-aos="fade-left" >
-			
-				<!-- Contenedor del texto -->
-				<div class="pack1" data-aos="zoom-out" data-aos-duration="1000">
-					<h2 class="mb-4 tracking-tight">🌱 Start<br><span style="color:slategrey">Establish your brand identity</span></h2>
-					<p class="mb-8  plantext">For businesses just starting out, the START package helps you build a strong foundation. If you're lacking a clear brand or even a logo, we’ll define your core values, create a visual identity, and develop your online positioning. With a comprehensive brand strategy, you'll stand out, connect with your target audience, and lay the groundwork for future growth.</p>
-					<!-- List -->
-					<ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
-						<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="100">
-							<!-- Icon -->
-							<svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-							<span class="  leading-tight">Clear brand foundation and identity.</span>
-						</li>
-						<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="300">
-							<!-- Icon -->
-							<svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-							<span class="leading-tight">Effective online positioning strategy.</span>
-						</li>
-						<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="500">
-							<!-- Icon -->
-							<svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-							<span class="leading-tight">Solid groundwork for future growth.</span>
-						</li>
-					</ul>
-					<p class="mb-8 ">Ready to build your brand from the ground up?</p>
-					<a href="#prices">
-						<button class="bubbly-button" data-aos="flip-up" data-aos-delay="200">View Pricing</button>
-					</a>
+				<!-- Row -->
+				<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+					<!-- Card 1 -->
+					<div class="p-8 p-4 rounded-lg shadow-lg transform transition-all hover:scale-105" data-aos="fade-up" data-aos-duration="1000" style="margin:0 10px; display: flex; flex-direction: column; height: 100%; justify-content: space-between; align-items:center; text-align: justify;">
+						<!-- Image at the top -->
+						<div class="flex justify-center mb-6"> <img src="Holytype-services-1.jpg" alt="Brand Strategy" class="rounded-lg w-16 h-16 object-cover"> </div>
+						<!-- Title --><a href="https://holytype.site/brand.html" id="title1"><h3 class="mb-4 text-2xl font-bold text-primary text-center">🎯 Brand Strategy</h3></a>
+						<!-- Detailed description -->
+						<p style="font-size: 0.85rem;">We develop a comprehensive strategy that defines your brand’s vision, mission, and values. Our personalized approach will help you build a solid foundation for continuous growth, differentiating you from the competition and emotionally connecting with your target audience.</p>
+						<!-- Call to action --><br> <a href="https://holytype.site/brand.html" id="service1-btn" class="ctalink service-btn"><span class="ctaicon">👉</span>&nbsp;&nbsp;Discover how we can help you</a> <br> </div>
+					<!-- Card 2 -->
+					<div class="p-8 p-4 rounded-lg shadow-lg transform transition-all hover:scale-105" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" style="margin:0 10px; display: flex; flex-direction: column; height: 100%; justify-content: space-between; align-items:center; text-align: justify;">
+						<!-- Image at the top -->
+						<div class="flex justify-center mb-6"> <img src="Holytype-services-2.jpg" alt="Visual Identity" class="rounded-lg w-16 h-16 object-cover"> </div>
+						<!-- Title --><a href="https://holytype.site/identity.html" id="title2"><h3 class="mb-4 text-2xl font-bold text-secondary text-center">🎨 Visual Identity</h3></a>
+						<!-- Detailed description -->
+						<p style="font-size: 0.85rem;">We create cohesive visual elements for your brand, including logos, color palettes, and typography, designed to resonate with your audience. Our methodology ensures that your visual identity is unique, memorable, and perfectly suited to stand out in your market.</p>
+						<!-- Call to action --><br> <a href="https://holytype.site/identity.html" id="service2-btn" class="ctalink service-btn"><span class="ctaicon">👉</span> &nbsp;&nbsp;Discover how to transform your brand</a> <br> </div>
+					<!-- Card 3 -->
+					<div class="p-8 p-4 rounded-lg shadow-lg transform transition-all hover:scale-105" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" style="margin:0 10px; display: flex; flex-direction: column; height: 100%; justify-content: space-between; align-items:center; text-align: justify;">
+						<!-- Image at the top -->
+						<div class="flex justify-center mb-6"> <img src="Holytype-services-3.jpg" alt="Growth Strategies" class="rounded-lg w-16 h-16 object-cover"> </div>
+						<!-- Title --><a href="https://holytype.site/growth.html" id="title3"><h3 class="mb-4 text-2xl font-bold text-accent text-center">📈 Growth Strategies</h3></a>
+						<!-- Detailed description -->
+						<p style="font-size: 0.85rem;">Boost your reach and growth through targeted marketing campaigns and impactful brand messaging. We analyze your market and audience to design strategies that not only increase your visibility but also generate measurable and sustainable long-term results.</p>
+						<!-- Call to action --><br>
+						<a href="https://holytype.site/growth.html" id="service3-btn" class="ctalink service-btn"> <span class="ctaicon">👉</span> &nbsp;&nbsp;Explore our strategies for your growth</a> <br> </div>
 				</div>
 			</div>
-			
-
-
-			<hr class="border-gray-200 sm:mx-auto dark:border-gray-700">
-
-			<!-- Row -->
-			<div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-				<img class=" w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="./feature-2.png" alt="feature image 2" data-aos="fade-right">
-				<div class="pack2" data-aos="zoom-out" data-aos-duration="1000">
-					<h2 class="mb-4 tracking-tight">🌻 Grow<br><span style="color:slategrey">Strengthen and build recognition</span></h2>
-					<p class="mb-8  plantext">For businesses that are growing, the GROW package enhances your existing branding. Whether you need to refine your visual identity or improve your communication strategy, we help create consistency across all channels and boost your online presence. This plan ensures your brand resonates and builds lasting customer loyalty.</p>
-					<!-- List -->
-					<ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
-
-						<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="100">
-							<!-- Icon -->
-							<svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-							<span class="  leading-tight">Consistent brand identity across all channels</span>
-						</li>
-						<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="300">
-							<!-- Icon -->
-							<svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-							<span class="leading-tight">Stronger customer loyalty and engagement.</span>
-						</li>
-						<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="500">
-							<!-- Icon -->
-							<svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-							<span class="leading-tight">Improved online presence and visibility.</span>
-						</li>
-					</ul>
-					<p class="mb-8 ">Want to refine your brand and boost your presence?</p>
-					<a href="#prices">
-						<button class="bubbly-button" data-aos="flip-up" data-aos-delay="200">View Pricing</button>
-					</a>
+		</section>
+		<!-- End block -->
+		<!-- Start block PLANS-->
+		<section id="plans" class="plans">
+			<div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24">
+				<div class="text-center">
+					<h2 class="tracking-tight mb-6">💡 Find the right plan for you</h2>
+					<p class="max-w-3xl mx-auto mb-12">Customized packages designed to grow with your business, from foundation to expansion.</p>
+				</div>
+				<!-- Row -->
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-16">
+					<!-- Contenedor de la imagen --><img class="w-full mb-4 rounded-lg lg:mb-0 order-1 lg:order-2" src="./feature-1.png" alt="dashboard feature image" data-aos="fade-left">
+					<!-- Contenedor del texto -->
+					<div class="pack1" data-aos="zoom-out" data-aos-duration="1000">
+						<h2 class="mb-4 tracking-tight">🌱 Start<br><span style="color:slategrey">Establish your brand identity</span></h2>
+						<p class="mb-8  plantext">For businesses just starting out, the START package helps you build a strong foundation. If you're lacking a clear brand or even a logo, we’ll define your core values, create a visual identity, and develop your online positioning. With a comprehensive brand strategy, you'll stand out, connect with your target audience, and lay the groundwork for future growth.</p>
+						<!-- List -->
+						<ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
+							<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="100">
+								<!-- Icon --><svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="  leading-tight">Clear brand foundation and identity.</span> </li>
+							<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="300">
+								<!-- Icon --><svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="leading-tight">Effective online positioning strategy.</span> </li>
+							<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="500">
+								<!-- Icon --><svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="leading-tight">Solid groundwork for future growth.</span> </li>
+						</ul>
+						<p class="mb-8 ">Ready to build your brand from the ground up?</p>
+						<a href="#prices"> <button class="bubbly-button" data-aos="flip-up" data-aos-delay="200">View Pricing</button> </a>
+					</div>
+				</div>
+				<hr class="border-gray-200 sm:mx-auto dark:border-gray-700">
+				<!-- Row -->
+				<div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16"> <img class=" w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="./feature-2.png" alt="feature image 2" data-aos="fade-right">
+					<div class="pack2" data-aos="zoom-out" data-aos-duration="1000">
+						<h2 class="mb-4 tracking-tight">🌻 Grow<br><span style="color:slategrey">Strengthen and build recognition</span></h2>
+						<p class="mb-8  plantext">For businesses that are growing, the GROW package enhances your existing branding. Whether you need to refine your visual identity or improve your communication strategy, we help create consistency across all channels and boost your online presence. This plan ensures your brand resonates and builds lasting customer loyalty.</p>
+						<!-- List -->
+						<ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
+							<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="100">
+								<!-- Icon --><svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="  leading-tight">Consistent brand identity across all channels</span> </li>
+							<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="300">
+								<!-- Icon --><svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="leading-tight">Stronger customer loyalty and engagement.</span> </li>
+							<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="500">
+								<!-- Icon --><svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="leading-tight">Improved online presence and visibility.</span> </li>
+						</ul>
+						<p class="mb-8 ">Want to refine your brand and boost your presence?</p>
+						<a href="#prices"> <button class="bubbly-button" data-aos="flip-up" data-aos-delay="200">View Pricing</button> </a>
+					</div>
+				</div>
+				<hr class="border-gray-200 sm:mx-auto dark:border-gray-700">
+				<!-- Row -->
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-16">
+					<!-- Contenedor de la imagen --><img class="w-full mb-4 rounded-lg lg:mb-0 order-1 lg:order-2" src="./feature-3.png" alt="dashboard feature image" data-aos="fade-left">
+					<!-- Contenedor del texto -->
+					<div class="pack3" data-aos="zoom-out" data-aos-duration="1000">
+						<h2 class="mb-4 tracking-tight">✨ Scale<br><span style="color:slategrey">Transform and expand your brand</span></h2>
+						<p class="mb-8  plantext">For established businesses, the SCALE package offers a comprehensive strategy to transform your brand and increase its impact. We focus on refining your branding, improving sales processes, and creating an omnichannel marketing approach. With a deep dive into strategic communication, your brand will stand out and continue to thrive in a competitive market.</p>
+						<!-- List -->
+						<ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
+							<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="100">
+								<!-- Icon --><svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="  leading-tight">Comprehensive brand redesign and optimization.</span> </li>
+							<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="300">
+								<!-- Icon --><svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="leading-tight">Unified omnichannel marketing strategy.</span> </li>
+							<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="500">
+								<!-- Icon --><svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="leading-tight">Streamlined sales processes and enhanced brand experience.</span> </li>
+						</ul>
+						<p class="mb-8 ">Ready to elevate your brand to the next level?</p>
+						<a href="#prices"> <button class="bubbly-button" data-aos="flip-up" data-aos-delay="200">View Pricing</button> </a>
+					</div>
 				</div>
 			</div>
-			<hr class="border-gray-200 sm:mx-auto dark:border-gray-700">
-
-			<!-- Row -->
-			<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-16">
-				<!-- Contenedor de la imagen -->
-				<img class="w-full mb-4 rounded-lg lg:mb-0 order-1 lg:order-2" src="./feature-3.png" alt="dashboard feature image" data-aos="fade-left">
-			
-				<!-- Contenedor del texto -->
-				<div class="pack3" data-aos="zoom-out" data-aos-duration="1000">
-					<h2 class="mb-4 tracking-tight">✨ Scale<br><span style="color:slategrey">Transform and expand your brand</span></h2>
-					<p class="mb-8  plantext">For established businesses, the SCALE package offers a comprehensive strategy to transform your brand and increase its impact. We focus on refining your branding, improving sales processes, and creating an omnichannel marketing approach. With a deep dive into strategic communication, your brand will stand out and continue to thrive in a competitive market.</p>
-					<!-- List -->
-					<ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
-						<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="100">
-							<!-- Icon -->
-							<svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-							<span class="  leading-tight">Comprehensive brand redesign and optimization.</span>
-						</li>
-						<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="300">
-							<!-- Icon -->
-							<svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-							<span class="leading-tight">Unified omnichannel marketing strategy.</span>
-						</li>
-						<li class="flex space-x-3" data-aos="fade-left" data-aos-delay="500">
-							<!-- Icon -->
-							<svg class="flex-shrink-0 w-5 h-5" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-							<span class="leading-tight">Streamlined sales processes and enhanced brand experience.</span>
-						</li>
-					</ul>
-					<p class="mb-8 ">Ready to elevate your brand to the next level?</p>
-					<a href="#prices">
-						<button class="bubbly-button" data-aos="flip-up" data-aos-delay="200">View Pricing</button>
-					</a>
+		</section>
+		<!-- End block -->
+		<!-- Start block PORTFOLIO-->
+		<section id="portfolio" class="portfolio drk">
+			<div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24" style="text-align: center;">
+				<!-- Header Section -->
+				<div class="text-center">
+					<h2 class="tracking-tight mb-6">💼 Our work speaks for itself</h2>
+					<p class="max-w-3xl mx-auto mb-12">Explore a selection of our most impactful projects that highlight our expertise in design, technology, and innovation.</p>
 				</div>
+				<!-- Filtro de categorías -->
+				<div class="text-center mb-8"> <button class="filter-btn" data-filter="all">Todo</button> <button class="filter-btn" data-filter="logo">Logos</button> <button class="filter-btn" data-filter="diseno">Diseño Gráfico</button> <button class="filter-btn" data-filter="web">Web</button> <button class="filter-btn" data-filter="fotografia">Fotografía</button> </div>
+				<!-- Portfolio Grid -->
+				<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-0">
+					<!-- Portfolio Item 1 (Logo) -->
+					<div class="portfolio-item logo relative rounded-lg overflow-hidden bg-white dark:bg-gray-800 shadow-lg hover:scale-105 transition-all duration-300"> <img src="https://i.pinimg.com/736x/d2/28/7b/d2287bb6193445bcaa9729889be6b4aa.jpg" alt="Project 1" class="w-full h-full object-cover rounded-lg">
+						<div class="overlay absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 transition-opacity duration-300">
+							<div class="text-white text-center">
+								<h3 class="text-lg">Logo Project 1</h3>
+								<p class="text-sm">Logos</p>
+							</div>
+						</div>
+						<a href="project1.html" class="absolute inset-0"></a>
+					</div>
+					<!-- Portfolio Item 2 (Web) -->
+					<div class="portfolio-item web lg:row-span-2 relative rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-all duration-300"> <img src="https://i.giphy.com/am8pxddtatQoq3iHhr.webp" alt="Project 2" class="w-full h-full object-cover rounded-lg">
+						<div class="overlay absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 transition-opacity duration-300">
+							<div class="text-white text-center">
+								<h3 class="text-lg">Web Project 2</h3>
+								<p class="text-sm">Web</p>
+							</div>
+						</div>
+						<a href="project2.html" class="absolute inset-0"></a>
+					</div>
+					<!-- Portfolio Item 3 (Diseño Gráfico) -->
+					<div class="portfolio-item diseno relative rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-all duration-300"> <img src="https://i.pinimg.com/736x/45/da/22/45da229c3422ca52b961bf282646385a.jpg" alt="Project 3" class="w-full h-full object-cover rounded-lg">
+						<div class="overlay absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 transition-opacity duration-300">
+							<div class="text-white text-center">
+								<h3 class="text-lg">Diseño Gráfico Project 3</h3>
+								<p class="text-sm">Diseño Gráfico</p>
+							</div>
+						</div>
+						<a href="project3.html" class="absolute inset-0"></a>
+					</div>
+					<!-- Portfolio Item 4 (Fotografía) -->
+					<div class="portfolio-item fotografia relative rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-all duration-300"> <img src="https://cdn.dribbble.com/userupload/17512615/file/original-c9242d06f513ea8104125173501b01bf.jpg?resize=1024x772" alt="Project 7" class="w-full h-full object-cover rounded-lg">
+						<div class="overlay absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 transition-opacity duration-300">
+							<div class="text-white text-center">
+								<h3 class="text-lg">Fotografía Project 7</h3>
+								<p class="text-sm">Fotografía</p>
+							</div>
+						</div>
+						<a href="project7.html" class="absolute inset-0"></a>
+					</div>
+					<!-- Otro Portfolio Item 5 (tipo: diseno) -->
+					<div class="portfolio-item diseno relative rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-all duration-300"> <img src="https://i.pinimg.com/564x/8c/50/37/8c503735a95954a128cb9679e391a2c8.jpg" alt="Project 11" class="w-full h-full object-cover rounded-lg">
+						<div class="overlay absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 transition-opacity duration-300">
+							<div class="text-white text-center">
+								<h3 class="text-lg">Diseño Gráfico Project 11</h3>
+								<p class="text-sm">Diseño Gráfico</p>
+							</div>
+						</div>
+						<a href="project11.html" class="absolute inset-0"></a>
+					</div>
+					<!-- Portfolio Item 6 (Diseño Gráfico) -->
+					<div class="portfolio-item diseno relative rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-all duration-300"> <img src="https://i.pinimg.com/736x/45/da/22/45da229c3422ca52b961bf282646385a.jpg" alt="Project 3" class="w-full h-full object-cover rounded-lg">
+						<div class="overlay absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 transition-opacity duration-300">
+							<div class="text-white text-center">
+								<h3 class="text-lg">Diseño Gráfico Project 3</h3>
+								<p class="text-sm">Diseño Gráfico</p>
+							</div>
+						</div>
+						<a href="project3.html" class="absolute inset-0"></a>
+					</div>
+				</div> <br>
+				<a href="https://holytype.site/portfolio.html"> <button class="bubbly-button-w" data-aos="flip-up" data-aos-delay="200">View the full portfolio!</button> </a>
 			</div>
-			
-		</div>
-	</section>
-	<!-- End block -->
-
-
-
-
-
-
-
-	<!-- Start block PORTFOLIO-->
-<section id="portfolio" class="portfolio drk">
-	<div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24" style="text-align: center;">
-	  <!-- Header Section -->
-	  <div class="text-center">
-		<h2 class="tracking-tight mb-6">💼 Our work speaks for itself</h2>
-		<p class="max-w-3xl mx-auto mb-12">Explore a selection of our most impactful projects that highlight our expertise in design, technology, and innovation.</p>
-	  </div>
-  
-	  <!-- Filtro de categorías -->
-	  <div class="text-center mb-8">
-		<button class="filter-btn" data-filter="all">Todo</button>
-		<button class="filter-btn" data-filter="logo">Logos</button>
-		<button class="filter-btn" data-filter="diseno">Diseño Gráfico</button>
-		<button class="filter-btn" data-filter="web">Web</button>
-		<button class="filter-btn" data-filter="fotografia">Fotografía</button>
-	  </div>
-  
-	  <!-- Portfolio Grid -->
-	  <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-0">
-  
-		<!-- Portfolio Item 1 (Logo) -->
-		<div class="portfolio-item logo relative rounded-lg overflow-hidden bg-white dark:bg-gray-800 shadow-lg hover:scale-105 transition-all duration-300">
-		  <img src="https://i.pinimg.com/736x/d2/28/7b/d2287bb6193445bcaa9729889be6b4aa.jpg" alt="Project 1" class="w-full h-full object-cover rounded-lg">
-		  <div class="overlay absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 transition-opacity duration-300">
-			<div class="text-white text-center">
-			  <h3 class="text-lg">Logo Project 1</h3>
-			  <p class="text-sm">Logos</p>
-			</div>
-		  </div>
-		  <a href="project1.html" class="absolute inset-0"></a>
-		</div>
-  
-		<!-- Portfolio Item 2 (Web) -->
-		<div class="portfolio-item web lg:row-span-2 relative rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-all duration-300">
-		  <img src="https://i.giphy.com/am8pxddtatQoq3iHhr.webp" alt="Project 2" class="w-full h-full object-cover rounded-lg">
-		  <div class="overlay absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 transition-opacity duration-300">
-			<div class="text-white text-center">
-			  <h3 class="text-lg">Web Project 2</h3>
-			  <p class="text-sm">Web</p>
-			</div>
-		  </div>
-		  <a href="project2.html" class="absolute inset-0"></a>
-		</div>
-  
-		<!-- Portfolio Item 3 (Diseño Gráfico) -->
-		<div class="portfolio-item diseno relative rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-all duration-300">
-		  <img src="https://i.pinimg.com/736x/45/da/22/45da229c3422ca52b961bf282646385a.jpg" alt="Project 3" class="w-full h-full object-cover rounded-lg">
-		  <div class="overlay absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 transition-opacity duration-300">
-			<div class="text-white text-center">
-			  <h3 class="text-lg">Diseño Gráfico Project 3</h3>
-			  <p class="text-sm">Diseño Gráfico</p>
-			</div>
-		  </div>
-		  <a href="project3.html" class="absolute inset-0"></a>
-		</div>
-  
-		<!-- Portfolio Item 4 (Fotografía) -->
-		<div class="portfolio-item fotografia relative rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-all duration-300">
-		  <img src="https://cdn.dribbble.com/userupload/17512615/file/original-c9242d06f513ea8104125173501b01bf.jpg?resize=1024x772" alt="Project 7" class="w-full h-full object-cover rounded-lg">
-		  <div class="overlay absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 transition-opacity duration-300">
-			<div class="text-white text-center">
-			  <h3 class="text-lg">Fotografía Project 7</h3>
-			  <p class="text-sm">Fotografía</p>
-			</div>
-		  </div>
-		  <a href="project7.html" class="absolute inset-0"></a>
-		</div>
-  
-		<!-- Otro Portfolio Item 5 (tipo: diseno) -->
-		<div class="portfolio-item diseno relative rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-all duration-300">
-		  <img src="https://i.pinimg.com/564x/8c/50/37/8c503735a95954a128cb9679e391a2c8.jpg" alt="Project 11" class="w-full h-full object-cover rounded-lg">
-		  <div class="overlay absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 transition-opacity duration-300">
-			<div class="text-white text-center">
-			  <h3 class="text-lg">Diseño Gráfico Project 11</h3>
-			  <p class="text-sm">Diseño Gráfico</p>
-			</div>
-		  </div>
-		  <a href="project11.html" class="absolute inset-0"></a>
-		</div>
-
-		<!-- Portfolio Item 6 (Diseño Gráfico) -->
-		<div class="portfolio-item diseno relative rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-all duration-300">
-			<img src="https://i.pinimg.com/736x/45/da/22/45da229c3422ca52b961bf282646385a.jpg" alt="Project 3" class="w-full h-full object-cover rounded-lg">
-			<div class="overlay absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 transition-opacity duration-300">
-			  <div class="text-white text-center">
-				<h3 class="text-lg">Diseño Gráfico Project 3</h3>
-				<p class="text-sm">Diseño Gráfico</p>
-			  </div>
-			</div>
-			<a href="project3.html" class="absolute inset-0"></a>
-		  </div>
-	  </div>
-	  <br>
-	  <a href="https://holytype.site/portfolio.html">
-		<button class="bubbly-button-w" data-aos="flip-up" data-aos-delay="200">View the full portfolio!</button>
-	  </a>
-	</div>
-  </section>
-  <!-- End Portfolio Section -->
-  
-	
-
-
-
-
-
-
-
-	<!-- Start block MENSAJE-->
-	<section id="mybestwishesforyou" class="opinions">
-		<div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24">
-			<figure class="max-w-screen-md mx-auto">
-				<svg class="h-12 mx-auto mb-3" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+		</section>
+		<!-- End Portfolio Section -->
+		<!-- Start block MENSAJE-->
+		<section id="mybestwishesforyou" class="opinions">
+			<div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24">
+				<figure class="max-w-screen-md mx-auto"> <svg class="h-12 mx-auto mb-3" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="#00d3ff"/>
                 </svg>
-				<blockquote>
-					<p class="px-4 txt anim-text-flow" data-aos="zoom-out">"Every step you take, every decision you make, is filled with sacrifice and dreams. Whether you're just starting out or have been at it for years, your effort doesn't go unnoticed. What you're building is not just a business; it's a legacy, an opportunity for you and those around you. The road may be tough, but the hope, dedication, and heart you put into it are what truly matter. Don't give up, keep going the best is yet to come."</p>
-				</blockquote>
-				<figcaption class="px-4 flex items-center justify-center mt-6 space-x-3" data-aos="flip-down">
-					<img class="w-12 h-12 rounded-full" src="profile.jpg" alt="profile picture">
-					<div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-						<div id="ceoname" class="pr-3">Rolando Camarasa</div>
-						<div id="business" class="pl-3">CEO at Holytype</div>
-					</div>
-				</figcaption>
-			</figure>
-		</div>
-	</section>
-	<!-- End block -->
-
-
-
-
-
-
-
-	<!-- Start block PRICES--> 
-<section id="prices" class="prices drk">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24">
-        <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
-            <h2 class="mb-4 tracking-tight">🏷️ Clear costs, no hidden charges</h2>
-            <p class="mb-5">At Holytype, we empower small businesses and entrepreneurs with professional and affordable brand identity solutions.</p>
-        </div>
-        
-        <div class="pricing-cards">
-            <!-- START Plan -->
-            <div class="pricing-card lght" data-aos="fade-right">
-				<div class="card-header">
-					<i class="fas fa-user card-icon"></i>
-					<h3 class="card-title">START</h3>
-					<p class="card-desc">Perfect for startups building their first brand identity.</p>
-					<br>
-					<hr>
-					<p class="card-price">$449*<span class="discount">-20%</span></p>
-					<hr>
-					<br>
-					<div class="banner"></div>
+					<blockquote>
+						<p class="px-4 txt anim-text-flow" data-aos="zoom-out">"Every step you take, every decision you make, is filled with sacrifice and dreams. Whether you're just starting out or have been at it for years, your effort doesn't go unnoticed. What you're building is not just a business; it's a legacy, an opportunity for you and those around you. The road may be tough, but the hope, dedication, and heart you put into it are what truly matter. Don't give up, keep going the best is yet to come."</p>
+					</blockquote>
+					<figcaption class="px-4 flex items-center justify-center mt-6 space-x-3" data-aos="flip-down"> <img class="w-12 h-12 rounded-full" src="profile.jpg" alt="profile picture">
+						<div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+							<div id="ceoname" class="pr-3">Rolando Camarasa</div>
+							<div id="business" class="pl-3">CEO at Holytype</div>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+		</section>
+		<!-- End block -->
+		<!-- Start block PRICES-->
+		<section id="prices" class="prices drk">
+			<div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24">
+				<div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
+					<h2 class="mb-4 tracking-tight">🏷️ Clear costs, no hidden charges</h2>
+					<p class="mb-5">At Holytype, we empower small businesses and entrepreneurs with professional and affordable brand identity solutions.</p>
 				</div>
-				<ul class="card-features">
-					<li>Initial brand audit and competitor analysis</li>
-					<li>Definition of core values and mission</li>
-					<li>Development of visual identity + brand manual</li>
-					<li>Creation of a clear and compelling value proposition</li>
-					<li>Basic digital positioning strategy</li>
-					<li>Social media profile optimization</li>
-					<li>Contact information and digital communication optimization</li>
-				</ul>
-				<div class="card-footer">
-					<br>
-					<a id="openModalBtn" class="bubbly-button">Get Started</a>
-					<p class="disc">*ORIGINAL PRICE: $560<br>Discount valid until January 31, 2025</p>
+				<div class="pricing-cards">
+					<!-- START Plan -->
+					<div class="pricing-card lght" data-aos="fade-right">
+						<div class="card-header"> <i class="fas fa-user card-icon"></i>
+							<h3 class="card-title">START</h3>
+							<p class="card-desc">Perfect for startups building their first brand identity.</p> <br>
+							<hr>
+							<p class="card-price">$449*<span class="discount">-20%</span></p>
+							<hr> <br>
+							<div class="banner"></div>
+						</div>
+						<ul class="card-features">
+							<li>Custom logo design</li>
+							<li>Definition of color palette and typography</li>
+							<li>Creation of basic brand manual</li>
+							<li>Business card design</li>
+							<li>Basic stationery design (letterhead and envelopes)</li>
+							<li>Optimization of Facebook, Instagram, LinkedIn profiles</li>
+							<li>Design of basic banners and posts for social media</li>
+							<li>Basic SEO structure analysis</li>
+							<li>Recommendation of titles, descriptions, and tags for the website</li>
+							<li>Interview to define value proposition and short-term goals</li>
+							<li>Local competition analysis and initial positioning recommendations</li>
+						</ul>
+						<div class="card-footer"> <br> <a id="openModalBtn" class="bubbly-button">Get Started</a>
+							<p class="disc">*ORIGINAL PRICE: $560<br>Discount valid until January 31, 2025</p>
+						</div>
+					</div>
+					<!-- GROW Plan -->
+					<div class="pricing-card featured drk" data-aos="fade-down">
+						<div class="card-header"> <i class="fas fa-rocket card-icon"></i>
+							<h3 class="card-title">GROW</h3>
+							<p class="card-desc">Designed for growing businesses to strengthen their brand.</p> <br>
+							<hr class="phr">
+							<p class="card-price">$599*<span class="discount">-20%</span></p>
+							<hr class="phr"> <br>
+							<div class="banner"></div>
+						</div>
+						<ul class="card-features-f">
+							<li>Logo revision and adjustments if necessary</li>
+							<li>Creation of extended brand manual</li>
+							<li>Development of content strategy for social media</li>
+							<li>Creation of social media posting calendar</li>
+							<li>Complete website SEO audit</li>
+							<li>Optimization of titles and descriptions across all pages</li>
+							<li>Review of local SEO (Google My Business and local SEO)</li>
+							<li>Analysis and optimization of CTAs on the website</li>
+							<li>Review of website navigation and structure to improve UX</li>
+							<li>Management of basic Facebook Ads and Google Ads campaigns</li>
+							<li>Design of ads for paid campaigns</li>
+							<li>1-hour consultancy to develop sales funnel strategies</li>
+							<li>Analysis of direct competition and suggestions to outperform it</li>
+						</ul>
+						<div class="card-footer"> <br> <a id="openModalBtn2" class="bubbly-button bubbly-button-w">Get Started</a>
+							<p class="disc">*ORIGINAL PRICE: $750<br>Discount valid until January 31, 2025</p>
+						</div>
+					</div>
+					<!-- SCALE Plan -->
+					<div class="pricing-card lght" data-aos="fade-left">
+						<div class="card-header"> <i class="fas fa-crown card-icon"></i>
+							<h3 class="card-title">SCALE</h3>
+							<p class="card-desc">Perfect for established businesses expanding globally.</p> <br>
+							<hr>
+							<p class="card-price">$1199*<span class="discount">-20%</span></p>
+							<hr> <br>
+							<div class="banner"></div>
+						</div>
+						<ul class="card-features">
+							<li>Complete logo redesign if necessary</li>
+							<li>Creation of full brand manual (logo, colors, typography, brand usage)</li>
+							<li>Development and execution of long-term content marketing strategy</li>
+							<li>Management of advanced digital advertising campaigns (Facebook Ads, Google Ads, LinkedIn Ads)</li>
+							<li>Complete technical SEO audit of the website</li>
+							<li>Advanced on-page SEO optimization: titles, descriptions, internal linking structure</li>
+							<li>Review of website loading speed and optimization to improve UX</li>
+							<li>Analysis and optimization of sales funnels to increase conversion</li>
+							<li>Optimization of landing pages to maximize lead capture</li>
+							<li>Continuous consultancy of 3 hours per month to adjust marketing strategies</li>
+							<li>In-depth international competition analysis and strategies to surpass key competitors</li>
+							<li>Continuous tracking of advertising campaigns</li>
+							<li>Monthly reports on ROI and campaign effectiveness</li>
+						</ul>
+						<div class="card-footer"> <br> <a id="openModalBtn3" class="bubbly-button">Get Started</a>
+							<p class="disc">*ORIGINAL PRICE: $1500<br>Discount valid until January 31, 2025</p>
+						</div>
+					</div>
 				</div>
 			</div>
-      
-            <!-- GROW Plan -->
-            <div class="pricing-card featured drk" data-aos="fade-down">
-                <div class="card-header">
-                    <i class="fas fa-rocket card-icon"></i>
-                    <h3 class="card-title">GROW</h3>
-                    <p class="card-desc">Designed for growing businesses to strengthen their brand.</p>
-					<br>
-					<hr class="phr">
-                    <p class="card-price">$599*<span class="discount">-20%</span></p>
-					<hr class="phr">
-					<br>
-					<div class="banner"></div>
-                </div>
-                <ul class="card-features-f">
-                    <li>Optimization and updates to visual identity</li>
-                    <li>Redesign of brand manual and style guide</li>
-                    <li>Logo and brand element vectorization</li>
-                    <li>Personalized content strategy for social media</li>
-                    <li>Graphic material design (stationery, posters, etc.)</li>
-                    <li>Digital communication and content marketing strategy</li>
-                    <li>Enhanced public communication on social media</li>
-                </ul>
-                <div class="card-footer">
-					<br>
-					<a id="openModalBtn2" class="bubbly-button bubbly-button-w">Get Started</a>
-					<p class="disc">*ORIGINAL PRICE: $750<br>Discount valid until January 31, 2025</p>
-                </div>
-            </div>
-      
-            <!-- SCALE Plan -->
-            <div class="pricing-card lght" data-aos="fade-left">
-                <div class="card-header">
-                    <i class="fas fa-crown card-icon"></i>
-                    <h3 class="card-title">SCALE</h3>
-                    <p class="card-desc">Perfect for established businesses expanding globally.</p>
-					<br>
-					<hr>
-                    <p class="card-price">$1199*<span class="discount">-20%</span></p>
-					<hr>
-					<br>
-					<div class="banner"></div>
-                </div>
-                <ul class="card-features">
-                    <li>Complete or partial brand redesign</li>
-                    <li>Omnichannel marketing strategy</li>
-                    <li>Strategic consulting for sales processes</li>
-                    <li>Creation of impactful branding campaigns</li>
-                    <li>Updated brand manual and style guide</li>
-                    <li>Promotional material design</li>
-                    <li>Custom plugin development for business needs</li>
-                </ul>
-                <div class="card-footer">
-					<br>
-					<a id="openModalBtn3" class="bubbly-button">Get Started</a>
-					<p class="disc">*ORIGINAL PRICE: $1500<br>Discount valid until January 31, 2025</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End block -->
-
-
-
-
-
-
-
-<!-- Start block FAQ-->
-<section id="faqs" class="faq">
-	<div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24">
-	  <h2 class="mb-6 tracking-tight text-center lg:mb-8">💬 Frequently Asked Questions</h2>
-	  <div class="max-w-screen-md mx-auto">
-		<div class="faq-item" data-aos="fade-right">
-		  <button class="faq-trigger">
+		</section>
+		<!-- End block -->
+		<!-- Start block FAQ-->
+		<section id="faqs" class="faq">
+			<div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24">
+				<h2 class="mb-6 tracking-tight text-center lg:mb-8">💬 Frequently Asked Questions</h2>
+				<div class="max-w-screen-md mx-auto">
+					<div class="faq-item" data-aos="fade-right"> <button class="faq-trigger">
 			<span><i class="fas fa-star"></i> What makes Holytype different from other branding agencies?</span>
 			<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#00d3ff">
 			  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 			</svg>
 		  </button>
-		  <div class="faq-content">
-			<p>At Holytype, we don’t just design; we dive deep into the DNA of your brand to create something truly unique and meaningful. 🌟 What sets us apart is our personalized and collaborative approach. We work closely with you, taking the time to understand your story, your values, and your goals, ensuring every element from strategy to visual identity feels authentic and aligned with your vision.
-				<br>
-				<br>
-				Unlike many agencies, we emphasize building a brand that connects emotionally with your audience. It’s not just about looking good it’s about creating an experience that resonates and leaves a lasting impact. 💡 Whether it's defining your purpose, crafting a cohesive identity, or helping you grow through tailored strategies, Holytype combines creativity with purpose-driven solutions to help you shine in the marketplace.
-				<br>
-				<br>
-				At the end of the day, Holytype is more than an agencywe’re your partner in growth, here to champion your brand every step of the way. Let’s turn your vision into a brand people love. 💖</p>
-		  </div>
-		</div>
-  
-		<div class="faq-item" data-aos="fade-left">
-		  <button class="faq-trigger">
+						<div class="faq-content">
+							<p>At Holytype, we don’t just design; we dive deep into the DNA of your brand to create something truly unique and meaningful. 🌟 What sets us apart is our personalized and collaborative approach. We work closely with you, taking the time to understand your story, your values, and your goals, ensuring every element from strategy to visual identity feels authentic and aligned with your vision. <br> <br> Unlike many agencies, we emphasize building a brand that connects emotionally with your audience. It’s not just about looking good it’s about creating an experience that resonates and leaves a lasting impact. 💡 Whether it's defining your purpose, crafting a cohesive identity, or helping you grow through tailored strategies, Holytype combines creativity with purpose-driven solutions to help you shine in the marketplace. <br> <br> At the end of the day, Holytype is more than an agencywe’re your partner in growth, here to champion your brand every step of the way. Let’s turn your vision into a brand people love. 💖</p>
+						</div>
+					</div>
+					<div class="faq-item" data-aos="fade-left"> <button class="faq-trigger">
 			<span><i class="fas fa-tools"></i> How do I know which package is right for my business?</span>
 			<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#00d3ff">
 			  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 			</svg>
 		  </button>
-		  <div class="faq-content">
-			<p>We understand that every business has unique needs, and choosing the right package can feel overwhelming. That’s why we’re here to help! 🌟 You can reach out to us anytime for a free consultation. We’ll take the time to understand your goals and recommend the package that best aligns with your brand’s vision and budget. Let’s make this process simple and stress-free together! 💡</p>
-		  </div>
-		</div>
-  
-		<div class="faq-item" data-aos="fade-right">
-		  <button class="faq-trigger">
+						<div class="faq-content">
+							<p>We understand that every business has unique needs, and choosing the right package can feel overwhelming. That’s why we’re here to help! 🌟 You can reach out to us anytime for a free consultation. We’ll take the time to understand your goals and recommend the package that best aligns with your brand’s vision and budget. Let’s make this process simple and stress-free together! 💡</p>
+						</div>
+					</div>
+					<div class="faq-item" data-aos="fade-right"> <button class="faq-trigger">
 			<span><i class="fas fa-clock"></i> How long does the branding process take?</span>
 			<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#00d3ff">
 			  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 			</svg>
 		  </button>
-		  <div class="faq-content">
-			<p>Our branding process is streamlined to be both thorough and efficient! Typically, it takes around three days:<br>
-				1️⃣ Interview: We’ll start with a collaborative session to understand your vision, mission, and style preferences.
-				<br>
-				<br>
-				2️⃣ Sketch & Concept Development: Next, we create an initial draft or sketch to align with your goals.
-				<br>
-				<br>
-				3️⃣ Final Delivery: Finally, we polish the design and deliver a branding package that’s ready to impress!
-				<br>
-				<br>
-				Your time is valuable, and we’re committed to delivering quality work quickly while keeping you involved every step of the way. 🕒✨</p>
-		  </div>
-		</div>
-  
-		<div class="faq-item" data-aos="fade-left">
-		  <button class="faq-trigger">
+						<div class="faq-content">
+							<p>Our branding process is streamlined to be both thorough and efficient! Typically, it takes around three days:<br> 1️⃣ Interview: We’ll start with a collaborative session to understand your vision, mission, and style preferences. <br> <br> 2️⃣ Sketch & Concept Development: Next, we create an initial draft or sketch to align with your goals. <br> <br> 3️⃣ Final Delivery: Finally, we polish the design and deliver a branding package that’s ready to impress! <br> <br> Your time is valuable, and we’re committed to delivering quality work quickly while keeping you involved every step of the way. 🕒✨</p>
+						</div>
+					</div>
+					<div class="faq-item" data-aos="fade-left"> <button class="faq-trigger">
 			<span><i class="fas fa-palette"></i> Will I own the rights to my branding assets?</span>
 			<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#00d3ff">
 			  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 			</svg>
 		  </button>
-		  <div class="faq-content">
-			<p>Absolutely, all branding assets we create for you are 100% yours! 💼✨ Once the project is complete, we’ll provide you with the original design files (in formats like AI, PNG, or SVG), giving you full ownership and flexibility. Your brand belongs to you, and we’re here to ensure you have everything you need to bring it to life. 🎨</p>
-		  </div>
-		</div>
-  
-		<div class="faq-item" data-aos="fade-right">
-		  <button class="faq-trigger">
+						<div class="faq-content">
+							<p>Absolutely, all branding assets we create for you are 100% yours! 💼✨ Once the project is complete, we’ll provide you with the original design files (in formats like AI, PNG, or SVG), giving you full ownership and flexibility. Your brand belongs to you, and we’re here to ensure you have everything you need to bring it to life. 🎨</p>
+						</div>
+					</div>
+					<div class="faq-item" data-aos="fade-right"> <button class="faq-trigger">
 			<span><i class="fas fa-edit"></i> Can I customize a package to fit my specific needs?</span>
 			<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#00d3ff">
 			  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 			</svg>
 		  </button>
-		  <div class="faq-content">
-			<p>Absolutely! At Holytype, we know that every business is unique, and one size doesn’t always fit all. 💡 You can fully customize a package by combining specific services that best suit your goals and needs. Whether you’re looking for a focus on strategy, design, or growth, we’ll collaborate to build a tailored solution that fits your vision and budget perfectly. Let’s create something amazing together! ✨</p>
-		  </div>
-		</div>
-  
-		<div class="faq-item" data-aos="fade-left">
-		  <button class="faq-trigger">
+						<div class="faq-content">
+							<p>Absolutely! At Holytype, we know that every business is unique, and one size doesn’t always fit all. 💡 You can fully customize a package by combining specific services that best suit your goals and needs. Whether you’re looking for a focus on strategy, design, or growth, we’ll collaborate to build a tailored solution that fits your vision and budget perfectly. Let’s create something amazing together! ✨</p>
+						</div>
+					</div>
+					<div class="faq-item" data-aos="fade-left"> <button class="faq-trigger">
 			<span><i class="fas fa-globe"></i> Do you work with clients outside the United States?</span>
 			<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#00d3ff">
 			  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 			</svg>
 		  </button>
-		  <div class="faq-content">
-			<p>Absolutely! 🌍 At Holytype, we work with clients from all over the world, including Australia, Canada, the UK, and beyond. Thanks to digital collaboration tools, we can seamlessly communicate, share ideas, and deliver outstanding results no matter where you are located. Whether it’s branding strategy, visual identity, or growth solutions, we’re here to bring your vision to life – no borders, no barriers. Let’s connect and create something amazing together! ✨</p>
-		  </div>
-		</div>
-  
-		<div class="faq-item" data-aos="fade-right">
-		  <button class="faq-trigger">
+						<div class="faq-content">
+							<p>Absolutely! 🌍 At Holytype, we work with clients from all over the world, including Australia, Canada, the UK, and beyond. Thanks to digital collaboration tools, we can seamlessly communicate, share ideas, and deliver outstanding results no matter where you are located. Whether it’s branding strategy, visual identity, or growth solutions, we’re here to bring your vision to life – no borders, no barriers. Let’s connect and create something amazing together! ✨</p>
+						</div>
+					</div>
+					<div class="faq-item" data-aos="fade-right"> <button class="faq-trigger">
 			<span><i class="fas fa-phone-alt"></i> What support is available after the project is completed?</span>
 			<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#00d3ff">
 			  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 			</svg>
 		  </button>
-		  <div class="faq-content">
-			<p>At Holytype, our relationship doesn’t end when the project is delivered in fact, it’s just the beginning. 🌱 We’re committed to being your long-term branding partner, offering a range of post-project support to ensure your brand continues to thrive:<br>
-				<br>
-				<br>
-				1️⃣ Guidance and Resources: After delivery, we’ll provide you with a detailed guide on how to use your branding assets effectively, from logo application to brand colors and typography.
-				<br>
-				<br>
-				2️⃣ Minor Adjustments: If you need small updates or tweaks to your designs, we’re happy to assist because your brand should evolve as your business grows.
-				<br>
-				<br>
-				3️⃣ Consultation Calls: Got questions down the road? You can book follow-up consultations with us to discuss branding strategies, marketing ideas, or any challenges you’re facing.
-				<br>
-				<br>
-				4️⃣ Ongoing Services: Whether it’s creating new marketing materials, refreshing your visual identity, or expanding your brand’s reach, we’re here to support your growth with additional services.
-				<br>
-				<br>
-				5️⃣ Peace of Mind: Our promise is simple you’re not alone. When you work with Holytype, you gain a partner who genuinely cares about your success. We’ll be here to guide you, inspire you, and ensure your brand shines at every stage.
-				<br>
-				<br>
-				Let’s make sure your brand not only looks great but also continues to make an impact long after launch. 🌟✨</p>
-		  </div>
-		</div>
-  
-		<div class="faq-item" data-aos="fade-left">
-		  <button class="faq-trigger">
+						<div class="faq-content">
+							<p>At Holytype, our relationship doesn’t end when the project is delivered in fact, it’s just the beginning. 🌱 We’re committed to being your long-term branding partner, offering a range of post-project support to ensure your brand continues to thrive:<br> <br> <br> 1️⃣ Guidance and Resources: After delivery, we’ll provide you with a detailed guide on how to use your branding assets effectively, from logo application to brand colors and typography. <br> <br> 2️⃣ Minor Adjustments: If you need small updates or tweaks to your designs, we’re happy to assist because your brand should evolve as your business grows. <br> <br> 3️⃣ Consultation Calls: Got questions down the road? You can book follow-up consultations with us to discuss branding strategies, marketing ideas, or any challenges you’re facing. <br> <br> 4️⃣ Ongoing Services: Whether it’s creating new marketing materials, refreshing your visual identity, or expanding your brand’s reach, we’re here to support your growth with additional services. <br> <br> 5️⃣ Peace of Mind: Our promise is simple you’re not alone. When you work with Holytype, you gain a partner who genuinely cares about your success. We’ll be here to guide you, inspire you, and ensure your brand shines at every stage. <br> <br> Let’s make sure your brand not only looks great but also continues to make an impact long after launch. 🌟✨</p>
+						</div>
+					</div>
+					<div class="faq-item" data-aos="fade-left"> <button class="faq-trigger">
 			<span><i class="fas fa-credit-card"></i> Do you offer payment plans?</span>
 			<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#00d3ff">
 			  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 			</svg>
 		  </button>
-		  <div class="faq-content">
-			<p>Yes, we do! 💳 We understand that investing in branding is a big step, and we want to make it as accessible as possible. We offer flexible payment plans to accommodate your budget, so you can focus on building your dream brand without financial stress. Let’s talk and find a plan that works for you! 💼</p>
-		  </div>
-		</div>
-	  </div>
-	</div>
-  </section>
-  <!-- End block FAQ -->
-	
-
-	  
-
-
-  
-
-
-
-
-
-
-
-	<!-- Start Contact Section -->
-	<section id="contact" class="contact drk">
-		<div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24">
-			<!-- Header Section -->
-			<div class="text-center">
-				<h2 class="tracking-tight mb-6">🚀 Let’s build something extraordinary together</h2>
-				<p class="max-w-3xl mx-auto mb-12">We're here to help! Whether you have a question, want to start a project, or just want to chat, feel free to reach out to us. We'll get back to you as soon as possible.</p>
-			</div>
-
-			<!-- Row -->
-			<div class="lg:grid lg:grid-cols-2 gap-16 contact-cont">
-				<!-- Form Column -->
-				<div class="unique-contact-form2 p-8 rounded-lg shadow-lg pad-contact" data-aos="zoom-out" data-aos-delay="50">
-					<h2 class="unique-contact-title">Contact us</h2>
-					<form action="https://formsubmit.co/277769d69d33b524e0ab0d4b14e4752a" method="POST" id="contact-form" class="unique-contact-form-body">
-						<input type="hidden" name="_subject" value="ContactoGeneral">
-						<input type="hidden" name="_template" value="table">
-						<!-- Name Input -->
-					  <div class="unique-form-group">
-						<label for="name" class="unique-contact-label">Your Name</label>
-						<input type="text" name="name" id="name" class="unique-contact-input" placeholder="Enter your name" required>
-					  </div>
-					  <!-- Email Input -->
-					  <div class="unique-form-group">
-						<label for="email" class="unique-contact-label">Your Email</label>
-						<input type="email" name="email" id="email" class="unique-contact-input" placeholder="Enter your email" required>
-					  </div>
-					  <!-- Subject Input -->
-					  <div class="unique-form-group">
-						<label for="subject" class="unique-contact-label">Subject</label>
-						<input type="text" name="subject" id="subject" class="unique-contact-input" placeholder="Enter the subject" required>
-					  </div>
-					  <!-- Phone Input -->
-					  <div class="unique-form-group">
-						<label for="phone" class="unique-contact-label">Your Phone</label>
-						<input type="text" name="phone" id="phone" class="unique-contact-input" placeholder="Enter your phone number" required>
-					  </div>
-					  <!-- Message Textarea -->
-					  <div class="unique-form-group">
-						<label for="message" class="unique-contact-label">Your Message</label>
-						<textarea name="message" id="message" class="unique-contact-input" placeholder="Write your message here" rows="15" required></textarea>
-					  </div>
-					  <!-- Submit Button -->
-					  <div class="unique-form-group">
-						<button type="submit" class="bubbly-button-w" style="width: 100%;">Submit Your Inquiry</button>
-					  </div>
-					</form>
-				  </div>
-				  
-
-				<!-- Contact Info Column with Background -->
-				<div class="contact-info p-8 rounded-lg shadow-lg pad-contact unique-contact-form3" data-aos="zoom-out" data-aos-delay="350">
-					<h2 class="mb-6 text-center">Our contact information</h2>
-					<p class="mb-8">Prefer not to fill out the form? Here’s how you can reach us directly:</p>
-
-					<!-- Contact Details List -->
-					<ul class="space-y-8">
-						<li class="flex items-center space-x-6">
-							<svg class="w-6 h-6" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-							<span class="datatip">Buenos Aires, Argentina</span>
-						</li>
-						<li class="flex items-center space-x-6">
-							<svg class="w-6 h-6" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-							<span class="datatip"><a href="mailto:holytype.branding@gmail.com">holytype.branding@gmail.com</a></span>
-						</li>
-						<li class="flex items-center space-x-6">
-							<svg class="w-6 h-6" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-							<span class="datatip"><a href="https://wa.me/5493329208747?text=Hi%20there!%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Could%20you%20provide%20me%20with%20more%20details%3F">+549 3329 208747</a></span>
-						</li>
-					</ul>
-					<br>
-					<hr>
-					<!-- Íconos de redes sociales -->
-					<div class="social-icons mt-6">
-						<h5>Follow us: </h5>
-						<a href="https://www.instagram.com/" target="_blank" class="social-icon2"><i class="fa-brands fa-instagram"></i></a>
-						<a href="https://www.linkedin.com/" target="_blank" class="social-icon2"><i class="fa-brands fa-linkedin-in"></i></a>
-						<a href="https://x.com/" target="_blank" class="social-icon2"><i class="fa-brands fa-x-twitter"></i></a>
-						<a href="https://www.facebook.com/" target="_blank" class="social-icon2"><i class="fa-brands fa-facebook-f"></i></a>
-						<a href="https://www.behance.net/" target="_blank" class="social-icon2"><i class="fa-brands fa-behance"></i></a>
-						<a href="https://www.behance.net/" target="_blank" class="social-icon2"><i class="fa-brands fa-dribbble"></i></a>
+						<div class="faq-content">
+							<p>Yes, we do! 💳 We understand that investing in branding is a big step, and we want to make it as accessible as possible. We offer flexible payment plans to accommodate your budget, so you can focus on building your dream brand without financial stress. Let’s talk and find a plan that works for you! 💼</p>
+						</div>
 					</div>
-					<img src="contact.avif" alt="">
+				</div>
+			</div>
+		</section>
+		<!-- End block FAQ -->
+		<!-- Start Contact Section -->
+		<section id="contact" class="contact drk">
+			<div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24">
+				<!-- Header Section -->
+				<div class="text-center">
+					<h2 class="tracking-tight mb-6">🚀 Let’s build something extraordinary together</h2>
+					<p class="max-w-3xl mx-auto mb-12">We're here to help! Whether you have a question, want to start a project, or just want to chat, feel free to reach out to us. We'll get back to you as soon as possible.</p>
+				</div>
+				<!-- Row -->
+				<div class="lg:grid lg:grid-cols-2 gap-16 contact-cont">
+					<!-- Form Column -->
+					<div class="unique-contact-form2 p-8 rounded-lg shadow-lg pad-contact" data-aos="zoom-out" data-aos-delay="50">
+						<h2 class="unique-contact-title">Contact us</h2>
+						<form action="https://formsubmit.co/277769d69d33b524e0ab0d4b14e4752a" method="POST" id="contact-form" class="unique-contact-form-body"> <input type="hidden" name="_subject" value="ContactoGeneral"> <input type="hidden" name="_template" value="table">
+							<!-- Name Input -->
+							<div class="unique-form-group"> <label for="name" class="unique-contact-label">Your Name</label> <input type="text" name="name" id="name" class="unique-contact-input" placeholder="Enter your name" required> </div>
+							<!-- Email Input -->
+							<div class="unique-form-group"> <label for="email" class="unique-contact-label">Your Email</label> <input type="email" name="email" id="email" class="unique-contact-input" placeholder="Enter your email" required> </div>
+							<!-- Subject Input -->
+							<div class="unique-form-group"> <label for="subject" class="unique-contact-label">Subject</label> <input type="text" name="subject" id="subject" class="unique-contact-input" placeholder="Enter the subject" required> </div>
+							<!-- Phone Input -->
+							<div class="unique-form-group"> <label for="phone" class="unique-contact-label">Your Phone</label> <input type="text" name="phone" id="phone" class="unique-contact-input" placeholder="Enter your phone number" required> </div>
+							<!-- Message Textarea -->
+							<div class="unique-form-group"> <label for="message" class="unique-contact-label">Your Message</label> <textarea name="message" id="message" class="unique-contact-input" placeholder="Write your message here" rows="15" required></textarea> </div>
+							<!-- Submit Button -->
+							<div class="unique-form-group"> <button type="submit" class="bubbly-button-w" style="width: 100%;">Submit Your Inquiry</button> </div>
+						</form>
+					</div>
+					<!-- Contact Info Column with Background -->
+					<div class="contact-info p-8 rounded-lg shadow-lg pad-contact unique-contact-form3" data-aos="zoom-out" data-aos-delay="350">
+						<h2 class="mb-6 text-center">Our contact information</h2>
+						<p class="mb-8">Prefer not to fill out the form? Here’s how you can reach us directly:</p>
+						<!-- Contact Details List -->
+						<ul class="space-y-8">
+							<li class="flex items-center space-x-6"> <svg class="w-6 h-6" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="datatip">Buenos Aires, Argentina</span> </li>
+							<li class="flex items-center space-x-6"> <svg class="w-6 h-6" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="datatip"><a href="mailto:holytype.branding@gmail.com">holytype.branding@gmail.com</a></span> </li>
+							<li class="flex items-center space-x-6"> <svg class="w-6 h-6" fill="#00d3ff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="datatip"><a href="https://wa.me/5493329208747?text=Hi%20there!%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Could%20you%20provide%20me%20with%20more%20details%3F">+549 3329 208747</a></span> </li>
+						</ul> <br>
+						<hr>
+						<!-- Íconos de redes sociales -->
+						<div class="social-icons mt-6">
+							<h5>Follow us: </h5> <a href="https://www.instagram.com/" target="_blank" class="social-icon2"><i class="fa-brands fa-instagram"></i></a> <a href="https://www.linkedin.com/" target="_blank" class="social-icon2"><i class="fa-brands fa-linkedin-in"></i></a> <a href="https://x.com/" target="_blank" class="social-icon2"><i class="fa-brands fa-x-twitter"></i></a> <a href="https://www.facebook.com/" target="_blank" class="social-icon2"><i class="fa-brands fa-facebook-f"></i></a> <a href="https://www.behance.net/" target="_blank" class="social-icon2"><i class="fa-brands fa-behance"></i></a> <a href="https://www.behance.net/" target="_blank" class="social-icon2"><i class="fa-brands fa-dribbble"></i></a> </div> <img src="contact.avif" alt=""> </div>
+				</div>
+			</div>
+		</section>
+		<!-- End Contact Section -->
+		<!-- Start block FOOTER-->
+		<footer id="embersCanvas" class="" style="background-color: #0080ff;">
+			<div class="footer">
+				<div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5"> </div>
+				<div class="text-center">
+					<a href="#" class="flex items-center justify-center mb-5" data-aos="zoom-out" data-aos-delay="350"> <img src="./logo-holytype-1.png" class="downlogo h-6 mr-3 sm:h-9" alt="Landwind Logo" /> </a> <span class="block text-center">©2024 Holytype™. All Rights Reserved.
+                </span> </div>
+			</div>
+		</footer>
+		<!-- Modal -->
+		<div id="customContactModal" class="unique-modal-overlay" style="display: none;">
+			<div class="unique-modal-content drk">
+				<!-- Close Button --><button id="customCloseModalBtn" class="unique-modal-close-btn">&times;</button>
+				<div class="unique-modal-grid">
+					<!-- Left Content -->
+					<div class="unique-modal-left">
+						<h2 class="unique-modal-title">Let’s build a solid foundation for your brand and make it stand out!</h2>
+						<p class="unique-modal-description"> We will get in touch with you shortly to gather more details about the service you need. </p> <img src="./mail-01.png" alt="Ilustración de contacto" class="unique-modal-image"> </div>
+					<!-- Right Content -->
+					<form action="https://formsubmit.co/277769d69d33b524e0ab0d4b14e4752a" method="POST" id="customContactForm" class="unique-modal-form"> <input type="hidden" name="_subject" value="START me"> <input type="hidden" name="_template" value="table">
+						<div> <label for="customName" class="unique-modal-label">Your Name</label> <input type="text" id="customName" name="name" required class="unique-modal-input"> </div>
+						<div> <label for="customEmail" class="unique-modal-label">Your Email</label> <input type="email" id="customEmail" name="email" required class="unique-modal-input"> </div>
+						<div> <label for="customPhone" class="unique-modal-label">Your Phone</label> <input type="text" id="customPhone" name="phone" required class="unique-modal-input"> </div>
+						<div> <label for="customMessage" class="unique-modal-label">Your Message</label> <textarea id="customMessage" name="message" rows="4" required class="unique-modal-input"></textarea> </div> <button type="submit" class="bubbly-button-w" style="width: 100%;">ready, set, go!</button> </form>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!-- End Contact Section -->
-
-
-
-
-
-
-
-    <!-- Start block FOOTER-->
-	<footer id="embersCanvas" class="" style="background-color: #0080ff;">
-		<div class="footer">
-			<div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
-				
-			</div>
-			<div class="text-center">
-				<a href="#" class="flex items-center justify-center mb-5" data-aos="zoom-out" data-aos-delay="350">
-					<img src="./logo-holytype-1.png" class="downlogo h-6 mr-3 sm:h-9" alt="Landwind Logo" />
-				</a>
-				<span class="block text-center">©2024 Holytype™. All Rights Reserved.
-                </span>
+		<!-- Modal -->
+		<div id="customContactModal2" class="unique-modal-overlay" style="display: none;">
+			<div class="unique-modal-content drk">
+				<!-- Close Button --><button id="customCloseModalBtn2" class="unique-modal-close-btn">&times;</button>
+				<div class="unique-modal-grid">
+					<!-- Left Content -->
+					<div class="unique-modal-left">
+						<h2 class="unique-modal-title">Strengthen your brand’s presence and drive customer loyalty!</h2>
+						<p class="unique-modal-description"> We will get in touch with you shortly to gather more details about the service you need. </p> <img src="./mail-01.png" alt="Ilustración de contacto" class="unique-modal-image"> </div>
+					<!-- Right Content -->
+					<form action="https://formsubmit.co/277769d69d33b524e0ab0d4b14e4752a" method="POST" id="customContactForm2" class="unique-modal-form"> <input type="hidden" name="_subject" value="GROW me"> <input type="hidden" name="_template" value="table">
+						<div> <label for="customName" class="unique-modal-label">Your Name</label> <input type="text" id="customName2" name="name" required class="unique-modal-input"> </div>
+						<div> <label for="customEmail" class="unique-modal-label">Your Email</label> <input type="email" id="customEmail2" name="email" required class="unique-modal-input"> </div>
+						<div> <label for="customPhone" class="unique-modal-label">Your Phone</label> <input type="text" id="customPhone2" name="phone" required class="unique-modal-input"> </div>
+						<div> <label for="customMessage" class="unique-modal-label">Your Message</label> <textarea id="customMessage2" name="message" rows="4" required class="unique-modal-input"></textarea> </div> <button type="submit" class="bubbly-button-w" style="width: 100%;">ready, set, go!</button> </form>
+				</div>
 			</div>
 		</div>
-	</footer>
-
-
-
-
-
-
-
-<!-- Modal -->
-<div id="customContactModal" class="unique-modal-overlay" style="display: none;">
-	<div class="unique-modal-content drk">
-	  <!-- Close Button -->
-	  <button id="customCloseModalBtn" class="unique-modal-close-btn">&times;</button>
-  
-	  <div class="unique-modal-grid">
-		<!-- Left Content -->
-		<div class="unique-modal-left">
-		  <h2 class="unique-modal-title">Let’s build a solid foundation for your brand and make it stand out!</h2>
-		  <p class="unique-modal-description">
-			We will get in touch with you shortly to gather more details about the service you need.
-		  </p>
-		  <img src="./mail-01.png" alt="Ilustración de contacto" class="unique-modal-image">
+		<!-- Modal -->
+		<div id="customContactModal3" class="unique-modal-overlay" style="display: none;">
+			<div class="unique-modal-content drk">
+				<!-- Close Button --><button id="customCloseModalBtn3" class="unique-modal-close-btn">&times;</button>
+				<div class="unique-modal-grid">
+					<!-- Left Content -->
+					<div class="unique-modal-left">
+						<h2 class="unique-modal-title">Transform your brand and expand your reach with a powerful omnichannel strategy!</h2>
+						<p class="unique-modal-description"> We will get in touch with you shortly to gather more details about the service you need. </p> <img src="./mail-01.png" alt="Ilustración de contacto" class="unique-modal-image"> </div>
+					<!-- Right Content -->
+					<form action="https://formsubmit.co/277769d69d33b524e0ab0d4b14e4752a" method="POST" id="customContactForm3" class="unique-modal-form"> <input type="hidden" name="_subject" value="SCALE me"> <input type="hidden" name="_template" value="table">
+						<div> <label for="customName" class="unique-modal-label">Your Name</label> <input type="text" id="customName3" name="name" required class="unique-modal-input"> </div>
+						<div> <label for="customEmail" class="unique-modal-label">Your Email</label> <input type="email" id="customEmail3" name="email" required class="unique-modal-input"> </div>
+						<div> <label for="customPhone" class="unique-modal-label">Your Phone</label> <input type="text" id="customPhone3" name="phone" required class="unique-modal-input"> </div>
+						<div> <label for="customMessage" class="unique-modal-label">Your Message</label> <textarea id="customMessage3" name="message" rows="4" required class="unique-modal-input"></textarea> </div> <button type="submit" class="bubbly-button-w" style="width: 100%;">ready, set, go!</button> </form>
+				</div>
+			</div>
 		</div>
-  
-		<!-- Right Content -->
-		<form action="https://formsubmit.co/277769d69d33b524e0ab0d4b14e4752a" method="POST" id="customContactForm" class="unique-modal-form">
-			<input type="hidden" name="_subject" value="START me">
-			<input type="hidden" name="_template" value="table">
-		  <div>
-			<label for="customName" class="unique-modal-label">Your Name</label>
-			<input type="text" id="customName" name="name" required class="unique-modal-input">
-		  </div>
-		  <div>
-			<label for="customEmail" class="unique-modal-label">Your Email</label>
-			<input type="email" id="customEmail" name="email" required class="unique-modal-input">
-		  </div>
-		  <div>
-			<label for="customPhone" class="unique-modal-label">Your Phone</label>
-			<input type="text" id="customPhone" name="phone" required class="unique-modal-input">
-		  </div>
-		  <div>
-			<label for="customMessage" class="unique-modal-label">Your Message</label>
-			<textarea id="customMessage" name="message" rows="4" required class="unique-modal-input"></textarea>
-		  </div>
-		  <button type="submit" class="bubbly-button-w" style="width: 100%;">ready, set, go!</button>
-		</form>
-	  </div>
-	</div>
-  </div>
-
-  <!-- Modal -->
-<div id="customContactModal2" class="unique-modal-overlay" style="display: none;">
-	<div class="unique-modal-content drk">
-	  <!-- Close Button -->
-	  <button id="customCloseModalBtn2" class="unique-modal-close-btn">&times;</button>
-  
-	  <div class="unique-modal-grid">
-		<!-- Left Content -->
-		<div class="unique-modal-left">
-		  <h2 class="unique-modal-title">Strengthen your brand’s presence and drive customer loyalty!</h2>
-		  <p class="unique-modal-description">
-			We will get in touch with you shortly to gather more details about the service you need.
-		  </p>
-		  <img src="./mail-01.png" alt="Ilustración de contacto" class="unique-modal-image">
+		<!-- WhatsApp Floating Button -->
+		<a href="https://wa.me/5493329208747?text=Hi%20there!%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Could%20you%20provide%20me%20with%20more%20details%3F" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/640px-WhatsApp_icon.png" alt="WhatsApp" class="whatsapp-icon"> </a>
+		<!--MODAL FROM OUR SERVICES-->
+		<div id="service1-modal" class="modal hidden">
+			<div class="modal-content drk">
+				<!-- Título -->
+				<h1>🚀 <strong>Brand Strategy</strong></h1>
+				<!-- Subtítulo -->
+				<h2><strong>Build a strong, authentic brand that connects emotionally with your audience</strong></h2>
+				<hr class="phr"> <br>
+				<!-- Contenido -->
+				<p>At Holytype, we believe that a brand is much more than just a logo, name, or product it is a narrative, a promise, and a genuine connection with your audience. Our <strong>Brand Strategy</strong> service is designed to craft a comprehensive approach that defines your brand’s vision, mission, and core values, ensuring each element communicates with clarity, purpose, and consistency.</p>
+				<h2>💡 <strong>Why is a Strong Brand Strategy Essential?</strong></h2>
+				<p>A well-defined brand strategy is the foundation of everything your company represents. It determines how you are perceived in the market, how you differentiate from competitors, and how you connect emotionally with your audience. With a clear and compelling strategy, you do not just stand out you build trust, foster loyalty, and create a lasting bond with your customers.</p>
+				<p>Without a clear brand strategy, businesses risk becoming fragmented, inconsistent, and ultimately irrelevant in the eyes of their target market. That’s where Holytype comes in. We offer the structure, insights, and creative direction needed to elevate your brand, ensuring it resonates and thrives.</p>
+				<h2>🧩 <strong>What Does Our Brand Strategy Service Include?</strong></h2>
+				<ul>
+					<li><strong>🏆 Vision & Mission Clarity:</strong> We collaborate with you to define your brand’s purpose and strategic direction, ensuring that every decision and action aligns with your long-term vision while resonating with your target audience.</li>
+					<li><strong>🧭 Core Values that Matter:</strong> We identify the fundamental principles that guide your brand’s decisions and actions, ensuring consistency, authenticity, and alignment across all touchpoints.</li>
+					<li><strong>🌟 Competitive Differentiation:</strong> We develop a unique strategy that sets your brand apart in a crowded marketplace, emphasizing what makes your business special and worth choosing.</li>
+					<li><strong>💖 Emotional Connection:</strong> We go beyond transactional relationships, focusing on creating a deep emotional bond with your customers to ensure your brand is memorable, loved, and trusted.</li>
+				</ul> <br>
+				<h2>🎯 <strong>What Will You Achieve with Our Brand Strategy?</strong></h2>
+				<ul>
+					<li><strong>🌱 A Solid Foundation:</strong> Establish a robust, sustainable brand identity that resonates with your audience from day one, setting the stage for consistent growth.</li>
+					<li><strong>📣 Increased Visibility and Reach:</strong> With a well-defined value proposition and differentiated brand, you will gain greater visibility across key channels, ensuring the right message reaches the right audience.</li>
+					<li><strong>🔄 Brand Loyalty & Trust:</strong> By building an emotional connection with your customers, you’ll foster long-term relationships that lead to repeat business and brand advocacy.</li>
+				</ul>
+				<h2>⏳ <strong>Our Approach</strong></h2>
+				<p>At Holytype, we adopt a collaborative, hands-on approach to developing your brand strategy. We immerse ourselves in understanding your business, culture, and goals, ensuring that every aspect of your brand strategy is tailored to your unique needs and market dynamics. Whether you are just starting out or looking to refine or rebrand, we are your trusted partner in building a brand that stands the test of time.</p>
+				<p>Our strategy is not just about improving aesthetics it’s about making your brand meaningful, impactful, and memorable in the minds of your customers.</p>
+				<h2>🚀 <strong>Our Expertise</strong></h2>
+				<p>With years of experience working alongside top-tier companies and industry leaders, Holytype knows what it takes to succeed in today’s competitive landscape. We are not simply here to help you grow your brand; we are here to make it unforgettable.</p>
+				<p>If you’re ready to elevate your brand and position it for long-term success, Holytype is here to guide you. Together, we will create a brand that not only stands out but lasts.</p>
+				<!-- Botón de cierre --><button id="close-btn" class="unique-modal-close-btn">&times;</button> </div>
 		</div>
-  
-		<!-- Right Content -->
-		<form action="https://formsubmit.co/277769d69d33b524e0ab0d4b14e4752a" method="POST" id="customContactForm2" class="unique-modal-form">
-			<input type="hidden" name="_subject" value="GROW me">
-			<input type="hidden" name="_template" value="table">
-		  <div>
-			<label for="customName" class="unique-modal-label">Your Name</label>
-			<input type="text" id="customName2" name="name" required class="unique-modal-input">
-		  </div>
-		  <div>
-			<label for="customEmail" class="unique-modal-label">Your Email</label>
-			<input type="email" id="customEmail2" name="email" required class="unique-modal-input">
-		  </div>
-		  <div>
-			<label for="customPhone" class="unique-modal-label">Your Phone</label>
-			<input type="text" id="customPhone2" name="phone" required class="unique-modal-input">
-		  </div>
-		  <div>
-			<label for="customMessage" class="unique-modal-label">Your Message</label>
-			<textarea id="customMessage2" name="message" rows="4" required class="unique-modal-input"></textarea>
-		  </div>
-		  <button type="submit" class="bubbly-button-w" style="width: 100%;">ready, set, go!</button>
-		</form>
-	  </div>
-	</div>
-  </div>
-
-
-  <!-- Modal -->
-<div id="customContactModal3" class="unique-modal-overlay" style="display: none;">
-	<div class="unique-modal-content drk">
-	  <!-- Close Button -->
-	  <button id="customCloseModalBtn3" class="unique-modal-close-btn">&times;</button>
-  
-	  <div class="unique-modal-grid">
-		<!-- Left Content -->
-		<div class="unique-modal-left">
-		  <h2 class="unique-modal-title">Transform your brand and expand your reach with a powerful omnichannel strategy!</h2>
-		  <p class="unique-modal-description">
-			We will get in touch with you shortly to gather more details about the service you need.
-		  </p>
-		  <img src="./mail-01.png" alt="Ilustración de contacto" class="unique-modal-image">
+		<div id="service2-modal" class="modal hidden">
+			<div class="modal-content drk">
+				<!-- Título -->
+				<h1>🎨 Visual Identity</h1>
+				<!-- Subtítulo -->
+				<h2>Create a unique and memorable visual identity that resonates with your audience</h2>
+				<hr class="phr"> <br>
+				<!-- Contenido -->
+				<p>At Holytype, we understand that your brand’s visual identity is much more than just a design it is a complete and cohesive system that tells your story, embodies your values, and forms an emotional connection with your audience. We specialize in crafting tailored visual elements logos, color palettes, typography that reflect the essence of your brand and seamlessly align with your strategic goals.</p>
+				<h2>💡 Why is Visual Identity Essential?</h2>
+				<p>A strong visual identity is a fundamental asset for any brand looking to stand out in a crowded market. It ensures recognition, consistency, and emotional resonance, making your brand memorable and distinct. Whether you’re launching a new business or evolving an established one, your visual identity needs to encapsulate your brand’s core message and differentiate you from the competition.</p>
+				<p>In a digital-first world, your visual identity speaks before any words are written. It’s the first impression, the message that immediately communicates who you are and what you stand for. Without a unified, distinctive identity, a brand risks being lost in the noise.</p>
+				<h2>🌟 Our Approach to Visual Identity</h2>
+				<p>At Holytype, our process goes beyond simply selecting colors or designing a logo. We focus on the essence of your brand how it feels, how it speaks, and how it connects. We design a visual system that is not only adaptable and scalable but also emotionally resonant with your audience. Every decision, from typography to color schemes, is made to support your overarching brand narrative and ensure consistency across all touchpoints.</p>
+				<p>Our approach guarantees that your visual identity is not only aesthetically pleasing but also strategically aligned with your brand’s mission and goals. This holistic view ensures that your brand makes a meaningful impact and remains relevant across diverse platforms and mediums.</p>
+				<h2>🖌️ What We Offer in Our Visual Identity Service</h2>
+				<ul>
+					<li><strong>🎨 Logo Design:</strong> We create custom logos that do more than just look good they are meaningful, memorable, and perfectly aligned with your brand’s core values. Each logo is crafted to represent your unique identity and serve as the cornerstone of your visual identity system.</li>
+					<li><strong>🌈 Color Palettes:</strong> Color plays a vital role in perception. We carefully select color schemes that evoke the right emotions, reflect your brand’s personality, and help your business stand out in a competitive marketplace.</li>
+					<li><strong>🖋️ Typography:</strong> Typography is more than just a font; it’s a reflection of your brand’s voice. We choose typefaces that complement your brand’s tone, ensuring clarity, legibility, and consistency across all your materials.</li>
+					<li><strong>📐 Brand Style Guide:</strong> To maintain consistency, we create a comprehensive style guide that defines how to use your visual elements across different applications. This guide ensures that your brand looks cohesive, whether online, in print, or on digital platforms.</li>
+				</ul> <br>
+				<h2>🔍 What Will You Achieve with Our Visual Identity Service?</h2>
+				<ul>
+					<li><strong>🌍 Instant Brand Recognition:</strong> A distinctive, well-designed visual identity ensures that your brand stands out and is instantly recognizable, building trust and credibility with your target audience.</li>
+					<li><strong>💡 Consistent Brand Messaging:</strong> Consistency is key. We ensure your visual identity is applied consistently across all platforms and materials, reinforcing your brand message and strengthening your market position.</li>
+					<li><strong>✨ Memorable Impact:</strong> We design visual identities that leave a lasting impression. With a cohesive and unique visual system, your brand will stay top-of-mind, establishing a deep connection with your audience.</li>
+				</ul> <br>
+				<h2>🌟 Our Strategic Process</h2>
+				<p>Holytype’s approach to visual identity is grounded in strategy. We begin by immersing ourselves in your brand’s values, goals, and target audience. Our team combines creativity with strategic insight to develop a visual identity that aligns with your brand’s mission and resonates with your audience.</p>
+				<p>We don’t just create designs we create <strong>brand experiences</strong> that engage and leave a lasting impression. From the selection of colors to the creation of custom logos and typefaces, our process is focused on building a cohesive, scalable identity that grows with your business.</p>
+				<h2>🚀 Why Choose Holytype for Your Visual Identity?</h2>
+				<p>With years of experience in brand design, Holytype has the expertise to help companies like yours create visual identities that are not only eye-catching but strategically impactful. We are committed to designing a visual identity that reflects the true essence of your brand and differentiates you in a competitive landscape.</p>
+				<p>If you’re ready to elevate your brand’s visual presence and make an unforgettable impact, Holytype is here to help. Together, we’ll build a visual identity that truly represents your brand and helps it stand out in your industry.</p>
+				<!-- Botón de cierre --><button id="close-btn2" class="unique-modal-close-btn">&times;</button> </div>
 		</div>
-  
-		<!-- Right Content -->
-		<form action="https://formsubmit.co/277769d69d33b524e0ab0d4b14e4752a" method="POST" id="customContactForm3" class="unique-modal-form">
-			<input type="hidden" name="_subject" value="SCALE me">
-			<input type="hidden" name="_template" value="table">
-		  <div>
-			<label for="customName" class="unique-modal-label">Your Name</label>
-			<input type="text" id="customName3" name="name" required class="unique-modal-input">
-		  </div>
-		  <div>
-			<label for="customEmail" class="unique-modal-label">Your Email</label>
-			<input type="email" id="customEmail3" name="email" required class="unique-modal-input">
-		  </div>
-		  <div>
-			<label for="customPhone" class="unique-modal-label">Your Phone</label>
-			<input type="text" id="customPhone3" name="phone" required class="unique-modal-input">
-		  </div>
-		  <div>
-			<label for="customMessage" class="unique-modal-label">Your Message</label>
-			<textarea id="customMessage3" name="message" rows="4" required class="unique-modal-input"></textarea>
-		  </div>
-		  <button type="submit" class="bubbly-button-w" style="width: 100%;">ready, set, go!</button>
-		</form>
-	  </div>
-	</div>
-  </div>
-  
-  
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/5493329208747?text=Hi%20there!%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Could%20you%20provide%20me%20with%20more%20details%3F" 
-   class="whatsapp-btn" 
-   target="_blank" 
-   rel="noopener noreferrer">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/640px-WhatsApp_icon.png" 
-       alt="WhatsApp" 
-       class="whatsapp-icon">
-</a>
+		<div id="service3-modal" class="modal hidden">
+			<div class="modal-content drk">
+				<!-- Título -->
+				<h1>📈 Growth Strategies</h1>
+				<!-- Subtítulo -->
+				<h2>Boost your reach and drive sustainable growth with targeted marketing campaigns</h2>
+				<hr class="phr"> <br>
+				<!-- Contenido -->
+				<p>At Holytype, we understand that true growth is not just about expanding your reach it's about building a strong foundation for sustained success. Our Growth Strategies service is designed to help you achieve measurable, meaningful results that support the long-term vision of your brand. By leveraging data-driven insights, we analyze your market, study your audience, and craft strategies that fuel growth across every touchpoint.</p>
+				<h2>🔍 Why Are Growth Strategies Crucial?</h2>
+				<p>In today’s fast-paced and competitive landscape, having a great product or service is no longer enough. To truly thrive, you need a well-thought-out strategy that targets the right audience, uses the best marketing channels, and communicates your message in ways that engage and inspire action. A solid growth strategy ensures that each marketing effort contributes to your overarching goals and leads to a more substantial impact.</p>
+				<p>At Holytype, we focus on more than just growth we focus on scalable, sustainable growth that delivers results over the long run. We align our approach to your unique needs, ensuring that the strategies we develop are tailored, effective, and flexible enough to evolve with your business.</p>
+				<h2>🌱 Our Methodology</h2>
+				<p>We believe in maximizing your brand's potential by identifying and leveraging key opportunities in the market. Our strategies are adaptable to shifting consumer behaviors, emerging trends, and the latest marketing technologies. We understand that every business is different, which is why our solutions are customized to fit your specific objectives while remaining flexible enough to evolve as your brand grows.</p>
+				<h2>💥 What Do We Offer in Our Growth Strategies Service?</h2>
+				<ul>
+					<li><strong>🎯 Targeted Marketing Campaigns:</strong> We design laser-focused campaigns aimed at reaching your ideal audience, increasing engagement, and driving conversions across the most effective platforms.</li>
+					<li><strong>📊 Market & Audience Analysis:</strong> Through in-depth market research and audience analysis, we uncover valuable insights that enable us to tailor strategies that resonate with your target market and optimize your marketing efforts.</li>
+					<li><strong>📈 Brand Messaging Optimization:</strong> We craft compelling, consistent messaging that clearly communicates your value while fostering loyalty and deeper emotional connections with your audience.</li>
+					<li><strong>📅 Long-Term Strategy Development:</strong> Our growth strategies are built with sustainability in mind, ensuring that your success is not just rapid, but also steady, with measurable results you can track over time.</li>
+				</ul> <br>
+				<h2>🔄 What Will You Achieve with Our Growth Strategies?</h2>
+				<ul>
+					<li><strong>🌍 Increased Visibility:</strong> Our targeted campaigns ensure your brand reaches the right people, increasing awareness and attracting qualified leads across multiple platforms.</li>
+					<li><strong>📊 Measurable Results:</strong> We are committed to data-driven decisions. Every campaign and strategy is tracked and analyzed, ensuring that you see tangible results that translate into real business growth.</li>
+					<li><strong>🚀 Sustainable Growth:</strong> Our strategies create a solid foundation for ongoing expansion, ensuring your brand continues to thrive long after the initial campaign.</li>
+				</ul>
+				<h2>🌟 Our Approach</h2>
+				<p>At Holytype, we take a holistic approach to driving growth. We start by gaining a deep understanding of your business, goals, and challenges. Our team of experts then collaborates with you to develop strategies that not only produce short-term wins but also set the stage for long-term success. We work across all facets of digital marketing from content creation and SEO to paid advertising and social media engagement ensuring your brand always connects with your audience at the right time and in the right way.</p>
+				<p>Growth is a journey, not just a destination. Our strategies evolve as your business grows, ensuring every step you take leads to sustainable success. From initial launches to scaling efforts, we are dedicated to being your partner in driving meaningful, measurable growth for your brand.</p>
+				<h2>🚀 Why Choose Holytype?</h2>
+				<p>With years of experience helping global brands achieve growth, Holytype is the partner you need to scale your business effectively. We help uncover new opportunities, create actionable strategies, and achieve the growth your brand deserves.</p>
+				<p>If you’re ready to unlock new levels of success, Holytype is here to guide you. Let us craft growth strategies that not only boost your performance but also deliver long-lasting results.</p>
+				<!-- Botón de cierre --><button id="close-btn3" class="unique-modal-close-btn">&times;</button> </div>
+		</div>
+		<!-- JAVASCRIPT -->
+		<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="https://codepen.io/wodniack/pen/YzmgGzP/b66656b6c21a73b4ca05fda86662cc3a.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+		<script src="mycode.js"></script>
+		<!--Start of Tawk.to Script-->
+		<script type="text/javascript">
+			var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+				(function(){
+				var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+				s1.async=true;
+				s1.src='https://embed.tawk.to/674d36814304e3196aeb3922/1ie2ppr72';
+				s1.charset='UTF-8';
+				s1.setAttribute('crossorigin','*');
+				s0.parentNode.insertBefore(s1,s0);
+				})();
+			
+		</script>
+		<!--End of Tawk.to Script-->
+	</body>
 
 
-<!--MODAL FROM OUR SERVICES-->
-<div id="service1-modal" class="modal hidden">
-    <div class="modal-content drk">
-        <!-- Título -->
-        <h1>🚀 <strong>Brand Strategy</strong></h1>
-        
-        <!-- Subtítulo -->
-        <h2><strong>Build a strong, authentic brand that connects emotionally with your audience</strong></h2>
-        <hr class="phr">
-		<br>
-        <!-- Contenido -->
-        <p>At Holytype, we believe that a brand is much more than just a logo, name, or product it is a narrative, a promise, and a genuine connection with your audience. Our <strong>Brand Strategy</strong> service is designed to craft a comprehensive approach that defines your brand’s vision, mission, and core values, ensuring each element communicates with clarity, purpose, and consistency.</p>
-
-        <h2>💡 <strong>Why is a Strong Brand Strategy Essential?</strong></h2>
-        <p>A well-defined brand strategy is the foundation of everything your company represents. It determines how you are perceived in the market, how you differentiate from competitors, and how you connect emotionally with your audience. With a clear and compelling strategy, you do not just stand out you build trust, foster loyalty, and create a lasting bond with your customers.</p>
-        <p>Without a clear brand strategy, businesses risk becoming fragmented, inconsistent, and ultimately irrelevant in the eyes of their target market. That’s where Holytype comes in. We offer the structure, insights, and creative direction needed to elevate your brand, ensuring it resonates and thrives.</p>
-
-        <h2>🧩 <strong>What Does Our Brand Strategy Service Include?</strong></h2>
-        <ul>
-            <li><strong>🏆 Vision & Mission Clarity:</strong> We collaborate with you to define your brand’s purpose and strategic direction, ensuring that every decision and action aligns with your long-term vision while resonating with your target audience.</li>
-            <li><strong>🧭 Core Values that Matter:</strong> We identify the fundamental principles that guide your brand’s decisions and actions, ensuring consistency, authenticity, and alignment across all touchpoints.</li>
-            <li><strong>🌟 Competitive Differentiation:</strong> We develop a unique strategy that sets your brand apart in a crowded marketplace, emphasizing what makes your business special and worth choosing.</li>
-            <li><strong>💖 Emotional Connection:</strong> We go beyond transactional relationships, focusing on creating a deep emotional bond with your customers to ensure your brand is memorable, loved, and trusted.</li>
-        </ul>
-		<br>
-        <h2>🎯 <strong>What Will You Achieve with Our Brand Strategy?</strong></h2>
-        <ul>
-            <li><strong>🌱 A Solid Foundation:</strong> Establish a robust, sustainable brand identity that resonates with your audience from day one, setting the stage for consistent growth.</li>
-            <li><strong>📣 Increased Visibility and Reach:</strong> With a well-defined value proposition and differentiated brand, you will gain greater visibility across key channels, ensuring the right message reaches the right audience.</li>
-            <li><strong>🔄 Brand Loyalty & Trust:</strong> By building an emotional connection with your customers, you’ll foster long-term relationships that lead to repeat business and brand advocacy.</li>
-        </ul>
-
-        <h2>⏳ <strong>Our Approach</strong></h2>
-        <p>At Holytype, we adopt a collaborative, hands-on approach to developing your brand strategy. We immerse ourselves in understanding your business, culture, and goals, ensuring that every aspect of your brand strategy is tailored to your unique needs and market dynamics. Whether you are just starting out or looking to refine or rebrand, we are your trusted partner in building a brand that stands the test of time.</p>
-        <p>Our strategy is not just about improving aesthetics it’s about making your brand meaningful, impactful, and memorable in the minds of your customers.</p>
-
-        <h2>🚀 <strong>Our Expertise</strong></h2>
-        <p>With years of experience working alongside top-tier companies and industry leaders, Holytype knows what it takes to succeed in today’s competitive landscape. We are not simply here to help you grow your brand; we are here to make it unforgettable.</p>
-        <p>If you’re ready to elevate your brand and position it for long-term success, Holytype is here to guide you. Together, we will create a brand that not only stands out but lasts.</p>
-
-        <!-- Botón de cierre -->
-        <button id="close-btn" class="unique-modal-close-btn">&times;</button>
-    </div>
-</div>
-
-
-
-<div id="service2-modal" class="modal hidden">
-    <div class="modal-content drk">
-        <!-- Título -->
-        <h1>🎨 Visual Identity</h1>
-        <!-- Subtítulo -->
-        <h2>Create a unique and memorable visual identity that resonates with your audience</h2>
-		<hr class="phr">
-		<br>
-        <!-- Contenido -->
-        <p>At Holytype, we understand that your brand’s visual identity is much more than just a design it is a complete and cohesive system that tells your story, embodies your values, and forms an emotional connection with your audience. We specialize in crafting tailored visual elements logos, color palettes, typography that reflect the essence of your brand and seamlessly align with your strategic goals.</p>
-        
-        <h2>💡 Why is Visual Identity Essential?</h2>
-        <p>A strong visual identity is a fundamental asset for any brand looking to stand out in a crowded market. It ensures recognition, consistency, and emotional resonance, making your brand memorable and distinct. Whether you’re launching a new business or evolving an established one, your visual identity needs to encapsulate your brand’s core message and differentiate you from the competition.</p>
-        <p>In a digital-first world, your visual identity speaks before any words are written. It’s the first impression, the message that immediately communicates who you are and what you stand for. Without a unified, distinctive identity, a brand risks being lost in the noise.</p>
-
-        <h2>🌟 Our Approach to Visual Identity</h2>
-        <p>At Holytype, our process goes beyond simply selecting colors or designing a logo. We focus on the essence of your brand how it feels, how it speaks, and how it connects. We design a visual system that is not only adaptable and scalable but also emotionally resonant with your audience. Every decision, from typography to color schemes, is made to support your overarching brand narrative and ensure consistency across all touchpoints.</p>
-        <p>Our approach guarantees that your visual identity is not only aesthetically pleasing but also strategically aligned with your brand’s mission and goals. This holistic view ensures that your brand makes a meaningful impact and remains relevant across diverse platforms and mediums.</p>
-
-        <h2>🖌️ What We Offer in Our Visual Identity Service</h2>
-        <ul>
-            <li><strong>🎨 Logo Design:</strong> We create custom logos that do more than just look good they are meaningful, memorable, and perfectly aligned with your brand’s core values. Each logo is crafted to represent your unique identity and serve as the cornerstone of your visual identity system.</li>
-            <li><strong>🌈 Color Palettes:</strong> Color plays a vital role in perception. We carefully select color schemes that evoke the right emotions, reflect your brand’s personality, and help your business stand out in a competitive marketplace.</li>
-            <li><strong>🖋️ Typography:</strong> Typography is more than just a font; it’s a reflection of your brand’s voice. We choose typefaces that complement your brand’s tone, ensuring clarity, legibility, and consistency across all your materials.</li>
-            <li><strong>📐 Brand Style Guide:</strong> To maintain consistency, we create a comprehensive style guide that defines how to use your visual elements across different applications. This guide ensures that your brand looks cohesive, whether online, in print, or on digital platforms.</li>
-        </ul>
-		<br>
-        <h2>🔍 What Will You Achieve with Our Visual Identity Service?</h2>
-        <ul>
-            <li><strong>🌍 Instant Brand Recognition:</strong> A distinctive, well-designed visual identity ensures that your brand stands out and is instantly recognizable, building trust and credibility with your target audience.</li>
-            <li><strong>💡 Consistent Brand Messaging:</strong> Consistency is key. We ensure your visual identity is applied consistently across all platforms and materials, reinforcing your brand message and strengthening your market position.</li>
-            <li><strong>✨ Memorable Impact:</strong> We design visual identities that leave a lasting impression. With a cohesive and unique visual system, your brand will stay top-of-mind, establishing a deep connection with your audience.</li>
-        </ul>
-		<br>
-        <h2>🌟 Our Strategic Process</h2>
-        <p>Holytype’s approach to visual identity is grounded in strategy. We begin by immersing ourselves in your brand’s values, goals, and target audience. Our team combines creativity with strategic insight to develop a visual identity that aligns with your brand’s mission and resonates with your audience.</p>
-        <p>We don’t just create designs we create <strong>brand experiences</strong> that engage and leave a lasting impression. From the selection of colors to the creation of custom logos and typefaces, our process is focused on building a cohesive, scalable identity that grows with your business.</p>
-
-        <h2>🚀 Why Choose Holytype for Your Visual Identity?</h2>
-        <p>With years of experience in brand design, Holytype has the expertise to help companies like yours create visual identities that are not only eye-catching but strategically impactful. We are committed to designing a visual identity that reflects the true essence of your brand and differentiates you in a competitive landscape.</p>
-        <p>If you’re ready to elevate your brand’s visual presence and make an unforgettable impact, Holytype is here to help. Together, we’ll build a visual identity that truly represents your brand and helps it stand out in your industry.</p>
-
-        <!-- Botón de cierre -->
-        <button id="close-btn2" class="unique-modal-close-btn">&times;</button>
-    </div>
-</div>
-
-
-
-<div id="service3-modal" class="modal hidden">
-    <div class="modal-content drk">
-        <!-- Título -->
-        <h1>📈 Growth Strategies</h1>
-        <!-- Subtítulo -->
-        <h2>Boost your reach and drive sustainable growth with targeted marketing campaigns</h2>
-        <hr class="phr">
-		<br>
-        <!-- Contenido -->
-        <p>At Holytype, we understand that true growth is not just about expanding your reach it's about building a strong foundation for sustained success. Our Growth Strategies service is designed to help you achieve measurable, meaningful results that support the long-term vision of your brand. By leveraging data-driven insights, we analyze your market, study your audience, and craft strategies that fuel growth across every touchpoint.</p>
-        
-        <h2>🔍 Why Are Growth Strategies Crucial?</h2>
-        <p>In today’s fast-paced and competitive landscape, having a great product or service is no longer enough. To truly thrive, you need a well-thought-out strategy that targets the right audience, uses the best marketing channels, and communicates your message in ways that engage and inspire action. A solid growth strategy ensures that each marketing effort contributes to your overarching goals and leads to a more substantial impact.</p>
-        <p>At Holytype, we focus on more than just growth we focus on scalable, sustainable growth that delivers results over the long run. We align our approach to your unique needs, ensuring that the strategies we develop are tailored, effective, and flexible enough to evolve with your business.</p>
-
-        <h2>🌱 Our Methodology</h2>
-        <p>We believe in maximizing your brand's potential by identifying and leveraging key opportunities in the market. Our strategies are adaptable to shifting consumer behaviors, emerging trends, and the latest marketing technologies. We understand that every business is different, which is why our solutions are customized to fit your specific objectives while remaining flexible enough to evolve as your brand grows.</p>
-
-        <h2>💥 What Do We Offer in Our Growth Strategies Service?</h2>
-        <ul>
-            <li><strong>🎯 Targeted Marketing Campaigns:</strong> We design laser-focused campaigns aimed at reaching your ideal audience, increasing engagement, and driving conversions across the most effective platforms.</li>
-            <li><strong>📊 Market & Audience Analysis:</strong> Through in-depth market research and audience analysis, we uncover valuable insights that enable us to tailor strategies that resonate with your target market and optimize your marketing efforts.</li>
-            <li><strong>📈 Brand Messaging Optimization:</strong> We craft compelling, consistent messaging that clearly communicates your value while fostering loyalty and deeper emotional connections with your audience.</li>
-            <li><strong>📅 Long-Term Strategy Development:</strong> Our growth strategies are built with sustainability in mind, ensuring that your success is not just rapid, but also steady, with measurable results you can track over time.</li>
-        </ul>
-		<br>
-        <h2>🔄 What Will You Achieve with Our Growth Strategies?</h2>
-        <ul>
-            <li><strong>🌍 Increased Visibility:</strong> Our targeted campaigns ensure your brand reaches the right people, increasing awareness and attracting qualified leads across multiple platforms.</li>
-            <li><strong>📊 Measurable Results:</strong> We are committed to data-driven decisions. Every campaign and strategy is tracked and analyzed, ensuring that you see tangible results that translate into real business growth.</li>
-            <li><strong>🚀 Sustainable Growth:</strong> Our strategies create a solid foundation for ongoing expansion, ensuring your brand continues to thrive long after the initial campaign.</li>
-        </ul>
-
-        <h2>🌟 Our Approach</h2>
-        <p>At Holytype, we take a holistic approach to driving growth. We start by gaining a deep understanding of your business, goals, and challenges. Our team of experts then collaborates with you to develop strategies that not only produce short-term wins but also set the stage for long-term success. We work across all facets of digital marketing from content creation and SEO to paid advertising and social media engagement ensuring your brand always connects with your audience at the right time and in the right way.</p>
-        
-        <p>Growth is a journey, not just a destination. Our strategies evolve as your business grows, ensuring every step you take leads to sustainable success. From initial launches to scaling efforts, we are dedicated to being your partner in driving meaningful, measurable growth for your brand.</p>
-
-        <h2>🚀 Why Choose Holytype?</h2>
-        <p>With years of experience helping global brands achieve growth, Holytype is the partner you need to scale your business effectively. We help uncover new opportunities, create actionable strategies, and achieve the growth your brand deserves.</p>
-        <p>If you’re ready to unlock new levels of success, Holytype is here to guide you. Let us craft growth strategies that not only boost your performance but also deliver long-lasting results.</p>
-
-        <!-- Botón de cierre -->
-        <button id="close-btn3" class="unique-modal-close-btn">&times;</button>
-    </div>
-</div>
-
-
-
-
-
-  
-
-
-
-
-
-    <!-- JAVASCRIPT -->
-	
-	<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-	<script src="https://codepen.io/wodniack/pen/YzmgGzP/b66656b6c21a73b4ca05fda86662cc3a.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-	<script src="mycode.js"></script>
-
-
-
-
-
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-	(function(){
-	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-	s1.async=true;
-	s1.src='https://embed.tawk.to/674d36814304e3196aeb3922/1ie2ppr72';
-	s1.charset='UTF-8';
-	s1.setAttribute('crossorigin','*');
-	s0.parentNode.insertBefore(s1,s0);
-	})();
-	</script>
-	<!--End of Tawk.to Script-->
-
-</body>
 
 </html>
-
-
-
-

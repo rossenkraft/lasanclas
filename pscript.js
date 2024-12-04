@@ -242,3 +242,29 @@ function customScrollTo(target, duration = 500) {
 
     requestAnimationFrame(animateScroll);
 }
+
+// menú hamburguesa -------------------------------------------------------------------
+// Obtén el botón de hamburguesa y el menú
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const mobileMenu = document.getElementById('mobile-menu-2');
+const header = document.getElementById('header');  // Asegúrate de darle un id a tu header
+
+// Función para abrir/cerrar el menú
+hamburgerIcon.addEventListener('click', () => {
+    const isExpanded = hamburgerIcon.getAttribute('aria-expanded') === 'true';
+    hamburgerIcon.setAttribute('aria-expanded', !isExpanded); // Alterna el estado del menú
+    mobileMenu.classList.toggle('hidden'); // Alterna la visibilidad del menú
+
+    // Cambiar el fondo del header
+    header.classList.toggle('bg-black');  // Añadir o quitar la clase bg-black
+});
+
+// Cierra el menú si se hace clic en un enlace del menú
+const menuLinks = mobileMenu.querySelectorAll('a');
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden'); // Oculta el menú
+        hamburgerIcon.setAttribute('aria-expanded', 'false'); // Marca que el menú está cerrado
+        header.classList.remove('bg-black');  // Quitar el fondo negro al cerrar
+    });
+});
