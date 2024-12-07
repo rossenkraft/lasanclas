@@ -10,13 +10,14 @@ body, html {
 }
 
 .image-container {
-    width: 640px;  /* Ancho fijo */
+    width: 100%;  /* Ancho del contenedor es el 100% del dispositivo */
+    max-width: 640px;  /* Límite máximo de 640px */
     margin: 0 auto;  /* Centrado horizontal */
     overflow: hidden; /* Para asegurar que no haya desplazamiento vertical */
 }
 
 .image {
-    width: 100%;   /* El ancho será siempre 640px */
+    width: 100%;   /* El ancho de la imagen será el 100% del contenedor */
     height: auto;  /* El alto se ajustará proporcionalmente */
     display: block; /* Elimina espacio debajo de la imagen */
 }
