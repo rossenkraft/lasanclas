@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background-color: black;
+}
+
+.image-container {
+    width: 640px;  /* Ancho fijo */
+    margin: 0 auto;  /* Centrado horizontal */
+    overflow: hidden; /* Para asegurar que no haya desplazamiento vertical */
+}
+
+.image {
+    width: 100%;   /* El ancho será siempre 640px */
+    height: auto;  /* El alto se ajustará proporcionalmente */
+    display: block; /* Elimina espacio debajo de la imagen */
+}
+
+.home-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0080FF;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.home-button:hover {
+    background-color: #005bb5;
+}
