@@ -11,7 +11,7 @@ body, html {
 
 .image-container {
     width: 100%;  /* Ancho del contenedor es el 100% del dispositivo */
-    max-width: 640px;  /* Límite máximo de 640px */
+    max-width: 1000px;  /* Límite máximo de 640px */
     margin: 0 auto;  /* Centrado horizontal */
     overflow: hidden; /* Para asegurar que no haya desplazamiento vertical */
 }
@@ -36,8 +36,10 @@ body, html {
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 60px;
+    height: 60px;
 }
 
 .home-button:hover {
-    background-color: #005bb5;
+    background-color: #00d3FF;
 }
