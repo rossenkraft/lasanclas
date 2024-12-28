@@ -3215,7 +3215,7 @@ header nav .lg\:flex ul li {
   }
 
   header nav .flex.items-center img {
-      height: 25px;  /* Reducir el tamaño del logo en móviles */
+      height: 21px;  /* Reducir el tamaño del logo en móviles */
   }
 
   #hamburger-icon {
