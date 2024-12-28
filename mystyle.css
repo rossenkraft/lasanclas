@@ -3183,7 +3183,8 @@ header nav {
 
 /* Logo */
 header nav .flex.items-center img {
-  height: 60px;  /* Ajustar la altura del logo */
+  height: 33px;
+  margin: 10px 0 10px 0;
 }
 
 /* Menú hamburguesa */
@@ -3214,7 +3215,7 @@ header nav .lg\:flex ul li {
   }
 
   header nav .flex.items-center img {
-      height: 46px;  /* Reducir el tamaño del logo en móviles */
+      height: 25px;  /* Reducir el tamaño del logo en móviles */
   }
 
   #hamburger-icon {
@@ -4591,7 +4592,7 @@ p {
   }
 
   .logoholy{
-    width: 180%;
+    width: 100%;
     height: auto;
   }
 
@@ -4609,7 +4610,7 @@ p {
   }
 
   .downlogo {
-    width: 80px;
+    width: 180px;
     height: auto;
   }
 }

@@ -1594,7 +1594,7 @@ input:checked+.toggle-bg {
 		display: flex
 	}
 	.sm\:h-9 {
-		height: 5rem
+		height: 2rem
 	}
 	.sm\:w-auto {
 		width: auto
