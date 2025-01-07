@@ -3709,11 +3709,11 @@ a-waves {
 
 /* Aseguramos que todos los elementos de la grilla tengan el mismo tamaño */
 .portfolio-item {
-  width: 100%;
-  max-height: 300px;
+  width: 90%;
   position: relative; /* Necesario para la capa overlay */
   overflow: hidden;  /* Asegura que la imagen y el overlay no sobresalgan */
   border-radius: 8px; /* Bordes redondeados */
+  margin: 20px;
 }
 
 /* Overlay para el hover */
@@ -4597,11 +4597,11 @@ p {
   }
 
   .portfolio-item {
-    width: 100%;
-    max-height: 150px;
-    position: relative; /* Necesario para la capa overlay */
-    overflow: hidden;  /* Asegura que la imagen y el overlay no sobresalgan */
-    border-radius: 8px; /* Bordes redondeados */
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 20px;
   }
 
   .bb1, .bb2{
@@ -4770,4 +4770,21 @@ p {
 
 .tawk-icon img {
   display: none !important;
+}
+
+.portfolio-item {
+  aspect-ratio: 1;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1; /* Ajusta el aspecto a cuadrado (puedes usar 16/9, 4/3, etc.) */
+  overflow: hidden;
+}
+
+.image-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen mantenga sus proporciones y llene el contenedor */
 }
