@@ -38,9 +38,9 @@ html {
 }
 
 
-#section-2 {
+#section-1 {
   position: relative;
-  background-image: url('https://cdn.dribbble.com/userupload/16331637/file/original-3299a804ebc86d866d63e3be93dfa231.png');
+  background-image: url('/bg-1.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -50,6 +50,32 @@ html {
   justify-content: center;
   align-items: center;
 }
+
+#section-2 {
+	position: relative;
+	background-image: url('/bg-2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  #section-3 {
+	position: relative;
+	background-image: url('/bg-4.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
 
 
 
@@ -83,7 +109,7 @@ html {
 
 #section-4 {
   position: relative;
-  background-image: url('https://cdn.dribbble.com/users/3837025/screenshots/7166959/media/e0f92069305fd2fdd1fad2acac7d69d1.png');
+  background-image: url('/bg-3.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
