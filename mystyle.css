@@ -52,22 +52,22 @@ body {
  /* Definir la animación */
 @keyframes fondoAnimado {
   0% {
-    background-color: rgb(0, 0, 0, 0.5); /* Primer color con transparencia */
+    background-color: rgb(3, 13, 73, 0.8); /* Primer color con transparencia */
   }
   20% {
-    background-color: rgb(0, 20, 74, 0.5); /* Segundo color */
+    background-color: rgba(0, 14, 53, 0.8); /* Segundo color */
   }
   40% {
-    background-color: rgba(0, 17, 112, 1, 0.5); /* Tercer color */
+    background-color: rgba(0, 5, 37, 0.8); /* Tercer color */
   }
   60% {
-    background-color: rgb(4, 11, 53, 0.5); /* Regresa al primer color */
+    background-color: rgba(3, 13, 73, 0.8); /* Regresa al primer color */
   }
   80% {
-    background-color: rgb(0, 27, 183, 0.5); /* Regresa al primer color */
+    background-color: rgba(0, 14, 53, 0.8); /* Regresa al primer color */
   }
   100% {
-    background-color: rgb(0, 0, 0, 0.5); /* Regresa al primer color */
+    background-color: rgba(3, 13, 73, 0.8); /* Regresa al primer color */
   }
 }
 
@@ -3047,7 +3047,7 @@ body {
 
 /* Modal Content */
 .unique-modal-content {
-  background: background: linear-gradient(227deg, #122d3b, #00baff);
+  background: linear-gradient(227deg, #122d3b, #00baff);
   color: #ffffff;
   border-radius: 12px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
@@ -4164,7 +4164,7 @@ a-waves {
 
 .drk3 {
   background: 
-    linear-gradient(227deg, rgba(0, 5,66, 0.5), rgba(0,5,66,0.7), rgba(0,0,0,1)),
+    linear-gradient(10deg, rgba(0, 5,66, 0.7), rgba(0,5,66,0.7), rgba(0,0,0,1)),
     url('sea2.jpg');
   background-size: cover;
   background-position: center;
@@ -4174,7 +4174,7 @@ a-waves {
 
 .drk4 {
   background: 
-    linear-gradient(227deg, rgba(0, 5,66, 0.5), rgba(0,5,66,0.7), rgba(0,0,0,1)),
+    linear-gradient(10deg, rgba(0, 5,66, 0.5), rgba(0,5,66,0.7), rgba(0,0,0,1)),
     url('sea4.jpg');
   background-size: cover;
   background-position: center;
@@ -4191,7 +4191,7 @@ a-waves {
 
 .lght1 {
   background: 
-    linear-gradient(90deg, rgb(255, 255, 255,1), rgb(255, 255, 255,1), rgb(255, 255, 255,0.5)),
+    linear-gradient(90deg, rgb(255, 255, 255,1), rgb(255, 255, 255,0.9), rgb(255, 255, 255,0.6)),
     url('sea.jpg');
     color: #122d3b;
 }
@@ -4831,4 +4831,8 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Asegura que la imagen mantenga sus proporciones y llene el contenedor */
+}
+
+.opinions {
+  background-color: #ffffff;
 }
