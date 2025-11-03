@@ -614,3 +614,5 @@ serviceBtn.addEventListener('mouseover', () => {
 serviceBtn.addEventListener('mouseout', () => {
     ctaIcon.classList.remove('animate__animated', 'animate__jello');  // Quitar la animación si se usa Animate.css
 });
+
+// Comentario
