@@ -96,8 +96,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(103, 0, 112, 0.6); /* Primer color con opacidad */
-  animation: fondoAnimado 8s infinite alternate;
+  background: linear-gradient(0deg,#020017,#020017,#020017,rgba(2, 0, 23,0.5),rgba(2, 0, 23,0)); /* Primer color con opacidad */
   z-index: 1; /* Poner la capa de color por encima del video */
 }
 
@@ -3763,7 +3762,7 @@ a-waves {
 }
 
 .filter-btn:hover {
-  background-color: #555;
+  background-color: #ff7a00;
 }
 
 .filter-btn.active {
@@ -3880,7 +3879,7 @@ a-waves {
   padding: 1em 2em;
   -webkit-appearance: none;
   appearance: none;
-  background: linear-gradient(227deg, #006ea5, #006ea5); /* Color de fondo actualizado */
+  background: linear-gradient(227deg, #0044FF, #0044FF); /* Color de fondo actualizado */
   color: #fff;
   border-radius: 10px;
   border: none;
@@ -3914,28 +3913,28 @@ a-waves {
 .bubbly-button:before {
   display: none;
   top: -75%;
-  background-image: radial-gradient(circle, #006ea5 20%, transparent 20%), 
-                    radial-gradient(circle, transparent 20%, #006ea5 20%, transparent 30%), 
-                    radial-gradient(circle, #006ea5 20%, transparent 20%), 
-                    radial-gradient(circle, #006ea5 20%, transparent 20%), 
-                    radial-gradient(circle, transparent 10%, #006ea5 15%, transparent 20%), 
-                    radial-gradient(circle, #006ea5 20%, transparent 20%), 
-                    radial-gradient(circle, #006ea5 20%, transparent 20%), 
-                    radial-gradient(circle, #006ea5 20%, transparent 20%), 
-                    radial-gradient(circle, #006ea5 20%, transparent 20%);
+  background-image: radial-gradient(circle, #0044FF 20%, transparent 20%), 
+                    radial-gradient(circle, transparent 20%, #0044FF 20%, transparent 30%), 
+                    radial-gradient(circle, #0044FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0044FF 20%, transparent 20%), 
+                    radial-gradient(circle, transparent 10%, #0044FF 15%, transparent 20%), 
+                    radial-gradient(circle, #0044FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0044FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0044FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0044FF 20%, transparent 20%);
   background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
 }
 
 .bubbly-button:after {
   display: none;
   bottom: -75%;
-  background-image: radial-gradient(circle, #006ea5 20%, transparent 20%), 
-                    radial-gradient(circle, #006ea5 20%, transparent 20%), 
-                    radial-gradient(circle, transparent 10%, #006ea5 15%, transparent 20%), 
-                    radial-gradient(circle, #006ea5 20%, transparent 20%), 
-                    radial-gradient(circle, #006ea5 20%, transparent 20%), 
-                    radial-gradient(circle, #006ea5 20%, transparent 20%), 
-                    radial-gradient(circle, #006ea5 20%, transparent 20%);
+  background-image: radial-gradient(circle, #0044FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0044FF 20%, transparent 20%), 
+                    radial-gradient(circle, transparent 10%, #0044FF 15%, transparent 20%), 
+                    radial-gradient(circle, #0044FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0044FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0044FF 20%, transparent 20%), 
+                    radial-gradient(circle, #0044FF 20%, transparent 20%);
   background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
 }
 
@@ -3959,7 +3958,7 @@ a-waves {
 .bubbly-button-outline {
   background: transparent; /* Sin fondo */
   color: white; /* Texto con el mismo color que el borde */
-  border: 2px solid #006ea5; /* Borde con color */
+  border: 2px solid #0044FF; /* Borde con color */
   box-shadow: none; /* Sin sombra */
 }
 
@@ -4153,9 +4152,7 @@ a-waves {
 }
 
 .drk2 {
-  background: 
-    linear-gradient(227deg, rgba(0,5,66, 0.9), rgba(0,5,66,0.7), rgba(0,0,0,1)),
-    url('sea.jpg');
+  background: linear-gradient(180deg,#020017,#003047,#003047,#003047,#003047);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4163,9 +4160,7 @@ a-waves {
 }
 
 .drk3 {
-  background: 
-    linear-gradient(10deg, rgba(0, 5,66, 0.7), rgba(0,5,66,0.7), rgba(0,0,0,1)),
-    url('sea2.jpg');
+  background-color: #020017;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4173,9 +4168,7 @@ a-waves {
 }
 
 .drk4 {
-  background: 
-    linear-gradient(10deg, rgba(0, 5,66, 0.5), rgba(0,5,66,0.7), rgba(0,0,0,1)),
-    url('sea4.jpg');
+  background-color: #003047;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4183,23 +4176,19 @@ a-waves {
 }
 
 .lght {
-  background: 
-    linear-gradient(227deg, rgb(255, 255, 238), rgba(212,211,157,1), rgb(255, 255, 255)),
-    url('sea.jpg');
+  background-color: #ffffff;
     color: #122d3b;
 }
 
 .lght1 {
   background: 
-    linear-gradient(90deg, rgb(255, 255, 255,1), rgb(255, 255, 255,0.9), rgb(255, 255, 255,0.6)),
-    url('sea.jpg');
+    linear-gradient(90deg, rgb(255, 255, 255,1), rgb(255, 255, 255,0.9), rgb(255, 255, 255,0.6));
     color: #122d3b;
 }
 
 .lght2 {
   background: 
-    linear-gradient(270deg, rgb(255, 255, 255,1), rgb(255, 255, 255,1), rgb(255, 255, 255,0.5)),
-    url('sea2.jpg');
+    linear-gradient(270deg, rgb(255, 255, 255,1), rgb(255, 255, 255,1), rgb(255, 255, 255,0.5));
     color: #122d3b;
 }
 
@@ -4344,7 +4333,7 @@ a-waves {
   left: 0;
   width: 1rem;
   height: 1rem;
-  background: linear-gradient(227deg, #122d3b, #00baff);
+  background-color: #ff7a00;
   color: white;
   display: flex;
   align-items: center;
@@ -4362,8 +4351,8 @@ a-waves {
   left: 0;
   width: 1rem;
   height: 1rem;
-  background: white;
-  color: #122d3b;
+  background-color: #ff7a00;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4517,7 +4506,7 @@ a-waves {
 }
 
 .faq-trigger i {
-  color:#122d3b;
+  color:#ff7a00;
   margin-right: 12px;
 }
 
@@ -4835,4 +4824,17 @@ p {
 
 .opinions {
   background-color: #ffffff;
+}
+
+.cog {
+  color:#ff7a00;
+}
+
+.mb-4 {
+  margin-bottom: 0rem;
+}
+
+.bbs {
+  width: 100%;
+  text-align: center;
 }
